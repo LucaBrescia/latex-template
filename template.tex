@@ -1,0 +1,46 @@
+\documentclass[titlepage]{report}
+\usepackage[italian]{babel}
+\usepackage[babel]{csquotes}
+\usepackage[a4paper,left=2cm,bottom=2cm,right=2cm,top=2.5cm]{geometry}
+\usepackage{subcaption}
+\usepackage{url}
+\usepackage{graphicx} 			
+\usepackage{sidecap}		
+\usepackage{setspace}		
+\usepackage{textcomp} 			
+\usepackage[table]{xcolor}		
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage[nowrite,infront,standard,swapnames]{frontespizio}
+
+\begin{document}
+    \hypersetup{
+        linkbordercolor={1 1 1},
+    }
+
+    % Compile the *-frn.tex file with the command "pdflatex" before this file
+    \begin{frontespizio}
+        \Universita {University Name}
+        % Uncomment next line to add a image file to your Frontespizio
+        %\Logo [Size]{Path}
+        \Dipartimento {Department}
+        \Corso [Course Level]{Course Name}
+        \Annoaccademico {Academic Year}
+        \Titoletto{Uptitle}
+        \Titolo {Title}
+        \Sottotitolo {Subtitle}
+        \NCandidato{Label}
+        \Candidato [Serial]{Name}
+    \end{frontespizio}
+
+    \tableofcontents 
+
+    \chapter*{Abstract}
+    \label{ch: Abstract}
+    \addcontentsline{toc}{chapter}{Abstract}
+
+    \chapter{Chapter 1}
+    \label{ch: Chapter 1}
+
+\end{document}
