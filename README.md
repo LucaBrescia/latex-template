@@ -8,7 +8,8 @@ Download this repository to begin writing your report or thesis with an encapsul
 ```sh
     # If you have PDFLATEX use
     pdflatex {yourname}.tex
-
+```
+```sh
     # If you want to use LATEX use
     latex {yourname}.tex
 ```
@@ -16,7 +17,8 @@ Download this repository to begin writing your report or thesis with an encapsul
 ```sh
     # If you have PDFLATEX use
     pdflatex {yourname}-frn.tex
-
+```
+```sh
     # If you want to use LATEX use
     latex {yourname}-frn.tex
     dvips {yourname}-frn.eps {yourname}-frn
@@ -25,7 +27,8 @@ Download this repository to begin writing your report or thesis with an encapsul
 ```sh
     # If you have PDFLATEX use
     pdflatex {yourname}.tex
-
+```
+```sh
     # If you want to use LATEX use
     latex {yourname}.tex
 ```
