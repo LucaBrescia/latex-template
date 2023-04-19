@@ -4,12 +4,32 @@ Download this repository to begin writing your report or thesis with an encapsul
 
 ## How to begin
 
-- Rename the two "template" file with your preferences.
-- Edit the *-frn.tex file first and compile it using the following command
+- Rename the two "template" file with your preferences then compile it using the following command:
 ```sh
-    pdflatex {yourname}-frn.tex
+    # If you have PDFLATEX use
+    pdflatex {yourname}.tex
+
+    # If you want to use LATEX use
+    latex {yourname}.tex
 ```
-- Start editing the main file *.tex 
+- Edit the {yourname}-frn.tex file first and compile it using the following command
+```sh
+    # If you have PDFLATEX use
+    pdflatex {yourname}-frn.tex
+
+    # If you want to use LATEX use
+    latex {yourname}-frn.tex
+    dvips {yourname}-frn.eps {yourname}-frn
+```
+- And then recompile the main {yourname}.tex file
+```sh
+    # If you have PDFLATEX use
+    pdflatex {yourname}.tex
+
+    # If you want to use LATEX use
+    latex {yourname}.tex
+```
+- Alright! You're ready to start editing the main file {yourname}.tex 
 
 ## Resources
 In the res folder there are some useful document to begin with. 
