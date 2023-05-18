@@ -13,10 +13,82 @@
 \usepackage{hyperref}
 \usepackage{fancyhdr}
 \usepackage[nowrite,infront,standard,swapnames]{frontespizio}
+\usepackage{amsmath}            % subequations
+\usepackage{listings}           % code listing style    
+\usepackage[most]{tcolorbox}
+\usepackage{xcolor}
+\usepackage[nowrite,infront,standard,swapnames]{frontespizio}
+%% Definizione nomi colori
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.98,0.98,0.95}
+
+%% Stile per il linsting
+\lstdefinestyle{customCode}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    otherkeywords={QBluetoothLocalDevice,QString,QOverload,QDialog,QWidget,Ui_Chat,QPushButton},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+
+    
+
+\lstdefinestyle{shelllike}{
+    language=bash,
+    backgroundcolor=\color{black},
+    basicstyle=\ttfamily\color{white}, commentstyle=\color{green}\ttfamily,
+    keywordstyle=\color{blue}\ttfamily, showstringspaces=false,
+    aboveskip=0pt,
+    belowskip=0pt
+}
+
+
+
+%% Applico lo stile ai listing
+\lstset{style=customCode}
 
 \begin{document}
+    % Per saltare una riga alla fine del paragrafo
+    \setlength{\parskip}{\baselineskip} 
+    % Per evitare i blocchi nei link dell'indice
     \hypersetup{
         linkbordercolor={1 1 1},
+    }
+    % Per creare il listing personalizzato "bashcode"
+    \newtcblisting{bashcode}{
+        arc=0pt,
+        boxrule=0pt,
+        colback=black,
+        listing only,
+        listing options={
+            style=shelllike,
+            numbers=none
+        },
+        right=0pt,
+        top=0pt,
+        bottom=0pt,
+        boxsep=5pt,
+        enhanced,
+        overlay={
+            \begin{tcbclipframe}
+                \fill[black, rounded corners] (frame.south west) rectangle ([xshift=-3mm]frame.north west);
+            \end{tcbclipframe}
+        },
     }
 
     % Compile the *-frn.tex file with the command "pdflatex" before this file
