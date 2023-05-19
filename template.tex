@@ -57,7 +57,8 @@
     belowskip=0pt
 }
 
-
+% Set link border color none. See more options: https://en.wikibooks.org/wiki/LaTeX/Hyperlinks
+\hypersetup{hidelinks}
 
 %% Applico lo stile ai listing
 \lstset{style=customCode}
@@ -65,10 +66,6 @@
 \begin{document}
     % Per saltare una riga alla fine del paragrafo
     \setlength{\parskip}{\baselineskip} 
-    % Per evitare i blocchi nei link dell'indice
-    \hypersetup{
-        linkbordercolor={1 1 1},
-    }
     % Per creare il listing personalizzato "bashcode"
     \newtcblisting{bashcode}{
         arc=0pt,
