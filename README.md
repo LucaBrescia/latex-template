@@ -1,4 +1,4 @@
-# Template for latex report
+# Template for latex reports
 
 Download this repository to begin writing your report or thesis with an embedded ready-to-use frontespizio page from frontespizio package
 
