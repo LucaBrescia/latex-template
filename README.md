@@ -31,7 +31,7 @@ Download this repository to begin writing your report or thesis with an embedded
     # If you want to use LATEX use
     latex {yourname}.tex
 ```
-- Alright! You're ready to start editing the main file {yourname}.tex 
+- You're ready to start editing the main file {yourname}.tex 
 
 ## Resources
 In the res folder there are some useful document to begin with. 
