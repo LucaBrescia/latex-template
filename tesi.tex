@@ -1,0 +1,50 @@
+\documentclass[oneside, a4paper]{book}
+\usepackage[italian]{babel}
+\usepackage[babel]{csquotes}
+\usepackage[a4paper,left=3.5cm,bottom=2.5cm,right=3.5cm,top=2.5cm]{geometry}
+\usepackage{subcaption}
+\usepackage{url}
+\usepackage{graphicx} 			
+\usepackage{sidecap}		
+\usepackage{setspace}		
+\usepackage{textcomp} 			
+\usepackage[table]{xcolor}		
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage[nowrite,infront,standard,swapnames]{frontespizio}
+\usepackage{amsmath}            % subequations
+\usepackage{listings}           % code listing style    
+\usepackage[most]{tcolorbox}
+\usepackage{xcolor}
+\usepackage[nowrite,infront,standard,swapnames]{frontespizio}
+\usepackage{sectsty} % to use command to centering section and chapter titles
+
+% Set link border color none. See more options: https://en.wikibooks.org/wiki/LaTeX/Hyperlinks
+\hypersetup{hidelinks}
+
+%% Add blank page without increase the page number
+% \shipout\null
+
+%% Increase / decrease page number
+% \stepcounter{page}{numtoincordec}
+
+% To center chapter and section text
+\allsectionsfont{\centering}
+
+\begin{document}
+    % Per saltare una riga alla fine del paragrafo
+    \setlength{\parskip}{\baselineskip} 
+
+    % Compile the *-frn.tex file with the command "pdflatex" before this file
+    \begin{frontespizio}
+    \end{frontespizio}
+
+    \shipout\null
+
+    \tableofcontents
+
+    \include{res/chapters/abstract/abstract}    
+    \include{res/chapters/ch1/chapter}
+
+\end{document}
