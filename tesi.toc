@@ -1,4 +1,43 @@
 \babel@toc {italian}{}\relax 
 \babel@toc {italian}{}\relax 
-\contentsline {chapter}{Abstract}{2}{chapter*.2}%
-\contentsline {chapter}{\numberline {1}Capitolo 1}{3}{chapter.1}%
+\contentsline {chapter}{Abstract}{4}{chapter*.2}%
+\contentsline {chapter}{\numberline {1}Nuove Topologie di Amplificatori a Bassa Tensione e Bassa Potenza}{5}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Problematiche della riduzione della tensione di alimentazione}{5}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Tecniche per amplificatori a bassa tensione}{6}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Floating-Gate MOSFET}{6}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Transistor in regione di sottosoglia}{6}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.2.3}Bulk-Driven}{6}{subsection.1.2.3}%
+\contentsline {section}{\numberline {1.3}Amplificatori a bassa tensione con elevata immunità EMI}{7}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Amplificatori basati su invertitori (NAUTA OTA)}{8}{section.1.4}%
+\contentsline {subsection}{\numberline {1.4.1}Principi di funzionamento dell'invertitore come cella analogica}{8}{subsection.1.4.1}%
+\contentsline {subsection}{\numberline {1.4.2}Topologia dell'amplificatore di Nauta}{9}{subsection.1.4.2}%
+\contentsline {subsection}{\numberline {1.4.3}Versione single-ended dell'amplificatore basato su invertitori}{9}{subsection.1.4.3}%
+\contentsline {subsection}{\numberline {1.4.4}Vantaggi in termini di immunità EMI}{9}{subsection.1.4.4}%
+\contentsline {section}{\numberline {1.5}Confronto tra le tecniche presentate}{10}{section.1.5}%
+\contentsline {chapter}{\numberline {2}L'Architettura Nauta OTA}{12}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Introduzione}{12}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Principi di Funzionamento del Nauta OTA}{13}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}L'Inverter CMOS come Elemento Analogico}{13}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Struttura Base del Nauta OTA}{13}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Conversione Tensione-Corrente Lineare}{14}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.4}Miglioramento del Guadagno DC}{15}{subsection.2.2.4}%
+\contentsline {section}{\numberline {2.3}Vantaggi dell'Architettura Nauta OTA}{16}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Immunità EMI}{16}{subsection.2.3.1}%
+\contentsline {section}{\numberline {2.4}Implementazioni a Bassa Tensione del Nauta OTA}{17}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Nauta OTA a due stadi}{17}{section.2.5}%
+\contentsline {section}{\numberline {2.6}Applicazioni del Nauta OTA}{17}{section.2.6}%
+\contentsline {chapter}{\numberline {3}Le Interferenze Elettromagnetiche}{19}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Definizione e tipologie di interferenze elettromagnetiche}{19}{section.3.1}%
+\contentsline {section}{\numberline {3.2}EMI nei circuiti integrati}{20}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Tipologie di propagazione delle EMI nei circuiti integrati}{20}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Interferenze irradiate}{21}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Interferenze condotte}{21}{subsection.3.3.2}%
+\contentsline {section}{\numberline {3.4}Sensibilità dei circuiti analogici alle EMI}{22}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Metodologia di studio delle EMI}{22}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Modellazione delle EMI}{22}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}Configurazione di test}{23}{subsection.3.5.2}%
+\contentsline {subsection}{\numberline {3.5.3}Parametri di valutazione}{23}{subsection.3.5.3}%
+\contentsline {section}{\numberline {3.6}Strategie di mitigazione delle EMI}{24}{section.3.6}%
+\contentsline {subsection}{\numberline {3.6.1}Approccio a posteriori}{24}{subsection.3.6.1}%
+\contentsline {subsection}{\numberline {3.6.2}Approccio preventivo}{24}{subsection.3.6.2}%
+\contentsline {chapter}{Bibliografia}{26}{chapter*.9}%

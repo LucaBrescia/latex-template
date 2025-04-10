@@ -19,7 +19,10 @@
 \usepackage{xcolor}
 \usepackage[nowrite,infront,standard,swapnames]{frontespizio}
 \usepackage{sectsty} % to use command to centering section and chapter titles
+\usepackage[style=numeric-comp,useprefix,hyperref,backend=bibtex,natbib,sorting=none]{biblatex}
 
+\addbibresource{./bib/bibliography.bib}
+\defbibheading{bibliography}{\subsection*{Bibliography}}
 % Set link border color none. See more options: https://en.wikibooks.org/wiki/LaTeX/Hyperlinks
 \hypersetup{hidelinks}
 
@@ -30,21 +33,44 @@
 % \stepcounter{page}{numtoincordec}
 
 % To center chapter and section text
-\allsectionsfont{\centering}
+%\allsectionsfont{\centering}
+\fontsize{12pt}{16pt}\selectfont % font size for the text
+%\chapterfont{\fontsize{16pt}{20pt}\selectfont} % font size for the chapter title
+\setstretch{1.5} % line spacing
+\setlength{\parindent}{0pt} % no indentation
 
 \begin{document}
-    % Per saltare una riga alla fine del paragrafo
+
+    % Skip a line at the end of paragraph
     \setlength{\parskip}{\baselineskip} 
 
-    % Compile the *-frn.tex file with the command "pdflatex" before this file
+    % Frontespizio page
     \begin{frontespizio}
     \end{frontespizio}
 
+    % Blank page between frontespizio and toc
     \shipout\null
 
+    % ToC
     \tableofcontents
 
-    \include{res/chapters/abstract/abstract}    
+    % Abstract
+    \include{res/chapters/abstract/abstract} 
+
+    % Chapter 1
     \include{res/chapters/ch1/chapter}
 
+    % Chapter 2
+    \include{res/chapters/ch2/chapter}
+
+    % Chapter 3
+    \include{res/chapters/ch3/chapter}
+
+    % Chapter 4
+    %\include{res/chapters/ch4/chapter}
+
+    % Chapter 5
+    %\include{res/chapters/ch5/chapter}
+
+    \printbibliography[heading=bibintoc]
 \end{document}

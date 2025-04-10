@@ -1,0 +1,419 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\datalist[entry]{none/global//global/global}
+  \entry{finalprint}{article}{}
+    \name{author}{3}{}{%
+      {{hash=RA}{%
+         family={Richelli},
+         familyi={R\bibinitperiod},
+         given={Anna},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=MaG}{%
+         family={Matig-a},
+         familyi={M\bibinithyphendelim a\bibinitperiod},
+         given={Gilbert},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=RJM}{%
+         family={Redout{\'e}},
+         familyi={R\bibinitperiod},
+         given={Jean-Michel},
+         giveni={J\bibinithyphendelim M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{RAMaGRJM1}
+    \strng{fullhash}{RAMaGRJM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{3-4}
+    \field{pages}{654\bibrangedash 661}
+    \field{title}{Design of a folded cascode opamp with increased immunity to
+  conducted electromagnetic interference in 0.18 $\mu$m CMOS}
+    \field{volume}{55}
+    \field{journaltitle}{Microelectronics Reliability}
+    \field{year}{2015}
+  \endentry
+
+  \entry{Bulk-Driven_CMOS_Amplifier_With_High_EMI_Immunity}{article}{}
+    \name{author}{4}{}{%
+      {{hash=LHG}{%
+         family={Li},
+         familyi={L\bibinitperiod},
+         given={Hong\bibnamedelima Ge},
+         giveni={H\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+      {{hash=BHX}{%
+         family={Bai},
+         familyi={B\bibinitperiod},
+         given={Hui\bibnamedelima Xin},
+         giveni={H\bibinitperiod\bibinitdelim X\bibinitperiod},
+      }}%
+      {{hash=XSG}{%
+         family={Xie},
+         familyi={X\bibinitperiod},
+         given={Shu\bibnamedelima Guo},
+         giveni={S\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+      {{hash=SDL}{%
+         family={Su},
+         familyi={S\bibinitperiod},
+         given={Dong\bibnamedelima Lin},
+         giveni={D\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{LHG+1}
+    \strng{fullhash}{LHGBHXXSGSDL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{6}
+    \field{pages}{1425\bibrangedash 1434}
+    \field{title}{Bulk-Driven CMOS Amplifier With High EMI Immunity}
+    \field{volume}{57}
+    \field{journaltitle}{IEEE Transactions on Electromagnetic Compatibility}
+    \field{year}{2015}
+  \endentry
+
+  \entry{Design_considerations_for_an_ultra-low_voltage_amplifier_with_high_EMI_immunity}{article}{}
+    \name{author}{1}{}{%
+      {{hash=RA}{%
+         family={Richelli},
+         familyi={R\bibinitperiod},
+         given={Anna},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{RA1}
+    \strng{fullhash}{RA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pages}{558\bibrangedash 561}
+    \field{title}{Design considerations for an Ultra-Low Voltage Amplifier with
+  High EMI Immunity}
+    \field{journaltitle}{IEEE International Conference on Electronics, Circuits
+  and Systems}
+    \field{year}{2008}
+  \endentry
+
+  \entry{Redoute-Richelli_EMC_Magazine}{article}{}
+    \name{author}{2}{}{%
+      {{hash=RJM}{%
+         family={Redout{\'e}},
+         familyi={R\bibinitperiod},
+         given={Jean-Michel},
+         giveni={J\bibinithyphendelim M\bibinitperiod},
+      }}%
+      {{hash=RA}{%
+         family={Richelli},
+         familyi={R\bibinitperiod},
+         given={Anna},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{RJMRA1}
+    \strng{fullhash}{RJMRA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{2}
+    \field{pages}{92\bibrangedash 100}
+    \field{title}{A methodological approach to EMI resistant analog integrated
+  circuit design}
+    \field{volume}{4}
+    \field{journaltitle}{IEEE Electromagnetic Compatibility Magazine}
+    \field{year}{2015}
+  \endentry
+
+  \entry{EMI_Immunity_of_the_Nauta_Inverter-Based_Amplifier}{article}{}
+    \name{author}{3}{}{%
+      {{hash=RA}{%
+         family={Rosa},
+         familyi={R\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=RA}{%
+         family={Richelli},
+         familyi={R\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=CL}{%
+         family={Colalongo},
+         familyi={C\bibinitperiod},
+         given={L.},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{RARACL1}
+    \strng{fullhash}{RARACL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pages}{15\bibrangedash 18}
+    \field{title}{EMI Immunity of the Nauta Inverter-Based Amplifier}
+    \field{journaltitle}{IEEE International Workshop on the Electromagnetic
+  Compatibility of Integrated Circuits}
+    \field{year}{2024}
+  \endentry
+
+  \entry{Nauta1992JSSC}{article}{}
+    \name{author}{1}{}{%
+      {{hash=NB}{%
+         family={Nauta},
+         familyi={N\bibinitperiod},
+         given={Bram},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{NB1}
+    \strng{fullhash}{NB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{2}
+    \field{pages}{142\bibrangedash 153}
+    \field{title}{A CMOS transconductance-C filter technique for very high
+  frequencies}
+    \field{volume}{27}
+    \field{journaltitle}{IEEE Journal of Solid-State Circuits}
+    \field{year}{1992}
+  \endentry
+
+  \entry{Braga2017}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=BRAS}{%
+         family={Braga},
+         familyi={B\bibinitperiod},
+         given={R.\bibnamedelima A.\bibnamedelima S.},
+         giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim
+  S\bibinitperiod},
+      }}%
+      {{hash=FLHC}{%
+         family={Ferreira},
+         familyi={F\bibinitperiod},
+         given={L.\bibnamedelima H.\bibnamedelima C.},
+         giveni={L\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim
+  C\bibinitperiod},
+      }}%
+      {{hash=CGD}{%
+         family={Colletta},
+         familyi={C\bibinitperiod},
+         given={G.\bibnamedelima D.},
+         giveni={G\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=DOO}{%
+         family={Dutra},
+         familyi={D\bibinitperiod},
+         given={O.\bibnamedelima O.},
+         giveni={O\bibinitperiod\bibinitdelim O\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BRAS+1}
+    \strng{fullhash}{BRASFLHCCGDDOO1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{IEEE 8th Latin American Symposium on Circuits \& Systems
+  (LASCAS)}
+    \field{pages}{1\bibrangedash 4}
+    \field{title}{Calibration-less {Nauta OTA} operating at 0.25-{V} power
+  supply in a 130-nm digital {CMOS} process}
+    \field{year}{2017}
+  \endentry
+
+  \entry{capitolo2}{article}{}
+    \field{labeltitlesource}{title}
+    \field{title}{Le Interferenze Elettromagnetiche}
+  \endentry
+
+  \entry{Susceptibility_of_the_Instrumentation_to_Conducted_EMI_Injected_Through_the_Ground_Plane}{article}{}
+    \name{author}{2}{}{%
+      {{hash=RA}{%
+         family={Richelli},
+         familyi={R\bibinitperiod},
+         given={Anna},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=MN}{%
+         family={Malnati},
+         familyi={M\bibinitperiod},
+         given={Nicola},
+         giveni={N\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{RAMN1}
+    \strng{fullhash}{RAMN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{4}
+    \field{pages}{1271\bibrangedash 1272}
+    \field{title}{Susceptibility of the Instrumentation to Conducted EMI
+  Injected Through the Ground Plane}
+    \field{volume}{65}
+    \field{journaltitle}{IEEE Transactions on Electromagnetic Compatibility}
+    \field{year}{2023}
+  \endentry
+
+  \entry{An_EMI-Resistant_Common-Mode_Cancelation_Differential_Input_Stage_in_UMC_180_nm_CMOS}{article}{}
+    \name{author}{3}{}{%
+      {{hash=RA}{%
+         family={Richelli},
+         familyi={R\bibinitperiod},
+         given={Anna},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=KS}{%
+         family={Kennedy},
+         familyi={K\bibinitperiod},
+         given={Simon},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=RJM}{%
+         family={Redout{\'e}},
+         familyi={R\bibinitperiod},
+         given={Jean-Michel},
+         giveni={J\bibinithyphendelim M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{RAKSRJM1}
+    \strng{fullhash}{RAKSRJM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{6}
+    \field{pages}{2049\bibrangedash 2051}
+    \field{title}{An EMI-Resistant Common-Mode Cancelation Differential Input
+  Stage in UMC 180 nm CMOS}
+    \field{volume}{59}
+    \field{journaltitle}{IEEE Transactions on Electromagnetic Compatibility}
+    \field{year}{2017}
+  \endentry
+
+  \entry{TR2016}{article}{}
+    \name{author}{4}{}{%
+      {{hash=RA}{%
+         family={Richelli},
+         familyi={R\bibinitperiod},
+         given={Anna},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=DG}{%
+         family={Delaini},
+         familyi={D\bibinitperiod},
+         given={Giovanni},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=GM}{%
+         family={Grassi},
+         familyi={G\bibinitperiod},
+         given={Marco},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=RJM}{%
+         family={Redout{\'e}},
+         familyi={R\bibinitperiod},
+         given={Jean-Michel},
+         giveni={J\bibinithyphendelim M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{RA+1}
+    \strng{fullhash}{RADGGMRJM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{3}
+    \field{pages}{1369\bibrangedash 1379}
+    \field{title}{Susceptibility of Operational Amplifiers to Conducted EMI
+  Injected Through the Ground Plane into Their Output Terminal}
+    \field{volume}{65}
+    \field{journaltitle}{IEEE Transactions on Reliability}
+    \field{year}{2016}
+  \endentry
+
+  \entry{Measurements_of_EMI_susceptibility_of_precision_voltage_references}{article}{}
+    \name{author}{5}{}{%
+      {{hash=RA}{%
+         family={Richelli},
+         familyi={R\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=CL}{%
+         family={Colalongo},
+         familyi={C\bibinitperiod},
+         given={L.},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=TL}{%
+         family={Toninelli},
+         familyi={T\bibinitperiod},
+         given={L.},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=RI}{%
+         family={Rusu},
+         familyi={R\bibinitperiod},
+         given={I.},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=RJM}{%
+         family={Redout{\'e}},
+         familyi={R\bibinitperiod},
+         given={J.-M.},
+         giveni={J\bibinithyphendelim M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{RA+1}
+    \strng{fullhash}{RACLTLRIRJM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pages}{162\bibrangedash 167}
+    \field{title}{Measurements of EMI Susceptibility of Precision Voltage
+  References}
+    \field{journaltitle}{IEEE International Workshop on the Electromagnetic
+  Compatibility of Integrated Circuits}
+    \field{year}{2017}
+  \endentry
+\enddatalist
+\endinput

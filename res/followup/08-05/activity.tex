@@ -1,0 +1,70 @@
+\documentclass[a4paper]{article}
+\usepackage{bookmark}
+\usepackage[italian]{babel}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{sectsty}
+\usepackage{parskip}
+
+\hypersetup{hidelinks}
+\allsectionsfont{\centering}
+
+\begin{document}
+    
+    \title{Analisi dell'amplificatore Miller}
+    \author{Luca Brescia}
+    \date{\today}
+    \maketitle
+
+    \section*{Obiettivo}
+        Creazione di uno standard per le simulazioni dei circuiti della tesi. \\
+        Utilizzare prima il circuito di un amplificatore Miller, in configurazione di inseguitore (buffer), a cui vanno effettuate le seguenti simulazioni:
+
+        \begin{itemize}
+            \item Analis DC: in cui bisogna osservare l'assestamento dell'uscita al valore prefissato di ingresso.
+            \item Analisi AC: fare sweep in frequenza da 1 MHz a 1-2-4 GHz
+        \end{itemize}
+
+        L'ingresso dovrà essere impostato su 0.5Vpp e ampiezza 1Vpp basato su una tensione di alimentazione di Vdd=1V.
+
+        Inoltre si dovranno effettuare le simulazioni con le seguenti configurazioni:
+
+        \begin{itemize}
+            \item 1 stadio;
+            \item 2 stadi;
+            \item Eff. corner;
+            \item PVT
+            \item Montecarlo;
+        \end{itemize}
+
+    \section*{Svolgimento}
+        \subsection*{Miller a singolo stadio}
+            Si è partiti con la simulazione di un amplificatore Miller a singolo stadio. La prima analisi che si è effettuata è l'andamento dell'uscita a fronte di un ingresso costante a $V_+ = V_- = \frac{Vdd}{2}$ per dimensionare i transistori MOS di modo da ottenere $V_o \simeq \frac{Vdd}{2}$. \\
+            Si è scelto di dimensionare i transistori con una L non minima, poiché l'applicazione è analogica, e si è deciso di partire con una $L = 4\mu m$. Con tale valore si è effettuato uno sweep in W dei transistori NMOS, detta \textit{wn\_miller} e, successivamente, si è effettuato uno sweep in W dei transistori PMOS, detta \textit{wp\_miller}.
+            I valori di sweep utilizzati sono riportati tabella \ref{tab:sweep_wn_wp}:
+            \begin{table}[]
+                \centering
+                \begin{tabular}{c|c|c|}
+                    \cline{2-3}
+                                                     & da        & a          \\ \hline
+                    \multicolumn{1}{|c|}{wn\_miller} & $8\mu m$  & $300\mu m$ \\ \hline
+                    \multicolumn{1}{|c|}{wp\_miller} & $16\mu m$ & $300\mu m$ \\ \hline
+                    \end{tabular}
+                \label{tab:sweep_wn_wp}
+                \caption[short]{Valori di sweep per le variabili di W dei transistori MOS per l'amplificatore Miller a singolo stadio}
+            \end{table}
+            Si sono scelti i valori $wn\_miller = 24\mu m$ e $wp_miller = 72\mu m$. 
+            Con tali geometrie si ottiene $V_o \simeq \frac{Vdd}{2}$ con tutti i transistori in regione 2 (saturazione) tranne per il generatore di corrente, polarizzato con una tensione $V_b = 800mV$, che resta in regione 1 (lineare).
+            Per la scelta dell tensione $V_b$ di polarizzazione del generatore di corrente, transistore M3, si è effettuato uno sweep in tensione da $V_{th} \simeq 457mV$ a $Vdd$. Si è osservato un mantenimento della regione 1 per tutto lo sweep di tensioni soprasoglia e che, come ci si aspetterebbe, la tensione di uscita cala all'aumentare della tensione $V_b$.
+
+
+    \section*{Appunti incontro Richelli}
+    Il dimensionamento dei componenti devo farlo in modo tale da fissare il dc operating point in SAT per tutti i MOS.
+    Quindi prima dimensiono in modo da avere SAT anche per il gen di corrente. Una volta che so che nel punto di lavoro il MOS è in SAT posso fare sweep delle tensioni V+ e V- per vedere la caratteristica.
+    Quello che mi aspetto è che la Vd del gen di corrente dipende da Vs della coppia differenziale e quindi da V+ e V-. Per cui sicuramente andrà in LIN il gen di corrente, tuttavia devo dimensionare in modo da avere ro grande e gm piccola e questo dipende dalle geometrie (da vedere bene come sono legati a L e W).
+
+    Inoltre, per il dimensionamento del NAUTA, sono tutti inverter per cui devo mantenere le caratteristiche dell'inverter ma siamo nel mondo analogico per cui vanno dimensionati ragionevolmente grandi. 
+    Da tenere in considerazione le geometrie del miller per cui gli NMOS sono dimensionati più o meno uguali. I PMOS devono essere più grandi (sempre come nel miller) quindi fare riferimento alle geometrie del paper EMCCompo.
+    Controllare la caratteristica degli inverter base che deve essere rispecchiata anche per questa tipologia di inverter. 
+            
+\end{document}

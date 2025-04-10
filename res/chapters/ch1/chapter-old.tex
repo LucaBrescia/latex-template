@@ -1,0 +1,43 @@
+\documentclass[oneside, a4paper]{book}
+\usepackage[italian]{babel}
+\usepackage[babel]{csquotes}
+\usepackage[a4paper,left=3.5cm,bottom=2.5cm,right=3.5cm,top=2.5cm]{geometry}
+
+\begin{document}
+
+\chapter{Introduzione alle nuove tecnologie circuitali}
+
+\section{Motivazione e contesto}
+Negli ultimi anni, l'evoluzione dell'elettronica analogica ha richiesto una continua riduzione della tensione di alimentazione dei circuiti per migliorare l'efficienza energetica e l'integrazione nei dispositivi a basso consumo. Questa tendenza è particolarmente rilevante per applicazioni come sensori biomedicali, dispositivi indossabili e sistemi Internet of Things (IoT), dove il consumo di potenza è un fattore determinante. Tuttavia, la riduzione della tensione di alimentazione pone significative sfide in termini di prestazioni dei circuiti analogici, specialmente per quanto riguarda la linearità, la banda passante e la sensibilità ai disturbi elettromagnetici (EMI).
+
+\section{Tecnologie circuitali per la riduzione della tensione di alimentazione}
+La riduzione della tensione di alimentazione nei circuiti analogici ha spinto lo sviluppo di nuove tecniche circuitali per garantire prestazioni elevate anche a bassi livelli di tensione. Tra le principali strategie adottate si trovano:
+
+\begin{itemize}
+    \item \textbf{Tecniche Bulk-Driven}: consentono di controllare la corrente del dispositivo tramite il terminale bulk, riducendo la dipendenza dalla tensione di soglia e migliorando l'operatività a basse tensioni.
+    \item \textbf{Circuiti DIGOTA}: utilizzano una topologia differenziale con inverter per migliorare la tensione di uscita disponibile e ridurre la distorsione.
+    \item \textbf{NAUTA OTA}: una nuova architettura priva di resistenze e condensatori interni che sfrutta la retroazione positiva per ottenere guadagni elevati anche a basse tensioni di alimentazione.
+\end{itemize}
+
+\section{Tecniche per la riduzione delle interferenze elettromagnetiche}
+La suscettibilità ai disturbi elettromagnetici è una delle principali problematiche dei circuiti analogici a bassa tensione. Per mitigare questi effetti, sono state sviluppate diverse strategie, tra cui:
+
+\begin{itemize}
+    \item \textbf{Tecniche Bulk-Driven}: oltre a migliorare la risposta a basse tensioni, questa tecnica aumenta l'immunità ai disturbi riducendo la dipendenza del transistor dalla tensione di gate.
+    \item \textbf{Architetture DIGOTA}: permettono una maggiore reiezione del rumore comune (CMRR) e una maggiore stabilità in ambienti ad alto EMI.
+    \item \textbf{NAUTA OTA}: sfruttando una topologia innovativa, questo amplificatore offre una maggiore robustezza contro le interferenze elettromagnetiche senza la necessità di reti RC esterne.
+\end{itemize}
+
+\section{Obiettivi della tesi}
+L'obiettivo di questa tesi è lo studio della sensibilità alle interferenze elettromagnetiche di un amplificatore **OTA inverter-based** operante a tensioni di alimentazione inferiori a 1.8V. In particolare, l'analisi si concentrerà sulla valutazione delle prestazioni del **NAUTA OTA**, confrontandolo con altre soluzioni di riduzione della tensione di alimentazione e mitigazione del rumore elettromagnetico.
+
+\section{Struttura della tesi}
+Il resto della tesi è organizzato come segue:
+\begin{itemize}
+    \item Il Capitolo 2 fornirà una panoramica sulle architetture OTA a bassa tensione, con particolare attenzione ai circuiti **Bulk-Driven** e **DIGOTA**.
+    \item Il Capitolo 3 descriverà in dettaglio il principio di funzionamento del **NAUTA OTA**, con un'analisi delle sue prestazioni e della sua sensibilità ai disturbi.
+    \item Il Capitolo 4 presenterà la metodologia di simulazione e i risultati ottenuti, evidenziando vantaggi e limitazioni dell'architettura studiata.
+    \item Il Capitolo 5 concluderà la tesi con una discussione sulle prospettive future e le possibili applicazioni della tecnologia analizzata.
+\end{itemize}
+
+\end{document}

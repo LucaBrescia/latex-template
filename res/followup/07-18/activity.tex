@@ -1,0 +1,43 @@
+\documentclass[a4paper]{article}
+\usepackage{bookmark}
+\usepackage[italian]{babel}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{sectsty}
+\usepackage{parskip}
+
+\hypersetup{hidelinks}
+\allsectionsfont{\centering}
+
+\begin{document}
+    
+    \title{Analisi dell'amplificatore Miller}
+    \author{Luca Brescia}
+    \date{\today}
+    \maketitle
+
+    \section*{Obiettivo}
+        Creazione di uno standard per le simulazioni dei circuiti della tesi. \\
+        Utilizzare prima il circuito di un amplificatore Miller, in configurazione di inseguitore (buffer), a cui vanno effettuate le seguenti simulazioni:
+
+        \begin{itemize}
+            \item Analis DC: in cui bisogna osservare l'assestamento dell'uscita al valore prefissato di ingresso.
+            \item Analisi AC: fare sweep in frequenza da 1 MHz a 1-2-4 GHz
+        \end{itemize}
+
+        L'ingresso dovrà essere impostato su 0.5Vpp e ampiezza 1Vpp basato su una tensione di alimentazione di Vdd=1V.
+
+        Inoltre si dovranno effettuare le simulazioni con le seguenti configurazioni:
+
+        \begin{itemize}
+            \item 1 stadio;
+            \item 2 stadi;
+            \item Eff. corner;
+            \item PVT
+            \item Montecarlo;
+        \end{itemize}
+
+        Per gli ultimi tre punti riferirsi alla prof.ssa Richelli.
+    \section*{Svolgimento}
+
+\end{document}
