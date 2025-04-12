@@ -13,6 +13,12 @@ Reallocating 'name_of_file' (item size: 1) to 29 items.
 A level-1 auxiliary file: res/chapters/ch2/chapter.aux
 Reallocating 'name_of_file' (item size: 1) to 29 items.
 A level-1 auxiliary file: res/chapters/ch3/chapter.aux
+Reallocating 'name_of_file' (item size: 1) to 29 items.
+A level-1 auxiliary file: res/chapters/ch4/chapter.aux
+Reallocating 'name_of_file' (item size: 1) to 29 items.
+A level-1 auxiliary file: res/chapters/ch5/chapter.aux
+Reallocating 'name_of_file' (item size: 1) to 29 items.
+A level-1 auxiliary file: res/chapters/ch6/chapter.aux
 Reallocating 'glb_str_end' (item size: 4) to 20 items.
 Reallocating 'glb_str_ptr' (item size: 4) to 20 items.
 Reallocating 'global_strs' (item size: 1) to 4000000 items.
@@ -30,12 +36,13 @@ Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Database file #1: tesi-blx.bib
 Database file #2: ./bib/bibliography.bib
+Warning--I didn't find a database entry for "Tesi.pdf"
 Biblatex version: 3.19
 Reallocating 'wiz_functions' (item size: 4) to 9000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 You've used 13 entries,
             6399 wiz_defined-function locations,
-            1287 strings with 12113 characters,
+            1292 strings with 12213 characters,
 and the built_in function-call counts, 103006 in all, are:
 = -- 8666
 > -- 1233
@@ -74,3 +81,4 @@ warning$ -- 0
 while$ -- 1403
 width$ -- 0
 write$ -- 392
+(There was 1 warning)

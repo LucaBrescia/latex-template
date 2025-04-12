@@ -1,0 +1,130 @@
+\chapter{Le Interferenze Elettromagnetiche}
+
+\section{Definizione e tipologie di interferenze elettromagnetiche}
+Le interferenze elettromagnetiche (EMI, \textit{Electromagnetic Interference}) rappresentano un fenomeno fisico di fondamentale importanza nell'elettronica moderna. Con il termine EMI si intende qualsiasi segnale elettromagnetico indesiderato, irradiato nello spazio oppure trasmesso tramite conduttori (come piste di alimentazione o di segnale), che compromette il corretto funzionamento dei dispositivi elettrici o elettronici \cite{capitolo2}.
+
+Le EMI possono essere classificate in base alla loro origine come:
+\begin{itemize}
+    \item \textbf{Sorgenti naturali}: fenomeni atmosferici, radiazioni cosmiche, scariche elettrostatiche naturali;
+    \item \textbf{Sorgenti artificiali}: create dall'uomo, che possono essere ulteriormente suddivise in:
+    \begin{itemize}
+        \item \textbf{Emissioni volontarie}: segnali generati da sistemi elettronici che sfruttano la radiazione elettromagnetica per il loro funzionamento (apparati di telecomunicazione, radar, stazioni radio-TV);
+        \item \textbf{Emissioni involontarie}: radiazioni indesiderate generate durante il normale funzionamento di apparecchiature elettriche ed elettroniche (commutazioni in circuiti digitali, motori elettrici, inverter).
+    \end{itemize}
+\end{itemize}
+
+In base alla modalità di propagazione, le EMI si suddividono principalmente in \cite{capitolo2}:
+\begin{itemize}
+    \item \textbf{Interferenze irradiate}: si propagano attraverso lo spazio sotto forma di onde elettromagnetiche;
+    \item \textbf{Interferenze condotte}: si propagano attraverso conduttori fisici come cavi di alimentazione, linee di segnale o piani di massa.
+\end{itemize}
+
+\section{EMI nei circuiti integrati}
+Con l'incremento dell'utilizzo di dispositivi elettronici in ogni ambito della vita quotidiana, l'immunità alle interferenze elettromagnetiche è diventata un vincolo progettuale di primaria importanza per i progettisti di circuiti integrati \cite{Design_considerations_for_an_ultra-low_voltage_amplifier_with_high_EMI_immunity}. Gli effetti di tali disturbi possono infatti coinvolgere un'ampia gamma di circuiti, compromettendone il funzionamento e l'affidabilità \cite{capitolo2}.
+
+Negli ultimi decenni, il livello di inquinamento elettromagnetico è aumentato in modo significativo a causa della crescente diffusione di reti di connessione wireless, dispositivi elettronici portatili e sistemi di comunicazione sempre più complessi, come illustrato in Figura \ref{fig:inquinamento_em} \cite{Design_considerations_for_an_ultra-low_voltage_amplifier_with_high_EMI_immunity}.
+
+\begin{figure}[ht]
+    \centering
+    %\includegraphics[width=0.7\textwidth]{}
+    \caption{Rappresentazione dell'inquinamento elettromagnetico nell'ambiente moderno}
+    \label{fig:inquinamento_em}
+\end{figure}
+
+Di conseguenza, l'ampiezza delle interferenze elettromagnetiche è aumentata e può essere comparabile o addirittura superiore all'ampiezza dei segnali utili, portando a malfunzionamenti nei circuiti integrati esposti a tali interferenze \cite{capitolo2}. Con l'aumento del numero di sorgenti d'interferenza, della velocità dei circuiti integrati e del livello d'integrazione, il problema di limitare gli effetti delle EMI risulta sempre più determinante per garantire un buon funzionamento dei circuiti elettronici e degli apparecchi in cui sono utilizzati \cite{Redoute-Richelli_EMC_Magazine}.
+
+\section{Tipologie di propagazione delle EMI nei circuiti integrati}
+Nel contesto dei circuiti integrati, la comprensione dei meccanismi di propagazione delle EMI è fondamentale per sviluppare strategie efficaci di mitigazione. Le due principali modalità di propagazione sono \cite{capitolo2}:
+
+\subsection{Interferenze irradiate}
+In questo scenario, è il dispositivo stesso a fungere da antenna ricevente per le interferenze. L'analisi di questo tipo di interferenze richiede l'applicazione della teoria dei campi elettromagnetici \cite{capitolo2}. 
+
+Nel caso dei circuiti integrati moderni, questo tipo di interferenze è attualmente meno rilevante rispetto alle interferenze condotte, principalmente per due motivi \cite{capitolo2}:
+\begin{itemize}
+    \item Le dimensioni dei chip sono generalmente ridotte rispetto alla lunghezza d'onda ($\lambda$) delle interferenze elettromagnetiche più comuni;
+    \item La struttura dei circuiti integrati li rende antenne poco efficienti per le frequenze tipiche delle EMI.
+\end{itemize}
+
+\subsection{Interferenze condotte}
+Le interferenze condotte sono generalmente più significative per i circuiti integrati e più semplici da analizzare poiché seguono le leggi dell'elettrotecnica convenzionale \cite{capitolo2}. Queste interferenze si propagano attraverso:
+\begin{itemize}
+    \item Linee di alimentazione;
+    \item Piste di segnale;
+    \item Piani di massa \cite{Susceptibility_of_the_Instrumentation_to_Conducted_EMI_Injected_Through_the_Ground_Plane};
+    \item Interconnessioni tra componenti.
+\end{itemize}
+
+La Figura \ref{fig:propagazione_emi} illustra le principali tipologie di propagazione delle interferenze nei circuiti integrati.
+
+\begin{figure}[ht]
+    \centering
+    %\includegraphics[width=0.6\textwidth]{}
+    \caption{Principali tipologie di propagazione delle interferenze}
+    \label{fig:propagazione_emi}
+\end{figure}
+
+\section{Sensibilità dei circuiti analogici alle EMI}
+Tra i vari componenti presenti in una apparecchiatura elettronica, quelli che risentono maggiormente di possibili interferenze sono i dispositivi di tipo analogico \cite{capitolo2, An_EMI-Resistant_Common-Mode_Cancelation_Differential_Input_Stage_in_UMC_180_nm_CMOS}. Questo è dovuto principalmente alle caratteristiche intrinseche dei segnali analogici:
+\begin{itemize}
+    \item I segnali analogici possono assumere infiniti valori in un intervallo continuo, rendendo più difficile distinguere il segnale utile dal rumore;
+    \item La precisione dei circuiti analogici dipende fortemente dalla stabilità dei punti di lavoro, che possono essere alterati dalle EMI \cite{TR2016};
+    \item I circuiti analogici operano spesso con segnali di ampiezza ridotta, particolarmente vulnerabili alle interferenze \cite{Redoute-Richelli_EMC_Magazine}.
+\end{itemize}
+
+Al contrario, i segnali digitali hanno un range di valori discreti per definire i livelli logici 0 e 1, e finché il disturbo non modifica il segnale portandolo al di fuori di tale range, il suo effetto è praticamente nullo o comunque limitato a fenomeni come il jitter nei segnali di clock \cite{capitolo2}.
+
+In questo lavoro ci concentreremo quindi sullo studio dell'effetto delle interferenze sui circuiti analogici, in particolare sugli amplificatori operazionali, poiché sono tra i componenti più sensibili ai disturbi e al contempo tra i più utilizzati nelle applicazioni elettroniche moderne \cite{capitolo2, EMI_Immunity_of_the_Nauta_Inverter-Based_Amplifier}.
+
+\section{Metodologia di studio delle EMI}
+Per studiare efficacemente l'impatto delle EMI sui circuiti integrati, è necessario definire un metodo rigoroso di rappresentazione e quantificazione in laboratorio. La metodologia adottata in questo studio prevede:
+
+\subsection{Modellazione delle EMI}
+Le interferenze elettromagnetiche vengono tipicamente modellate mediante segnali sinusoidali \cite{capitolo2}. Questa scelta è motivata da diversi fattori:
+\begin{itemize}
+    \item La sinusoide è alla base di ogni segnale periodico (per il teorema di Fourier);
+    \item È facilmente riproducibile in laboratorio;
+    \item Rappresenta il caso peggiore, in quanto i disturbi elettromagnetici reali tendono ad attenuarsi nel tempo \cite{capitolo2}.
+\end{itemize}
+
+\subsection{Configurazione di test}
+Per valutare l'impatto delle EMI sui circuiti analogici, viene generalmente utilizzata una configurazione di test standard che prevede \cite{finalprint, Redoute-Richelli_EMC_Magazine}:
+\begin{itemize}
+    \item Il circuito in esame collegato in configurazione \textit{voltage follower} (inseguitore di tensione);
+    \item Segnali interferenti sinusoidali sovrapposti ai terminali di ingresso o di alimentazione;
+    \item Misurazione dello spostamento della tensione di uscita (offset) rispetto al valore atteso in assenza di interferenze \cite{Measurements_of_EMI_susceptibility_of_precision_voltage_references}.
+\end{itemize}
+
+Questa configurazione rappresenta il caso peggiore poiché la retroazione diretta tra uscita e ingresso invertente amplifica gli effetti delle EMI, consentendo di evidenziare anche le più piccole vulnerabilità del circuito \cite{Redoute-Richelli_EMC_Magazine}.
+
+\subsection{Parametri di valutazione}
+I principali parametri utilizzati per quantificare la sensibilità dei circuiti alle EMI sono \cite{Bulk-Driven_CMOS_Amplifier_With_High_EMI_Immunity, TR2016}:
+\begin{itemize}
+    \item \textbf{Offset indotto da EMI}: la variazione della tensione di uscita DC causata dalle interferenze;
+    \item \textbf{Intervallo di frequenze critiche}: le frequenze alle quali il circuito mostra la massima sensibilità;
+    \item \textbf{Densità spettrale di potenza (PSD)}: misura dell'energia del segnale interferente trasferita all'uscita.
+\end{itemize}
+
+\section{Strategie di mitigazione delle EMI}
+Per limitare gli effetti delle interferenze elettromagnetiche sui circuiti integrati, si possono seguire principalmente due approcci \cite{capitolo2}:
+
+\subsection{Approccio a posteriori}
+Consiste nel non considerare il problema delle interferenze in fase di progettazione del dispositivo e compensare il loro effetto solo dopo la realizzazione del circuito, adottando una serie di procedure spesso complicate e costose \cite{capitolo2}:
+\begin{itemize}
+    \item Revisione del layout;
+    \item Aggiunta di filtri esterni;
+    \item Schermature;
+    \item Modifiche circuitali.
+\end{itemize}
+
+Questo approccio, sebbene talvolta necessario, comporta generalmente maggiori costi e tempi di sviluppo, oltre a soluzioni spesso sub-ottimali \cite{Redoute-Richelli_EMC_Magazine}.
+
+\subsection{Approccio preventivo}
+Rappresenta la strategia più efficace e consiste nel considerare già in fase progettuale le caratteristiche che dovrà avere il dispositivo per garantire una sufficiente immunità alle interferenze elettromagnetiche \cite{capitolo2}. Questo approccio prevede:
+\begin{itemize}
+    \item Adozione di topologie circuitali intrinsecamente più robuste alle EMI \cite{An_EMI-Resistant_Common-Mode_Cancelation_Differential_Input_Stage_in_UMC_180_nm_CMOS};
+    \item Utilizzo di tecniche di layout specifiche per ridurre l'accoppiamento con sorgenti di interferenza \cite{finalprint};
+    \item Implementazione di circuiti di cancellazione del modo comune \cite{An_EMI-Resistant_Common-Mode_Cancelation_Differential_Input_Stage_in_UMC_180_nm_CMOS};
+    \item Progettazione di stadi di ingresso con elevata reiezione alle interferenze \cite{Redoute-Richelli_EMC_Magazine}.
+\end{itemize}
+
+Nei capitoli successivi, analizzeremo in dettaglio alcune architetture di amplificatori come l'architettura NAUTA OTA \cite{EMI_Immunity_of_the_Nauta_Inverter-Based_Amplifier}, con particolare attenzione alla loro sensibilità alle interferenze elettromagnetiche e alle tecniche più efficaci per migliorarne l'immunità.

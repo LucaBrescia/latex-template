@@ -25,10 +25,10 @@ Un inverter CMOS presenta due comportamenti distinti: in regime digitale funzion
 
 La corrente di uscita di un singolo inverter CMOS può essere espressa come:
 \begin{equation}
-I_{out} = I_{dn} - I_{dp} = \frac{\beta_n}{2}(V_{in} - V_{tn})^2 - \frac{\beta_p}{2}(V_{DD} - V_{in} - |V_{tp}|)^2
+I_{out} = I_{dn} - I_{dp} = \frac{k_n}{2}(V_{in} - V_{tn})^2 - \frac{k_p}{2}(V_{DD} - V_{in} - |V_{tp}|)^2
 \end{equation}
 
-Questa relazione mostra che la risposta di un singolo inverter è non lineare. Tuttavia, quando i fattori $\beta$ dei transistor NMOS e PMOS sono adeguatamente bilanciati e il circuito è utilizzato in configurazione differenziale, è possibile ottenere una conversione V-I molto più lineare.
+Questa relazione mostra che la risposta di un singolo inverter è non lineare. Tuttavia, quando i fattori $k_n$ e $k_p$ dei transistor NMOS e PMOS sono adeguatamente bilanciati e il circuito è utilizzato in configurazione differenziale, è possibile ottenere una conversione V-I molto più lineare.
 
 \subsection{Struttura Base del Nauta OTA}
 
@@ -41,7 +41,7 @@ La struttura base del Nauta OTA è costituita da sei inverter CMOS, disposti in 
     \label{fig:nauta_ota}
 \end{figure}
 
-Il Nauta OTA è composto da tre coppie di inverter che svolgono funzioni specifiche. Gli inverter 1 e 2 formano la coppia di ingresso differenziale e sono responsabili della conversione tensione-corrente lineare. Gli inverter 3 e 6 funzionano come cross-coupled inverters che generano una resistenza negativa per il miglioramento del guadagno DC. Infine, gli inverter 4 e 5 agiscono come self-coupled inverters e controllano il livello di modo comune dell'uscita.
+Il Nauta OTA è composto da tre coppie di inverter che svolgono funzioni specifiche. Gli inverter 1 e 2 formano la coppia di ingresso differenziale e sono responsabili della conversione tensione-corrente lineare. Gli inverter 3 e 6 funzionano come \textit{"cross-coupled inverters"} che generano una resistenza negativa per il miglioramento del guadagno DC. Infine, gli inverter 4 e 5 agiscono come \textit{"self-coupled inverters"} e controllano il livello di modo comune dell'uscita.
 
 Questa configurazione permette di ottenere un'impedenza di uscita elevata per i segnali differenziali e un'impedenza di uscita bassa per i segnali di modo comune, consentendo così un controllo efficace del modo comune in uscita senza l'aggiunta di circuiti dedicati.
 
@@ -119,6 +119,14 @@ I vantaggi di questa implementazione includono il funzionamento con tensione di 
 \section{Nauta OTA a due stadi}
 
 Per applicazioni che richiedono prestazioni avanzate in termini di guadagno, rumore e linearità, sono state sviluppate architetture Nauta OTA a due stadi. Queste configurazioni combinano i vantaggi dell'architettura Nauta con altre topologie per ottenere caratteristiche ottimali.
+
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=1\textwidth]{../tesi-emi/img/two_stage_nauta.pdf}
+    \caption{Architettura Nauta OTA a due stadi}
+    \label{fig:two_stage_nauta}
+\end{figure}
 
 %\subsection{Architettura Ibrida Inverter-Based OTA e Nauta OTA}
 %

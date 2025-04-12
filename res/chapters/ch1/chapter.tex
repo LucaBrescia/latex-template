@@ -1,118 +1,165 @@
 \chapter{Nuove Topologie di Amplificatori a Bassa Tensione e Bassa Potenza}
 
-\section{Problematiche della riduzione della tensione di alimentazione}
+\section{Evoluzione e sfide nella progettazione di circuiti a bassa tensione}
 
 La continua evoluzione delle tecnologie microelettroniche ha portato a una progressiva riduzione delle dimensioni dei dispositivi, con un conseguente abbassamento delle tensioni di alimentazione. Questa tendenza è guidata principalmente da tre fattori: la necessità di ridurre il consumo energetico nei dispositivi portatili, l'aumento dell'affidabilità dei circuiti integrati e l'evoluzione dei processi di fabbricazione CMOS che richiedono tensioni di funzionamento sempre più basse \cite{finalprint}.
 
-Mentre per i circuiti digitali la riduzione della tensione di alimentazione rappresenta principalmente un vantaggio in termini di consumo di potenza, per i circuiti analogici questa tendenza pone sfide significative. La riduzione della tensione di alimentazione limita drasticamente l'escursione dei segnali analogici, riducendo il range dinamico e compromettendo il rapporto segnale-rumore. Inoltre, la tensione di soglia dei transistor MOS ($V_{th}$) non si riduce proporzionalmente alla tensione di alimentazione, riducendo ulteriormente lo spazio disponibile per il funzionamento in regione di saturazione \cite{Bulk-Driven_CMOS_Amplifier_With_High_EMI_Immunity}.
+% Qui si potrebbe inserire un'immagine che mostra il trend di riduzione delle tensioni di alimentazione negli anni
+\begin{figure}[htbp]
+    \centering
+    %\includegraphics[width=0.8\textwidth]{images/vdd_trend.png}
+    \caption{Evoluzione delle tensioni di alimentazione nei circuiti integrati CMOS negli ultimi decenni.}
+    \label{fig:vdd_trend}
+\end{figure}
 
-In questo contesto, diventa cruciale lo sviluppo di topologie circuitali innovative in grado di operare efficacemente con tensioni di alimentazione molto basse, mantenendo al contempo prestazioni accettabili in termini di guadagno, larghezza di banda e immunità ai disturbi elettromagnetici (EMI).
+L'esigenza di avere un'elevata portabilità dei sistemi elettronici ha stimolato lo sviluppo di circuiti a bassa potenza che consentano una durata ragionevole della batteria in applicazioni come apparecchi acustici, stimolatori cardiaci impiantabili e telefoni cellulari \cite{Tesi.pdf}. Tuttavia, mentre per i circuiti digitali la riduzione della tensione di alimentazione rappresenta principalmente un vantaggio in termini di consumo di potenza, per i circuiti analogici questa tendenza pone sfide significative.
 
-\section{Tecniche per amplificatori a bassa tensione}
+La riduzione della tensione di alimentazione limita drasticamente l'escursione dei segnali analogici, riducendo il range dinamico e compromettendo il rapporto segnale-rumore. Inoltre, la tensione di soglia dei transistor MOS ($V_{th}$) non si riduce proporzionalmente alla tensione di alimentazione, riducendo ulteriormente lo spazio disponibile per il funzionamento in regione di saturazione \cite{Bulk-Driven_CMOS_Amplifier_With_High_EMI_Immunity}. Queste problematiche sono particolarmente evidenti negli amplificatori operazionali, componenti fondamentali dei circuiti analogici.
 
-Per superare le limitazioni imposte dalla riduzione della tensione di alimentazione, sono state sviluppate diverse tecniche circuitali. Le principali approcci includono:
+Le strategie di progetto moderne mirano a ottenere una maggiore velocità e un elevato range dinamico, mantenendo al contempo un basso consumo di potenza. Come illustrato in \cite{Tesi.pdf}, il consumo di potenza in un circuito integrato è costituito principalmente da tre componenti: potenza dinamica, dovuta alla carica e scarica delle capacità parassite; potenza statica, causata dalle correnti di polarizzazione nei circuiti analogici o dalle correnti di perdita nei circuiti digitali; e potenza di corto-circuito, determinata dalla corrente che scorre quando sia i transistor PMOS che NMOS sono attivi contemporaneamente.
 
-\subsection{Floating-Gate MOSFET}
+% Qui potrebbe essere utile un'immagine che mostri le componenti di consumo di potenza in un circuito integrato
+\begin{figure}[htbp]
+    \centering
+    %\includegraphics[width=0.7\textwidth]{images/power_components.png}
+    \caption{Componenti principali del consumo di potenza in un circuito integrato CMOS.}
+    \label{fig:power_components}
+\end{figure}
 
-I transistor MOS a gate flottante permettono di modificare la tensione di soglia effettiva del dispositivo mediante una carica immagazzinata in un gate isolato \cite{Bulk-Driven_CMOS_Amplifier_With_High_EMI_Immunity}. Questa tecnica consente di operare con tensioni di alimentazione molto basse, ma presenta problematiche legate alla complessità di programmazione della carica e alla sua stabilità nel tempo.
+\section{Principali tecniche per amplificatori a bassa tensione}
 
-\subsection{Transistor in regione di sottosoglia}
+Per superare le limitazioni imposte dalla riduzione della tensione di alimentazione, sono state sviluppate diverse tecniche circuitali innovative. Una delle più diffuse è la tecnica di progettazione dei transistor in regione di sottosoglia (subthreshold), che permette di ottenere funzionalità analogiche con tensioni estremamente basse, inferiori alla tensione di soglia. Il principale vantaggio di questa tecnica è l'eccellente efficienza energetica, con un rapporto $g_m/I_D$ massimo. Tuttavia, i circuiti operanti in regione di sottosoglia presentano una velocità limitata e una maggiore sensibilità alle variazioni di processo e temperatura \cite{Bulk-Driven_CMOS_Amplifier_With_High_EMI_Immunity}.
 
-L'utilizzo di transistor polarizzati nella regione di sottosoglia (subthreshold) permette di ottenere funzionalità analogiche con tensioni estremamente basse, inferiori alla tensione di soglia. Il principale vantaggio di questa tecnica è l'eccellente efficienza energetica, con un rapporto $g_m/I_D$ massimo. Tuttavia, i circuiti operanti in regione di sottosoglia presentano una velocità limitata e una maggiore sensibilità alle variazioni di processo e temperatura \cite{Bulk-Driven_CMOS_Amplifier_With_High_EMI_Immunity}.
+Un'altra tecnica interessante è l'utilizzo di transistor MOS a gate flottante (Floating-Gate MOSFET), che permette di modificare la tensione di soglia effettiva del dispositivo mediante una carica immagazzinata in un gate isolato. Questa tecnica consente di operare con tensioni di alimentazione molto basse, ma presenta problematiche legate alla complessità di programmazione della carica e alla sua stabilità nel tempo.
 
-\subsection{Bulk-Driven}
+\subsection{Tecnologia Bulk-Driven}
 
-La tecnica bulk-driven rappresenta uno degli approcci più interessanti per la progettazione di circuiti a bassa tensione. A differenza dell'approccio tradizionale gate-driven, dove il segnale viene applicato al gate del transistor MOS, nella tecnica bulk-driven il segnale viene applicato al terminale di substrato (bulk), mentre il gate viene polarizzato con una tensione DC sufficiente a formare un canale \cite{Bulk-Driven_CMOS_Amplifier_With_High_EMI_Immunity}.
+Un approccio particolarmente promettente è rappresentato dalla tecnica bulk-driven. A differenza dell'approccio tradizionale gate-driven, dove il segnale viene applicato al gate del transistor MOS, nella tecnica bulk-driven il segnale viene applicato al terminale di substrato (bulk), mentre il gate viene polarizzato con una tensione DC sufficiente a formare un canale \cite{Bulk-Driven_CMOS_Amplifier_With_High_EMI_Immunity}. Questa tecnica è ampiamente sfruttata nella progettazione di circuiti a bassa tensione grazie alla sua capacità di operare con tensioni di alimentazione molto basse, dato che il funzionamento del dispositivo non è limitato dalla tensione di soglia.
 
-Questo approccio offre il vantaggio di eliminare la limitazione della tensione di soglia, poiché il funzionamento del transistor non dipende dal superamento di $V_{th}$ da parte della tensione di ingresso. La corrente di drain è modulata dalla tensione bulk-source, consentendo un'escursione di tensione di ingresso che può essere negativa, nulla o leggermente positiva.
+% Qui sarebbe utile inserire un'immagine che confronti l'approccio gate-driven con il bulk-driven
+\begin{figure}[htbp]
+    \centering
+    %\includegraphics[width=0.9\textwidth]{images/bulk_vs_gate_driven.png}
+    \caption{Confronto tra le configurazioni gate-driven e bulk-driven di un transistor MOS.}
+    \label{fig:bulk_vs_gate}
+\end{figure}
 
-Tuttavia, i transistor bulk-driven presentano alcune limitazioni significative:
-\begin{itemize}
-   \item Transconduttanza ($g_{mb}$) inferiore rispetto alla transconduttanza di gate ($g_m$), tipicamente di un fattore 3-5 volte più bassa
-   \item Minore larghezza di banda a causa della maggiore capacità parassita associata al terminale di bulk
-   \item Non linearità della caratteristica DC a causa dei diodi parassiti tra bulk e source
-   \item Maggiore sensibilità al rumore
-\end{itemize}
+Come descritto dettagliatamente in \cite{Tesi.pdf}, il transistor bulk-driven funziona in modo simile a un JFET: il terminale di gate è polarizzato per creare un canale di conduzione tra source e drain, mentre il terminale di bulk modula la larghezza di questo canale in base alla tensione applicata. Questo consente al MOSFET di operare come un dispositivo a svuotamento, con la possibilità di accettare tensioni di polarizzazione negative, nulle o leggermente positive.
 
-Nonostante questi svantaggi, la tecnica bulk-driven è ampiamente utilizzata in applicazioni a bassissima tensione grazie alla sua capacità di operare con tensioni di alimentazione inferiori a 1V. Per migliorare le prestazioni degli amplificatori bulk-driven, sono state proposte diverse soluzioni avanzate, come l'uso di feedback positivo parziale per aumentare la transconduttanza equivalente e l'adozione di topologie simmetriche per migliorare l'immunità EMI \cite{Bulk-Driven_CMOS_Amplifier_With_High_EMI_Immunity}.
+Tuttavia, i transistor bulk-driven presentano alcune limitazioni significative, tra cui una transconduttanza ($g_{mb}$) inferiore rispetto alla transconduttanza di gate ($g_m$), tipicamente di un fattore 3-5 volte più bassa, una minore larghezza di banda a causa della maggiore capacità parassita associata al terminale di bulk, e non linearità della caratteristica DC a causa dei diodi parassiti tra bulk e source \cite{Bulk-Driven_CMOS_Amplifier_With_High_EMI_Immunity}.
 
-\section{Amplificatori a bassa tensione con elevata immunità EMI}
+Per migliorare le prestazioni degli amplificatori bulk-driven, Li et al. \cite{Bulk-Driven_CMOS_Amplifier_With_High_EMI_Immunity} hanno proposto un amplificatore con immunità EMI migliorata utilizzando tre principali tecniche: feedback positivo parziale per aumentare la transconduttanza equivalente; partitore di tensione di ingresso con filtro RC per ridurre l'effetto delle EMI; e stadio di ingresso a doppia coppia differenziale per migliorare la linearità e le prestazioni AC. Queste tecniche hanno permesso di realizzare un amplificatore con una tensione di alimentazione $V_{DD}$ di 1V e una riduzione significativa dell'offset indotto da EMI rispetto alle topologie tradizionali.
 
-Un aspetto critico nella progettazione di amplificatori operazionali a bassa tensione è la loro suscettibilità alle interferenze elettromagnetiche (EMI). La riduzione della tensione di alimentazione rende i circuiti analogici più vulnerabili ai disturbi, poiché l'ampiezza dei segnali utili diminuisce rispetto al livello di rumore \cite{Design_considerations_for_an_ultra-low_voltage_amplifier_with_high_EMI_immunity, Redoute-Richelli_EMC_Magazine}.
+% Sarebbe utile inserire un'immagine dell'amplificatore bulk-driven con immunità EMI migliorata
+\begin{figure}[htbp]
+    \centering
+    %\includegraphics[width=0.8\textwidth]{images/bulk_driven_emi_immune.png}
+    \caption{Schema circuitale dell'amplificatore bulk-driven con immunità EMI migliorata proposto in \cite{Bulk-Driven_CMOS_Amplifier_With_High_EMI_Immunity}.}
+    \label{fig:bulk_driven_emi}
+\end{figure}
 
-Nel contesto degli amplificatori bulk-driven, diversi studi hanno dimostrato che questi circuiti possono essere progettati per ottenere un'elevata immunità EMI. È stato proposto \cite{Bulk-Driven_CMOS_Amplifier_With_High_EMI_Immunity} un amplificatore bulk-driven con immunità EMI migliorata utilizzando tre principali tecniche:
+\subsection{Struttura Selfcascode}
 
-\begin{enumerate}
-   \item Feedback positivo parziale per aumentare la transconduttanza equivalente;
-   \item Partitore di tensione di ingresso con filtro RC per ridurre l'effetto delle EMI;
-   \item Stadio di ingresso a doppia coppia differenziale per migliorare la linearità e le prestazioni AC.
-\end{enumerate}
+Un'altra soluzione proposta per affrontare le problematiche della riduzione dimensionale dei dispositivi è la struttura Selfcascode, descritta approfonditamente in \cite{Tesi.pdf}. Questa configurazione prevede di sostituire un singolo transistor con due transistor che condividono la stessa tensione di gate. I due transistor sono polarizzati in modo tale che uno lavori in saturazione mentre l'altro in zona lineare. Il vantaggio principale di tale configurazione risiede nell'ottenere valori di resistenza di uscita più elevati rispetto al caso di un singolo transistor polarizzato nel medesimo modo, sebbene a scapito di una transconduttanza equivalente leggermente inferiore.
 
-Queste tecniche hanno permesso di realizzare un amplificatore con una tensione di alimentazione $V_{DD}$ di 1V e una riduzione significativa dell'offset indotto da EMI rispetto alle topologie tradizionali.
+% Inserire un'immagine della struttura Selfcascode per transistor NMOS e PMOS
+\begin{figure}[htbp]
+    \centering
+    %\includegraphics[width=0.7\textwidth]{images/selfcascode.png}
+    \caption{Struttura Selfcascode per transistor NMOS e PMOS e suo modello equivalente.}
+    \label{fig:selfcascode}
+\end{figure}
 
-\section{Amplificatori basati su invertitori (NAUTA OTA)}
+Per un funzionamento ottimale della struttura Selfcascode, i fattori di forma dei due transistor devono rispettare una relazione specifica: il rapporto W/L del transistor che opera in saturazione deve essere maggiore di un fattore m (superiore a 1) rispetto al rapporto W/L del transistor che opera in zona lineare. Questa configurazione consente di migliorare significativamente le prestazioni degli amplificatori operazionali a bassa tensione, specialmente in termini di guadagno e immunità ai disturbi.
 
-Un approccio innovativo e sempre più diffuso per la realizzazione di amplificatori a bassa tensione è rappresentato dall'utilizzo di invertitori CMOS come blocchi di base. L'amplificatore operazionale a transconduttanza (OTA) detto Nauta OTA, proposto originariamente da B. Nauta nel 1992, rappresenta uno dei primi e più influenti esempi di questa classe di circuiti.
+\section{Strategie per migliorare l'immunità EMI}
 
-\subsection{Principi di funzionamento dell'invertitore come cella analogica}
+Un aspetto critico nella progettazione di amplificatori operazionali a bassa tensione è la loro suscettibilità alle interferenze elettromagnetiche (EMI). La riduzione della tensione di alimentazione rende i circuiti analogici più vulnerabili ai disturbi, poiché l'ampiezza dei segnali utili diminuisce rispetto al livello di rumore \cite{Design_considerations_for_an_ultra-low_voltage_amplifier_with_high_EMI_immunity, Redoute-Richelli_EMC_Magazine}. In questo contesto, diventa fondamentale sviluppare strategie specifiche per migliorare l'immunità EMI degli amplificatori a bassa tensione.
 
-L'invertitore CMOS, tradizionalmente utilizzato come elemento base dei circuiti digitali, può essere sfruttato anche come cella analogica quando polarizzato nella regione di alta transconduttanza. Come mostrato in \cite{EMI_Immunity_of_the_Nauta_Inverter-Based_Amplifier}, l'invertitore presenta due comportamenti distinti:
+Richelli \cite{Design_considerations_for_an_ultra-low_voltage_amplifier_with_high_EMI_immunity} ha affrontato questa problematica proponendo un amplificatore di classe AB basato su una topologia a due stadi fortemente simmetrica, particolarmente efficace nel minimizzare gli effetti dei disturbi provenienti da diverse fonti. L'amplificatore proposto può essere realizzato in tecnologia CMOS standard ed è adatto per le basse tensioni di alimentazione richieste dai circuiti integrati moderni.
 
-\begin{itemize}
-   \item In regime digitale: funziona come un elemento di commutazione tra i livelli logici alto e basso;
-   \item In regime analogico: opera come un amplificatore lineare con un guadagno determinato dalla transconduttanza totale ($g_{mP} + g_{mN}$) moltiplicata per la resistenza di uscita.
-\end{itemize}
+% Inserire un'immagine dell'amplificatore di classe AB con topologia simmetrica
+\begin{figure}[htbp]
+    \centering
+    %\includegraphics[width=0.8\textwidth]{images/class_ab_symmetric.png}
+    \caption{Amplificatore di classe AB con topologia simmetrica per aumentare l'immunità EMI.}
+    \label{fig:class_ab_symmetric}
+\end{figure}
 
-Questa dualità consente di utilizzare l'invertitore CMOS come blocco fondamentale per la costruzione di amplificatori analogici, con il vantaggio di una struttura estremamente semplice e compatibile con processi CMOS standard.
+\section{Amplificatori basati su invertitori CMOS}
 
-\subsection{Topologia dell'amplificatore di Nauta}
+Un approccio innovativo e sempre più diffuso per la realizzazione di amplificatori a bassa tensione è rappresentato dall'utilizzo di invertitori CMOS come blocchi di base. L'amplificatore operazionale a transconduttanza (OTA) di Nauta, proposto originariamente nel 1992, rappresenta uno dei primi e più influenti esempi di questa classe di circuiti. Come riportato in \cite{EMI_Immunity_of_the_Nauta_Inverter-Based_Amplifier}, l'invertitore CMOS può essere utilizzato non solo come elemento base dei circuiti digitali, ma anche come cella analogica quando polarizzato nella regione di alta transconduttanza.
 
-L'OTA di Nauta è concettualmente un semplice transconduttore basato su invertitori CMOS. Originariamente progettato come amplificatore completamente differenziale, è caratterizzato da:
+% Inserire un'immagine che mostri il comportamento digitale e analogico di un invertitore CMOS
+\begin{figure}[htbp]
+    \centering
+    %\includegraphics[width=0.7\textwidth]{images/inverter_analog_digital.png}
+    \caption{Comportamento digitale e analogico di un invertitore CMOS.}
+    \label{fig:inverter_behavior}
+\end{figure}
 
-\begin{itemize}
-   \item Assenza di nodi interni, che garantisce un eccellente comportamento ad alta frequenza;
-   \item Buona linearità nella conversione tensione-corrente quando i transistor operano in forte inversione;
-   \item Semplicità circuitale che consente di operare con tensioni di alimentazione ridotte.
-\end{itemize}
+L'OTA di Nauta è concettualmente un semplice transconduttore basato su invertitori CMOS, caratterizzato dall'assenza di nodi interni (che garantisce un eccellente comportamento ad alta frequenza), buona linearità nella conversione tensione-corrente quando i transistor operano in forte inversione, e semplicità circuitale che consente di operare con tensioni di alimentazione ridotte. Dalla topologia originale di Nauta sono state sviluppate numerose varianti, adattate a diverse applicazioni come filtri attivi, amplificatori completamente differenziali e architetture ibride.
 
-Dalla topologia originale di Nauta sono state sviluppate numerose varianti, adattate a diverse applicazioni come filtri attivi \cite{EMI_Immunity_of_the_Nauta_Inverter-Based_Amplifier}, amplificatori completamente differenziali e architetture ibride.
+Una versione a singola uscita (single-ended) dell'amplificatore basato su invertitori, denominata SEIA (Single-Ended Inverter-based Amplifier), è stata analizzata in dettaglio in \cite{EMI_Immunity_of_the_Nauta_Inverter-Based_Amplifier}. Questa topologia mantiene i vantaggi della struttura basata su invertitori pur adattandosi ad applicazioni che richiedono un'uscita non differenziale. La SEIA presenta un layout compatto, un consumo di potenza ridotto, buone prestazioni in termini di guadagno e larghezza di banda, e la capacità di operare con tensioni di alimentazione molto basse (fino a 0.5V).
 
-\subsection{Versione single-ended dell'amplificatore basato su invertitori}
-
-Una versione a singola uscita (single-ended) dell'amplificatore basato su invertitori è stata presentata in letteratura e analizzata in dettaglio in \cite{EMI_Immunity_of_the_Nauta_Inverter-Based_Amplifier}. Questa topologia, denominata SEIA (Single-Ended Inverter-based Amplifier), mantiene i vantaggi della struttura basata su invertitori pur adattandosi ad applicazioni che richiedono un'uscita non differenziale.
-
-La topologia SEIA è caratterizzata da:
-\begin{itemize}
-   \item Tutti gli stadi di transconduttanza realizzati mediante invertitori CMOS;
-   \item Layout compatto e consumo di potenza ridotto;
-   \item Buone prestazioni in termini di guadagno e larghezza di banda;
-   \item Capacità di operare con tensioni di alimentazione molto basse (fino a 0.5V).
-\end{itemize}
+% Inserire un'immagine della versione single-ended dell'amplificatore basato su invertitori
+\begin{figure}[htbp]
+    \centering
+    %\includegraphics[width=0.8\textwidth]{images/seia_schematic.png}
+    \caption{Schema circuitale dell'amplificatore Single-Ended Inverter-based (SEIA).}
+    \label{fig:seia_schematic}
+\end{figure}
 
 \subsection{Vantaggi in termini di immunità EMI}
 
-Uno degli aspetti più interessanti degli amplificatori basati su invertitori è la loro eccellente immunità alle interferenze elettromagnetiche. Come dimostrato in \cite{EMI_Immunity_of_the_Nauta_Inverter-Based_Amplifier}, questi amplificatori presentano una suscettibilità alle EMI significativamente inferiore rispetto alle topologie tradizionali come l'amplificatore Miller.
-
-I principali fattori che contribuiscono all'elevata immunità EMI degli amplificatori basati su invertitori sono:
-\begin{itemize}
-   \item Topologia circuitale estremamente semplice senza nodi interni;
-   \item Assenza di specchi di corrente e coppie differenziali, elementi particolarmente sensibili alle EMI;
-   \item Slew rate simmetrico sia per transizioni positive che negative, che riduce la distorsione non lineare;
-   \item Risposta simmetrica a variazioni rapide della tensione di ingresso.
-\end{itemize}
+Uno degli aspetti più interessanti degli amplificatori basati su invertitori è la loro eccellente immunità alle interferenze elettromagnetiche. Rosa et al. \cite{EMI_Immunity_of_the_Nauta_Inverter-Based_Amplifier} hanno dimostrato che questi amplificatori presentano una suscettibilità alle EMI significativamente inferiore rispetto alle topologie tradizionali come l'amplificatore Miller. I principali fattori che contribuiscono all'elevata immunità EMI degli amplificatori basati su invertitori sono la topologia circuitale estremamente semplice senza nodi interni, l'assenza di specchi di corrente e coppie differenziali (elementi particolarmente sensibili alle EMI), lo slew rate simmetrico sia per transizioni positive che negative (che riduce la distorsione non lineare), e la risposta simmetrica a variazioni rapide della tensione di ingresso.
 
 I risultati sperimentali riportati in \cite{EMI_Immunity_of_the_Nauta_Inverter-Based_Amplifier} mostrano che l'offset indotto da EMI negli amplificatori basati su invertitori è circa un ordine di grandezza inferiore rispetto a quello degli amplificatori Miller convenzionali, in un ampio intervallo di frequenze e per diverse condizioni operative.
 
-\section{Confronto tra le tecniche presentate}
+% Inserire un grafico che confronta l'offset EMI indotto nell'amplificatore SEIA rispetto a un amplificatore Miller
+\begin{figure}[htbp]
+    \centering
+    %\includegraphics[width=0.9\textwidth]{images/emi_comparison.png}
+    \caption{Confronto dell'offset indotto da EMI nell'amplificatore basato su invertitori (SEIA) e nell'amplificatore Miller tradizionale.}
+    \label{fig:emi_comparison}
+\end{figure}
 
-Le topologie circuitali discusse presentano ciascuna vantaggi e limitazioni specifiche:
+\section{Tecniche di compensazione per amplificatori a bassa tensione}
 
-\begin{itemize}
-   \item Gli amplificatori bulk-driven offrono una buona capacità di operare con tensioni di alimentazione estremamente basse ($\le 1V$), ma soffrono di una transconduttanza ridotta e di una minore linearità;
-   
-   \item Gli amplificatori basati su invertitori (tipo Nauta) presentano una buona immunità EMI e buone prestazioni in termini di larghezza di banda, con una struttura circuitale molto semplice. Tuttavia, possono presentare limitazioni in termini di guadagno a bassa frequenza e controllo del modo comune nelle versioni differenziali;
-   
-   \item Gli amplificatori tradizionali modificati per operare a bassa tensione (come quelli con stadi ripiegati e cascode) offrono un buon compromesso in termini di prestazioni complessive, ma spesso richiedono circuiti più complessi e un attento dimensionamento.
-\end{itemize}
+Un altro importante aspetto nella progettazione di amplificatori a bassa tensione riguarda le tecniche di compensazione per garantire la stabilità del circuito. Come descritto in \cite{Tesi.pdf}, la compensazione pseudo-cascode rappresenta una soluzione efficace per gli amplificatori a due stadi basati sulla struttura Selfcascode. Questa tecnica consente di ottenere un margine di fase insensibile alle variazioni della corrente di polarizzazione, mantenendo al contempo una buona risposta in frequenza e uno slew rate adeguato.
 
-La scelta della topologia più adatta dipende quindi dalle specifiche applicative, con particolare attenzione al compromesso tra tensione di alimentazione minima, consumo di potenza, immunità ai disturbi e prestazioni in termini di guadagno e larghezza di banda.
+La compensazione pseudo-cascode presenta diversi vantaggi rispetto alla compensazione cascode classica, tra cui una minore tensione di alimentazione richiesta, un minore consumo di potenza e una maggiore larghezza di banda. Questi vantaggi la rendono particolarmente adatta per applicazioni a bassa tensione e bassa potenza.
+
+% Inserire un'immagine che confronta la compensazione pseudo-cascode con la compensazione cascode classica
+\begin{figure}[htbp]
+    \centering
+    %\includegraphics[width=0.9\textwidth]{images/compensation_comparison.png}
+    \caption{Confronto tra compensazione pseudo-cascode e compensazione cascode classica.}
+    \label{fig:compensation_comparison}
+\end{figure}
+
+\section{Confronto e prospettive future}
+
+In conclusione, le tecniche di progettazione di amplificatori a bassa tensione e bassa potenza rappresentano un campo di ricerca in continua evoluzione, con numerose soluzioni innovative proposte per superare le limitazioni imposte dalla riduzione delle dimensioni dei dispositivi e delle tensioni di alimentazione. Le topologie circuitali discusse - amplificatori bulk-driven, strutture Selfcascode, amplificatori basati su invertitori - offrono ciascuna vantaggi specifici in termini di tensione minima di alimentazione, consumo di potenza, immunità ai disturbi e prestazioni complessive.
+
+La scelta della topologia più adatta dipende quindi dalle specifiche applicative, con particolare attenzione al compromesso tra tensione di alimentazione minima, consumo di potenza, immunità ai disturbi e prestazioni in termini di guadagno e larghezza di banda. È inoltre fondamentale considerare l'immunità alle interferenze elettromagnetiche, aspetto cruciale nei moderni sistemi elettronici caratterizzati da un ambiente elettromagnetico sempre più complesso e "inquinato".
+
+% Inserire una tabella di confronto delle varie tecniche
+\begin{table}[htbp]
+    \centering
+    \caption{Confronto tra le diverse topologie di amplificatori a bassa tensione}
+    \label{tab:amp_comparison}
+    \begin{tabular}{|l|c|c|c|c|}
+        \hline
+        \textbf{Topologia} & \textbf{Tensione min.} & \textbf{Consumo} & \textbf{Immunità EMI} & \textbf{Complessità} \\
+        \hline
+        Bulk-driven & $\leq 1$V & Basso & Media-Alta & Media \\
+        \hline
+        Nauta OTA & $\approx 0.5$V & Medio & Molto alta & Bassa \\
+        \hline
+        Selfcascode & $\approx 0.7$V & Medio & Alta & Media \\
+        \hline
+        Cascode tradizionale & $> 1$V & Alto & Media & Alta \\
+        \hline
+    \end{tabular}
+\end{table}
