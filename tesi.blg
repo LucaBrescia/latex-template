@@ -36,49 +36,47 @@ Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Database file #1: tesi-blx.bib
 Database file #2: ./bib/bibliography.bib
-Warning--I didn't find a database entry for "Tesi.pdf"
 Biblatex version: 3.19
 Reallocating 'wiz_functions' (item size: 4) to 9000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
-You've used 13 entries,
+You've used 15 entries,
             6399 wiz_defined-function locations,
-            1292 strings with 12213 characters,
-and the built_in function-call counts, 103006 in all, are:
-= -- 8666
-> -- 1233
-< -- 270
-+ -- 2875
-- -- 460
-* -- 7387
-:= -- 12126
+            1299 strings with 12509 characters,
+and the built_in function-call counts, 112300 in all, are:
+= -- 9345
+> -- 1426
+< -- 340
++ -- 3095
+- -- 504
+* -- 7958
+:= -- 12959
 add.period$ -- 0
-call.type$ -- 13
-change.case$ -- 133
+call.type$ -- 15
+change.case$ -- 187
 chr.to.int$ -- 42
-cite$ -- 24
-duplicate$ -- 10180
-empty$ -- 9204
-format.name$ -- 865
-if$ -- 20647
+cite$ -- 28
+duplicate$ -- 11198
+empty$ -- 10027
+format.name$ -- 885
+if$ -- 22704
 int.to.chr$ -- 0
-int.to.str$ -- 33
+int.to.str$ -- 41
 missing$ -- 0
-newline$ -- 404
-num.names$ -- 492
-pop$ -- 4511
+newline$ -- 449
+num.names$ -- 618
+pop$ -- 5097
 preamble$ -- 1
-purify$ -- 216
+purify$ -- 276
 quote$ -- 0
-skip$ -- 2040
+skip$ -- 2459
 stack$ -- 0
-substring$ -- 16999
-swap$ -- 1682
-text.length$ -- 277
+substring$ -- 17956
+swap$ -- 1940
+text.length$ -- 311
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 430
+type$ -- 494
 warning$ -- 0
-while$ -- 1403
+while$ -- 1509
 width$ -- 0
-write$ -- 392
-(There was 1 warning)
+write$ -- 435

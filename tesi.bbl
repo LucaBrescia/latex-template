@@ -96,59 +96,51 @@
     \field{year}{2015}
   \endentry
 
-  \entry{Design_considerations_for_an_ultra-low_voltage_amplifier_with_high_EMI_immunity}{article}{}
+  \entry{Tesi.pdf}{thesis}{}
     \name{author}{1}{}{%
-      {{hash=RA}{%
-         family={Richelli},
-         familyi={R\bibinitperiod},
-         given={Anna},
-         giveni={A\bibinitperiod},
+      {{hash=ZC}{%
+         family={Zuccarotto},
+         familyi={Z\bibinitperiod},
+         given={Carmelo},
+         giveni={C\bibinitperiod},
       }}%
     }
-    \list{publisher}{1}{%
-      {IEEE}%
-    }
-    \strng{namehash}{RA1}
-    \strng{fullhash}{RA1}
+    \strng{namehash}{ZC1}
+    \strng{fullhash}{ZC1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{pages}{558\bibrangedash 561}
-    \field{title}{Design considerations for an Ultra-Low Voltage Amplifier with
-  High EMI Immunity}
-    \field{journaltitle}{IEEE International Conference on Electronics, Circuits
-  and Systems}
-    \field{year}{2008}
+    \field{title}{Progetto di un Amplificatore Operazionale basato su struttura
+  Selfcascode in tecnologia CMOS 0.18$\mu$m}
+    \list{institution}{1}{%
+      {Università degli Studi di Brescia}%
+    }
+    \field{type}{Tesi di Laurea Specialistica in Ingegneria Elettronica}
+    \field{year}{2015}
   \endentry
 
-  \entry{Redoute-Richelli_EMC_Magazine}{article}{}
-    \name{author}{2}{}{%
-      {{hash=RJM}{%
-         family={Redout{\'e}},
-         familyi={R\bibinitperiod},
-         given={Jean-Michel},
-         giveni={J\bibinithyphendelim M\bibinitperiod},
-      }}%
-      {{hash=RA}{%
-         family={Richelli},
-         familyi={R\bibinitperiod},
-         given={Anna},
-         giveni={A\bibinitperiod},
+  \entry{Nauta1992}{article}{}
+    \name{author}{1}{}{%
+      {{hash=NB}{%
+         family={Nauta},
+         familyi={N\bibinitperiod},
+         given={Bram},
+         giveni={B\bibinitperiod},
       }}%
     }
     \list{publisher}{1}{%
       {IEEE}%
     }
-    \strng{namehash}{RJMRA1}
-    \strng{fullhash}{RJMRA1}
+    \strng{namehash}{NB1}
+    \strng{fullhash}{NB1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{number}{2}
-    \field{pages}{92\bibrangedash 100}
-    \field{title}{A methodological approach to EMI resistant analog integrated
-  circuit design}
-    \field{volume}{4}
-    \field{journaltitle}{IEEE Electromagnetic Compatibility Magazine}
-    \field{year}{2015}
+    \field{pages}{142\bibrangedash 153}
+    \field{title}{A CMOS Transconductance-C Filter Technique for Very High
+  Frequencies}
+    \field{volume}{27}
+    \field{journaltitle}{IEEE Journal of Solid-State Circuits}
+    \field{year}{1992}
   \endentry
 
   \entry{EMI_Immunity_of_the_Nauta_Inverter-Based_Amplifier}{article}{}
@@ -255,6 +247,61 @@
   \entry{capitolo2}{article}{}
     \field{labeltitlesource}{title}
     \field{title}{Le Interferenze Elettromagnetiche}
+  \endentry
+
+  \entry{Design_considerations_for_an_ultra-low_voltage_amplifier_with_high_EMI_immunity}{article}{}
+    \name{author}{1}{}{%
+      {{hash=RA}{%
+         family={Richelli},
+         familyi={R\bibinitperiod},
+         given={Anna},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{RA1}
+    \strng{fullhash}{RA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pages}{558\bibrangedash 561}
+    \field{title}{Design considerations for an Ultra-Low Voltage Amplifier with
+  High EMI Immunity}
+    \field{journaltitle}{IEEE International Conference on Electronics, Circuits
+  and Systems}
+    \field{year}{2008}
+  \endentry
+
+  \entry{Redoute-Richelli_EMC_Magazine}{article}{}
+    \name{author}{2}{}{%
+      {{hash=RJM}{%
+         family={Redout{\'e}},
+         familyi={R\bibinitperiod},
+         given={Jean-Michel},
+         giveni={J\bibinithyphendelim M\bibinitperiod},
+      }}%
+      {{hash=RA}{%
+         family={Richelli},
+         familyi={R\bibinitperiod},
+         given={Anna},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{RJMRA1}
+    \strng{fullhash}{RJMRA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{2}
+    \field{pages}{92\bibrangedash 100}
+    \field{title}{A methodological approach to EMI resistant analog integrated
+  circuit design}
+    \field{volume}{4}
+    \field{journaltitle}{IEEE Electromagnetic Compatibility Magazine}
+    \field{year}{2015}
   \endentry
 
   \entry{Susceptibility_of_the_Instrumentation_to_Conducted_EMI_Injected_Through_the_Ground_Plane}{article}{}

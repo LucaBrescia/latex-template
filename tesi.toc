@@ -1,33 +1,49 @@
 \babel@toc {italian}{}\relax 
 \babel@toc {italian}{}\relax 
-\contentsline {chapter}{Abstract}{3}{chapter*.2}%
-\contentsline {chapter}{\numberline {1}Nuove Topologie di Amplificatori a Bassa Tensione e Bassa Potenza}{4}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Evoluzione e sfide nella progettazione di circuiti a bassa tensione}{4}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Principali tecniche per amplificatori a bassa tensione}{5}{section.1.2}%
-\contentsline {subsection}{\numberline {1.2.1}Tecnologia Bulk-Driven}{6}{subsection.1.2.1}%
-\contentsline {subsection}{\numberline {1.2.2}Struttura Selfcascode}{7}{subsection.1.2.2}%
-\contentsline {section}{\numberline {1.3}Strategie per migliorare l'immunità EMI}{7}{section.1.3}%
-\contentsline {section}{\numberline {1.4}Amplificatori basati su invertitori CMOS}{8}{section.1.4}%
-\contentsline {subsection}{\numberline {1.4.1}Vantaggi in termini di immunità EMI}{8}{subsection.1.4.1}%
-\contentsline {section}{\numberline {1.5}Tecniche di compensazione per amplificatori a bassa tensione}{9}{section.1.5}%
-\contentsline {section}{\numberline {1.6}Confronto e prospettive future}{9}{section.1.6}%
-\contentsline {chapter}{\numberline {2}L'Architettura Nauta OTA}{11}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Introduzione}{11}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Principi di Funzionamento del Nauta OTA}{12}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}L'Inverter CMOS come Elemento Analogico}{12}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}Struttura Base del Nauta OTA}{12}{subsection.2.2.2}%
-\contentsline {subsection}{\numberline {2.2.3}Conversione Tensione-Corrente Lineare}{13}{subsection.2.2.3}%
-\contentsline {subsection}{\numberline {2.2.4}Miglioramento del Guadagno DC}{14}{subsection.2.2.4}%
+\contentsline {chapter}{Abstract}{I}{Doc-Start}%
+\contentsline {chapter}{\numberline {1}Nuove Topologie di Amplificatori a Bassa Tensione e Bassa Potenza}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Evoluzione della progettazione di circuiti a bassa tensione}{1}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Principali tecniche per amplificatori a bassa tensione}{3}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Tecnologia Bulk-Driven}{4}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Struttura Selfcascode}{6}{subsection.1.2.2}%
+\contentsline {section}{\numberline {1.3}Amplificatori basati su inverter CMOS}{7}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}L'Inverter CMOS come Elemento Analogico}{8}{subsection.1.3.1}%
+\contentsline {chapter}{\numberline {2}L'Architettura Nauta OTA}{10}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Introduzione}{10}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Principi di Funzionamento del Nauta OTA}{11}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Struttura Base del Nauta OTA}{11}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Conversione Tensione-Corrente Lineare}{12}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Miglioramento del Guadagno DC}{13}{subsection.2.2.3}%
 \contentsline {section}{\numberline {2.3}Vantaggi dell'Architettura Nauta OTA}{15}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Immunità EMI}{15}{subsection.2.3.1}%
-\contentsline {section}{\numberline {2.4}Implementazioni a Bassa Tensione del Nauta OTA}{16}{section.2.4}%
-\contentsline {section}{\numberline {2.5}Nauta OTA a due stadi}{16}{section.2.5}%
-\contentsline {section}{\numberline {2.6}Applicazioni del Nauta OTA}{16}{section.2.6}%
-\contentsline {chapter}{\numberline {3}Le Interferenze Elettromagnetiche}{18}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Definizione e tipologie di interferenze elettromagnetiche}{18}{section.3.1}%
-\contentsline {section}{\numberline {3.2}EMI nei circuiti integrati}{19}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Tipologie di propagazione delle EMI nei circuiti integrati}{20}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Sensibilità dei circuiti analogici alle EMI}{20}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Metodologia di studio delle EMI}{21}{section.3.5}%
-\contentsline {section}{\numberline {3.6}Strategie di mitigazione delle EMI}{22}{section.3.6}%
-\contentsline {chapter}{Bibliografia}{24}{chapter*.26}%
+\contentsline {section}{\numberline {2.4}Implementazioni a Bassa Tensione del Nauta OTA}{17}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Applicazioni del Nauta OTA}{18}{section.2.5}%
+\contentsline {chapter}{\numberline {3}Le Interferenze Elettromagnetiche}{20}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Definizione e tipologie di interferenze elettromagnetiche}{20}{section.3.1}%
+\contentsline {section}{\numberline {3.2}\textit {EMI} nei circuiti integrati}{22}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Tipologie di propagazione delle \textit {EMI} nei circuiti integrati}{23}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Sensibilità dei circuiti analogici alle \textit {EMI}}{25}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Immunità \textit {EMI} nell'architettura Nauta}{26}{subsection.3.4.1}%
+\contentsline {section}{\numberline {3.5}Metodologia di studio delle EMI}{27}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Strategie per migliorare l'immunità EMI}{28}{section.3.6}%
+\contentsline {subsection}{\numberline {3.6.1}Vantaggi degli amplificatori basati su inverter in termini di immunità EMI}{31}{subsection.3.6.1}%
+\contentsline {chapter}{\numberline {4}Confronto tra amplificatori Nauta e Miller in termini di immunità EMI}{33}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Introduzione}{33}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Fondamenti Teorici della Suscettibilità EMI negli Amplificatori}{34}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Meccanismi di Suscettibilità EMI nelle Architetture Tradizionali}{34}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Potenziali Vantaggi dell'Architettura Nauta}{35}{subsection.4.2.2}%
+\contentsline {section}{\numberline {4.3}Metodologia di Simulazione}{36}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Setup di Simulazione}{36}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Varianti Architetturali Analizzate}{37}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}Parametri di Confronto}{38}{subsection.4.3.3}%
+\contentsline {section}{\numberline {4.4}Considerazioni sul Dimensionamento}{38}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Dimensionamento dell'Amplificatore Miller}{38}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Dimensionamento dell'Amplificatore Nauta}{39}{subsection.4.4.2}%
+\contentsline {section}{\numberline {4.5}Parametri di Valutazione delle Prestazioni}{40}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Parametri AC Convenzionali}{40}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}Parametri di Immunità EMI}{40}{subsection.4.5.2}%
+\contentsline {subsection}{\numberline {4.5.3}Altri Parametri Rilevanti}{41}{subsection.4.5.3}%
+\contentsline {section}{\numberline {4.6}Considerazioni Preliminari sull'Immunità EMI}{41}{section.4.6}%
+\contentsline {subsection}{\numberline {4.6.1}Vantaggi Previsti dell'Architettura Nauta}{42}{subsection.4.6.1}%
+\contentsline {subsection}{\numberline {4.6.2}Sfide Potenziali dell'Architettura Nauta}{42}{subsection.4.6.2}%
+\contentsline {section}{\numberline {4.7}Conclusioni}{43}{section.4.7}%
+\contentsline {chapter}{Bibliografia}{44}{chapter*.20}%

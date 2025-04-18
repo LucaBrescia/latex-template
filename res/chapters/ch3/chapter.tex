@@ -3,36 +3,38 @@
 \section{Definizione e tipologie di interferenze elettromagnetiche}
 Con il termine interferenze elettromagnetiche (EMI, \textit{Electromagnetic Interference}) si intende un qualsiasi segnale elettromagnetico indesiderato, irradiato nello spazio oppure trasmesso tramite conduttori, che compromette il corretto funzionamento dei dispositivi elettrici o elettronici \cite{capitolo2}. Questo fenomeno fisico riveste un'importanza fondamentale nell'elettronica moderna, influenzando significativamente l'affidabilità e le prestazioni dei sistemi elettronici.
 
-Le EMI possono essere generate da diverse sorgenti che generalmente si suddividono in due categorie principali. La prima comprende le sorgenti naturali, come i fenomeni atmosferici, le radiazioni cosmiche e le scariche elettrostatiche naturali. La seconda invece include le sorgenti artificiali, create dall'uomo, che possono essere ulteriormente classificate in emissioni volontarie ed involontarie. Le emissioni volontarie derivano da sistemi elettronici che utilizzano intenzionalmente la radiazione elettromagnetica per il loro funzionamento, come apparati di telecomunicazione, radar e stazioni radio-TV. Le emissioni involontarie, invece, sono radiazioni indesiderate generate durante il normale funzionamento di apparecchiature elettriche ed elettroniche, come le commutazioni in circuiti digitali, i motori elettrici e gli inverter.
-
-% Qui si potrebbe inserire un'immagine che mostra la classificazione delle sorgenti di interferenza
-\begin{figure}[ht]
-    \centering
-    %\includegraphics[width=0.7\textwidth]{images/emi_sources.png}
-    \caption{Classificazione delle tipologie di sorgenti di interferenza elettromagnetica}
-    \label{fig:emi_sources}
-\end{figure}
-
-In base alla modalità di propagazione, le EMI si suddividono principalmente in interferenze irradiate, che si propagano attraverso lo spazio sotto forma di onde elettromagnetiche, e interferenze condotte, che si propagano attraverso conduttori fisici come cavi di alimentazione, linee di segnale o piani di massa \cite{capitolo2}. Questa distinzione è particolarmente rilevante quando si studiano gli effetti delle EMI sui circuiti integrati, poiché i meccanismi di accoppiamento e le strategie di mitigazione differiscono significativamente tra i due casi.
-
-\section{EMI nei circuiti integrati}
-A causa dell'incremento dell'utilizzo di dispositivi elettronici in ogni ambito della vita quotidiana, l'immunità alle interferenze elettromagnetiche è diventata un vincolo progettuale di primaria importanza per i progettisti di circuiti integrati \cite{Design_considerations_for_an_ultra-low_voltage_amplifier_with_high_EMI_immunity}. Gli effetti di tali disturbi possono infatti coinvolgere un'ampia gamma di circuiti, compromettendone il funzionamento e l'affidabilità.
-
 Negli ultimi decenni, il livello di inquinamento elettromagnetico è aumentato in modo significativo. Questo incremento è principalmente dovuto alla crescente diffusione di reti di connessione wireless, dispositivi elettronici portatili e sistemi di comunicazione sempre più complessi che hanno reso l'ambiente elettromagnetico moderno estremamente congestionato.
 
 % Qui si potrebbe inserire un'immagine sull'inquinamento elettromagnetico
 \begin{figure}[ht]
     \centering
-    %\includegraphics[width=0.7\textwidth]{images/inquinamento_em.png}
+    \includegraphics[width=0.7\textwidth]{img/inquinamento-elettromagnetico.png}
     \caption{Rappresentazione dell'inquinamento elettromagnetico nell'ambiente moderno}
     \label{fig:inquinamento_em}
 \end{figure}
 
+Le \textit{EMI} possono essere generate da diverse sorgenti che generalmente si suddividono in due categorie principali. La prima comprende le sorgenti naturali, come i fenomeni atmosferici, le radiazioni cosmiche e le scariche elettrostatiche naturali. La seconda invece include le sorgenti artificiali, create dall'uomo, che possono essere ulteriormente classificate in emissioni volontarie ed involontarie. Le emissioni volontarie derivano da sistemi elettronici che utilizzano intenzionalmente la radiazione elettromagnetica per il loro funzionamento, come apparati di telecomunicazione, radar e stazioni radio-TV. Le emissioni involontarie, invece, sono radiazioni indesiderate generate durante il normale funzionamento di apparecchiature elettriche ed elettroniche, come le commutazioni in circuiti digitali, i motori elettrici e gli inverter.
+
+% Qui si potrebbe inserire un'immagine che mostra la classificazione delle sorgenti di interferenza
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.7\textwidth]{img/tipi-di-emi.png}
+    \caption{Classificazione delle tipologie di sorgenti di interferenza elettromagnetica}
+    \label{fig:emi_sources}
+\end{figure}
+
+In base alla modalità di propagazione, le \textit{EMI} si suddividono principalmente in interferenze irradiate, che si propagano attraverso lo spazio sotto forma di onde elettromagnetiche, e interferenze condotte, che si propagano attraverso conduttori fisici come cavi di alimentazione, linee di segnale o piani di massa \cite{capitolo2}.
+
+\section{\textit{EMI} nei circuiti integrati}
+A causa dell'incremento dell'utilizzo di dispositivi elettronici in ogni ambito della vita quotidiana, l'immunità alle interferenze elettromagnetiche è diventata un vincolo progettuale di primaria importanza per i progettisti di circuiti integrati \cite{Design_considerations_for_an_ultra-low_voltage_amplifier_with_high_EMI_immunity}. Gli effetti di tali disturbi possono infatti coinvolgere un'ampia gamma di circuiti, compromettendone il funzionamento e l'affidabilità.
+
 Di conseguenza, l'ampiezza delle interferenze elettromagnetiche è aumentata fino a raggiungere valori comparabili o addirittura superiori all'ampiezza dei segnali utili, portando a malfunzionamenti nei circuiti integrati esposti a tali interferenze \cite{capitolo2}. Con l'aumento del numero di sorgenti d'interferenza, della velocità dei circuiti integrati e del livello d'integrazione, il problema di limitare gli effetti delle EMI risulta sempre più determinante per garantire un buon funzionamento dei circuiti elettronici e degli apparecchi in cui sono utilizzati.
+
+Questa distinzione è particolarmente rilevante quando si studiano gli effetti delle \textit{EMI} sui circuiti integrati, poiché i meccanismi di accoppiamento e le strategie di mitigazione differiscono significativamente tra i due casi (irradiate e condotte).
 
 Per affrontare efficacemente questa sfida, i progettisti di circuiti integrati devono adottare strategie specifiche già nelle prime fasi del processo di sviluppo. Come evidenziato in \cite{Redoute-Richelli_EMC_Magazine}, le soluzioni a posteriori sono spesso più complesse e costose rispetto a quelle implementate durante la fase di progettazione.
 
-\section{Tipologie di propagazione delle EMI nei circuiti integrati}
+\section{Tipologie di propagazione delle \textit{EMI} nei circuiti integrati}
 Nel contesto dei circuiti integrati, la comprensione dei meccanismi di propagazione delle EMI è fondamentale per sviluppare strategie efficaci di mitigazione. Esistono due principali modalità di propagazione delle interferenze nei circuiti integrati: le interferenze irradiate e le interferenze condotte \cite{capitolo2}.
 
 Nel caso delle interferenze irradiate, è il dispositivo stesso a fungere da antenna ricevente per le interferenze. L'analisi di questo tipo di interferenze richiede l'applicazione della teoria dei campi elettromagnetici. Tuttavia, nel caso dei circuiti integrati moderni, questo tipo di interferenze è attualmente meno rilevante rispetto alle interferenze condotte, principalmente perché le dimensioni dei chip sono generalmente ridotte rispetto alla lunghezza d'onda ($\lambda$) delle interferenze elettromagnetiche più comuni, rendendo i circuiti integrati antenne poco efficienti per le frequenze tipiche delle EMI.
@@ -40,7 +42,7 @@ Nel caso delle interferenze irradiate, è il dispositivo stesso a fungere da ant
 % Qui si potrebbe inserire un'immagine sulle modalità di propagazione delle EMI
 \begin{figure}[ht]
     \centering
-    %\includegraphics[width=0.6\textwidth]{images/propagazione_emi.png}
+    \includegraphics[width=0.6\textwidth]{img/propagazione-emi.png}
     \caption{Principali tipologie di propagazione delle interferenze nei circuiti integrati}
     \label{fig:propagazione_emi}
 \end{figure}
@@ -49,7 +51,7 @@ Le interferenze condotte sono generalmente più significative per i circuiti int
 
 Nelle applicazioni pratiche, entrambe le modalità di propagazione coesistono e possono interagire tra loro, rendendo complessa l'analisi dell'impatto complessivo delle EMI sui sistemi elettronici. Tuttavia, nei moderni circuiti integrati, le interferenze condotte rappresentano generalmente il problema più significativo e meritano quindi particolare attenzione.
 
-\section{Sensibilità dei circuiti analogici alle EMI}
+\section{Sensibilità dei circuiti analogici alle \textit{EMI}}
 Tra i vari componenti presenti in una apparecchiatura elettronica, quelli che risentono maggiormente di possibili interferenze sono i dispositivi di tipo analogico \cite{capitolo2, An_EMI-Resistant_Common-Mode_Cancelation_Differential_Input_Stage_in_UMC_180_nm_CMOS}. Questo è dovuto principalmente alle caratteristiche intrinseche dei segnali analogici, che possono assumere infiniti valori in un intervallo continuo, rendendo più difficile distinguere il segnale utile dal rumore.
 
 La precisione dei circuiti analogici dipende fortemente dalla stabilità dei punti di lavoro, che possono essere alterati dalle EMI \cite{TR2016}. Inoltre, questi circuiti operano spesso con segnali di ampiezza ridotta, particolarmente vulnerabili alle interferenze. Al contrario, i segnali digitali hanno un range di valori discreti per definire i livelli logici 0 e 1, e finché il disturbo non modifica il segnale portandolo al di fuori di tale range, il suo effetto è praticamente nullo o comunque limitato a fenomeni come il jitter nei segnali di clock.
@@ -57,29 +59,38 @@ La precisione dei circuiti analogici dipende fortemente dalla stabilità dei pun
 % Qui si potrebbe inserire un'immagine di confronto tra segnali analogici e digitali in presenza di EMI
 \begin{figure}[ht]
     \centering
-    %\includegraphics[width=0.7\textwidth]{images/analog_vs_digital_emi.png}
-    \caption{Confronto tra la sensibilità di segnali analogici e digitali alle interferenze elettromagnetiche}
-    \label{fig:analog_vs_digital}
+    \includegraphics[width=0.7\textwidth]{img/emi-effect-input-pins.pdf}
+    \caption{Effetto delle EMI sull'uscita di un amplificatore operazionale in configurazione \textit{voltage follower}}
+    \label{fig:emi_effect}
 \end{figure}
 
-In questo lavoro ci concentreremo quindi sullo studio dell'effetto delle interferenze sui circuiti analogici, in particolare sugli amplificatori operazionali, poiché sono tra i componenti più sensibili ai disturbi e al contempo tra i più utilizzati nelle applicazioni elettroniche moderne \cite{capitolo2}. Gli amplificatori operazionali rappresentano infatti un elemento fondamentale in numerosi sistemi di acquisizione dati, elaborazione dei segnali e conversione analogico-digitale, dove la presenza di EMI può compromettere significativamente le prestazioni complessive del sistema.
+In questo lavoro ci concentreremo quindi sullo studio dell'effetto delle interferenze sui circuiti analogici, in particolare sugli amplificatori operazionali, poiché sono tra i componenti più sensibili ai disturbi e al contempo tra i più utilizzati nelle applicazioni elettroniche moderne \cite{capitolo2}. Gli amplificatori operazionali rappresentano infatti un elemento fondamentale in numerosi sistemi di acquisizione dati, elaborazione dei segnali e conversione analogico-digitale, dove la presenza di \textit{EMI} può compromettere significativamente le prestazioni complessive del sistema.
 
-Come evidenziato in \cite{EMI_Immunity_of_the_Nauta_Inverter-Based_Amplifier}, diverse architetture di amplificatori operazionali presentano differenti livelli di suscettibilità alle EMI, con alcune topologie che mostrano caratteristiche intrinseche di immunità migliori rispetto ad altre. L'analisi di queste differenze e lo sviluppo di soluzioni circuitali specifiche per migliorare l'immunità alle EMI rappresentano un campo di ricerca particolarmente attivo e rilevante.
+Come evidenziato in \cite{EMI_Immunity_of_the_Nauta_Inverter-Based_Amplifier}, diverse architetture di amplificatori operazionali presentano differenti livelli di suscettibilità alle \textit{EMI}, con alcune topologie che mostrano caratteristiche intrinseche di immunità migliori rispetto ad altre. L'analisi di queste differenze e lo sviluppo di soluzioni circuitali specifiche per migliorare l'immunità alle \textit{EMI} rappresentano un campo di ricerca particolarmente attivo e rilevante.
+
+\subsection{Immunità \textit{EMI} nell'architettura Nauta}
+
+Un aspetto rilevante dell'architettura Nauta è la sua buona immunità alle \textit{EMI}. Come evidenziato in \cite{EMI_Immunity_of_the_Nauta_Inverter-Based_Amplifier}, gli amplificatori basati su inverter presentano una suscettibilità alle EMI significativamente inferiore rispetto agli amplificatori convenzionali come il Miller. Questo vantaggio è stato ulteriormente confermato da vari studi, tra cui \cite{Redoute-Richelli_EMC_Magazine} e \cite{finalprint}.
+
+Questa superiore immunità EMI è dovuta principalmente alla topologia circuitale semplice senza nodi interni, all'assenza di specchi di corrente e coppie differenziali (elementi particolarmente sensibili alle \textit{EMI}), e allo slew rate simmetrico sia per transizioni positive che negative, che riduce la distorsione non lineare. Inoltre, la risposta simmetrica a variazioni rapide della tensione di ingresso contribuisce ulteriormente a questa caratteristica.
+
+La resistenza alle interferenze elettromagnetiche rende l'architettura Nauta particolarmente adatta per applicazioni in ambienti con elevati livelli di interferenze elettromagnetiche, come in ambito automotive o industriale.
 
 \section{Metodologia di studio delle EMI}
-Per studiare efficacemente l'impatto delle EMI sui circuiti integrati, è necessario definire un metodo rigoroso di rappresentazione e quantificazione in laboratorio. Si è visto che una buona approssimazione delle EMI è possibile mediante segnali sinusoidali. Questo genere di onda, infatti, oltre ad essere alla base di ogni segnale periodico (per il teorema di Fourier), è anche facilmente riproducibile in laboratorio. Inoltre, fornendo in ingresso una sinusoide tempo invariante, è possibile ricondursi al caso peggiore in quanto i disturbi elettromagnetici reali tendono ad attenuarsi nel tempo \cite{capitolo2}.
+Per studiare efficacemente l'impatto delle \textit{EMI} sui circuiti integrati, è necessario definire un metodo rigoroso di rappresentazione e quantificazione in laboratorio. Si è visto che una buona approssimazione delle \textit{EMI} è possibile mediante segnali sinusoidali. Questo genere di onda, infatti, oltre ad essere alla base di ogni segnale periodico (per il teorema di Fourier), è anche facilmente riproducibile in laboratorio. Inoltre, fornendo in ingresso una sinusoide tempo invariante, è possibile ricondursi al caso peggiore in quanto i disturbi elettromagnetici reali tendono ad attenuarsi nel tempo \cite{capitolo2}.
 
-Per valutare l'impatto delle EMI sui circuiti analogici, viene generalmente utilizzata una configurazione di test standard che prevede il circuito in esame collegato in configurazione \textit{voltage follower} (inseguitore di tensione), con segnali interferenti sinusoidali sovrapposti ai terminali di ingresso o di alimentazione \cite{finalprint, Redoute-Richelli_EMC_Magazine}. La misurazione dello spostamento della tensione di uscita (offset) rispetto al valore atteso in assenza di interferenze permette di quantificare la sensibilità del circuito alle EMI \cite{Measurements_of_EMI_susceptibility_of_precision_voltage_references}.
+Per valutare l'impatto delle \textit{EMI} sui circuiti analogici, viene generalmente utilizzata una configurazione di test standard che prevede il circuito in esame collegato in configurazione \textit{voltage follower} (inseguitore di tensione), con segnali interferenti sinusoidali sovrapposti ai terminali di ingresso o di alimentazione \cite{finalprint, Redoute-Richelli_EMC_Magazine}. La misurazione dello spostamento della tensione di uscita (offset) rispetto al valore atteso in assenza di interferenze permette di quantificare la sensibilità del circuito alle \textit{EMI} \cite{Measurements_of_EMI_susceptibility_of_precision_voltage_references}.
 
 % Qui si potrebbe inserire un'immagine del setup di test EMI
 \begin{figure}[ht]
     \centering
     %\includegraphics[width=0.7\textwidth]{images/emi_test_setup.png}
-    \caption{Configurazione tipica per il test di suscettibilità alle EMI di un amplificatore operazionale}
+    TODO: Inserire un'immagine del setup di test EMI
+    \caption{Configurazione tipica per il test di suscettibilità alle \textit{EMI} di un amplificatore operazionale}
     \label{fig:emi_test_setup}
 \end{figure}
 
-Questa configurazione rappresenta il caso peggiore poiché la retroazione diretta tra uscita e ingresso invertente amplifica gli effetti delle EMI, consentendo di evidenziare anche le più piccole vulnerabilità del circuito. I principali parametri utilizzati per quantificare la sensibilità dei circuiti alle EMI sono l'offset indotto da EMI (la variazione della tensione di uscita DC causata dalle interferenze), l'intervallo di frequenze critiche (le frequenze alle quali il circuito mostra la massima sensibilità) e la densità spettrale di potenza (PSD), che misura l'energia del segnale interferente trasferita all'uscita \cite{Bulk-Driven_CMOS_Amplifier_With_High_EMI_Immunity, TR2016}.
+Questa configurazione rappresenta il caso peggiore poiché la retroazione diretta tra uscita e ingresso invertente amplifica gli effetti delle \textit{EMI}, consentendo di evidenziare anche le più piccole vulnerabilità del circuito. I principali parametri utilizzati per quantificare la sensibilità dei circuiti alle \textit{EMI} sono l'offset indotto da EMI (la variazione della tensione di uscita DC causata dalle interferenze), l'intervallo di frequenze critiche (le frequenze alle quali il circuito mostra la massima sensibilità) e la densità spettrale di potenza (PSD), che misura l'energia del segnale interferente trasferita all'uscita \cite{Bulk-Driven_CMOS_Amplifier_With_High_EMI_Immunity, TR2016}.
 
 Dopo aver progettato gli amplificatori operazionali, si effettueranno delle simulazioni, grazie all'ausilio di simulatori circuitali come Cadence, al fine di analizzare il loro comportamento quando sui loro ingressi sono presenti disturbi ad alta ed altissima frequenza. Questa metodologia permette di caratterizzare in modo completo la risposta dei circuiti in esame a diverse tipologie di interferenze elettromagnetiche, fornendo informazioni preziose per il miglioramento delle loro prestazioni.
 
@@ -87,23 +98,47 @@ Dopo aver progettato gli amplificatori operazionali, si effettueranno delle simu
 \begin{figure}[ht]
     \centering
     %\includegraphics[width=0.8\textwidth]{images/emi_simulation.png}
+    TODO: Inserire un'immagine della simulazione EMI
     \caption{Esempio di simulazione della risposta di un amplificatore operazionale alle EMI}
     \label{fig:emi_simulation}
 \end{figure}
 
-\section{Strategie di mitigazione delle EMI}
+\section{Strategie per migliorare l'immunità EMI}
+
+Un aspetto critico nella progettazione di amplificatori operazionali a bassa tensione è la loro suscettibilità alle interferenze elettromagnetiche (EMI). La riduzione della tensione di alimentazione rende i circuiti analogici più vulnerabili ai disturbi, poiché l'ampiezza dei segnali utili diminuisce rispetto al livello di rumore \cite{Design_considerations_for_an_ultra-low_voltage_amplifier_with_high_EMI_immunity, Redoute-Richelli_EMC_Magazine}. In questo contesto, diventa fondamentale sviluppare strategie specifiche per migliorare l'immunità EMI degli amplificatori a bassa tensione.
+
+Richelli \cite{Design_considerations_for_an_ultra-low_voltage_amplifier_with_high_EMI_immunity} ha affrontato questa problematica proponendo un amplificatore di classe AB basato su una topologia a due stadi fortemente simmetrica, particolarmente efficace nel minimizzare gli effetti dei disturbi provenienti da diverse fonti. L'amplificatore proposto può essere realizzato in tecnologia CMOS standard ed è adatto per le basse tensioni di alimentazione richieste dai circuiti integrati moderni.
+
+%%TODO: Inserire una breve descrizione di che cos'è un amplificatore di classe AB e la sua importanza nella progettazione di circuiti analogici.
+L'amplificatore di classe AB è una configurazione circuitale che combina le caratteristiche degli amplificatori di classe A e B, offrendo un buon compromesso tra linearità e efficienza energetica. Un classe A è un amplificatore che opera in modo continuo, con una corrente di bias costante, mentre un amplificatore di classe B opera solo durante metà del ciclo del segnale. La classe AB combina questi due approcci, consentendo una maggiore efficienza energetica rispetto alla classe A e una migliore linearità rispetto alla classe B.
+L'amplificatore di classe AB proposto da Richelli presenta una topologia simmetrica che migliora l'immunità EMI grazie a un bilanciamento ottimale delle correnti e alla riduzione delle capacità parassite. Inoltre, la configurazione simmetrica consente di ottenere un'uscita differenziale, che contribuisce a ridurre ulteriormente il rumore e le interferenze. La figura \ref{fig:class_ab_symmetric} mostra un esempio di amplificatore di classe AB con topologia simmetrica.
+
+% Inserire un'immagine dell'amplificatore di classe AB con topologia simmetrica
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.7\textwidth]{img/ultra-low-voltage-simmetrical-amplifier.pdf}
+    \caption{Amplificatore di classe AB con topologia simmetrica per aumentare l'immunità EMI.}
+    \label{fig:class_ab_symmetric}
+\end{figure}
+
 Per limitare gli effetti delle interferenze elettromagnetiche sui circuiti integrati, si possono seguire principalmente due approcci \cite{capitolo2}. Il primo consiste nel non considerare il problema delle interferenze in fase di progettazione del dispositivo e compensare il loro effetto solo dopo la realizzazione del circuito, adottando una serie di procedure spesso complicate e costose come la revisione del layout, l'aggiunta di filtri esterni, l'implementazione di schermature o modifiche circuitali.
 
 Il secondo approccio, generalmente più efficace, è quello di considerare già in fase progettuale le caratteristiche che dovrà avere il dispositivo per garantire una sufficiente immunità alle interferenze elettromagnetiche. Questo approccio preventivo prevede l'adozione di topologie circuitali intrinsecamente più robuste alle EMI, l'utilizzo di tecniche di layout specifiche per ridurre l'accoppiamento con sorgenti di interferenza, l'implementazione di circuiti di cancellazione del modo comune e la progettazione di stadi di ingresso con elevata reiezione alle interferenze.
 
 Come evidenziato in \cite{An_EMI-Resistant_Common-Mode_Cancelation_Differential_Input_Stage_in_UMC_180_nm_CMOS}, una tecnica particolarmente efficace consiste nell'implementazione di circuiti di cancellazione del modo comune, che possono ridurre significativamente l'impatto delle EMI sugli stadi di ingresso degli amplificatori operazionali. Allo stesso modo, un'attenta progettazione del layout può ridurre l'accoppiamento delle interferenze, come discusso in \cite{finalprint}.
 
-% Qui si potrebbe inserire un'immagine delle strategie di mitigazione EMI
-\begin{figure}[ht]
+\subsection{Vantaggi degli amplificatori basati su inverter in termini di immunità EMI}
+
+Uno degli aspetti più interessanti degli amplificatori basati su inverter è la loro buona immunità alle interferenze elettromagnetiche. Rosa et al. \cite{EMI_Immunity_of_the_Nauta_Inverter-Based_Amplifier} hanno dimostrato che questi amplificatori presentano una suscettibilità alle EMI significativamente inferiore rispetto alle topologie tradizionali come l'amplificatore Miller. I principali fattori che contribuiscono all'elevata immunità EMI degli amplificatori basati su inverter sono la topologia circuitale estremamente semplice senza nodi interni, l'assenza di specchi di corrente e coppie differenziali (elementi particolarmente sensibili alle EMI), lo slew rate simmetrico sia per transizioni positive che negative (che riduce la distorsione non lineare), e la risposta simmetrica a variazioni rapide della tensione di ingresso.
+
+I risultati sperimentali riportati in \cite{EMI_Immunity_of_the_Nauta_Inverter-Based_Amplifier} mostrano che l'offset indotto da EMI negli amplificatori basati su inverter è circa un ordine di grandezza inferiore rispetto a quello degli amplificatori Miller convenzionali, in un ampio intervallo di frequenze e per diverse condizioni operative.
+
+% Inserire un grafico che confronta l'offset EMI indotto nell'amplificatore SEIA rispetto a un amplificatore Miller
+\begin{figure}[htbp]
     \centering
-    %\includegraphics[width=0.7\textwidth]{images/emi_mitigation.png}
-    \caption{Strategie di mitigazione delle EMI nei circuiti integrati}
-    \label{fig:emi_mitigation}
+    \includegraphics[width=0.8\textwidth]{img/inverter-based-vs-miller-emi-comparison.pdf}
+    \caption{Confronto dell'offset indotto da EMI nell'amplificatore basato su inverter (SEIA) e nell'amplificatore Miller tradizionale \cite{EMI_Immunity_of_the_Nauta_Inverter-Based_Amplifier}.}
+    \label{fig:emi_comparison}
 \end{figure}
 
-Nei capitoli successivi, analizzeremo in dettaglio alcune architetture di amplificatori, con particolare attenzione alla loro sensibilità alle interferenze elettromagnetiche e alle tecniche più efficaci per migliorarne l'immunità. Tra queste, particolare interesse riveste l'architettura NAUTA OTA, che grazie alla sua topologia basata su invertitori CMOS mostra caratteristiche intrinseche di immunità alle EMI superiori rispetto ad architetture più tradizionali \cite{EMI_Immunity_of_the_Nauta_Inverter-Based_Amplifier}. Questo tipo di amplificatore rappresenta un esempio significativo di come l'approccio preventivo alla mitigazione delle EMI possa portare a soluzioni circuitali innovative ed efficaci.
+Nei capitoli successivi, analizzeremo in dettaglio alcune architetture di amplificatori, con particolare attenzione alla loro sensibilità alle interferenze elettromagnetiche e alle tecniche più efficaci per migliorarne l'immunità. Tra queste, particolare interesse riveste l'architettura NAUTA OTA, che grazie alla sua topologia basata su inverter CMOS mostra caratteristiche intrinseche di immunità alle EMI superiori rispetto ad architetture più tradizionali \cite{EMI_Immunity_of_the_Nauta_Inverter-Based_Amplifier}. Questo tipo di amplificatore rappresenta un esempio significativo di come l'approccio preventivo alla mitigazione delle EMI possa portare a soluzioni circuitali innovative ed efficaci.

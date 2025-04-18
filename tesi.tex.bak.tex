@@ -1,0 +1,107 @@
+\documentclass[oneside, a4paper]{book}
+\usepackage[italian]{babel}
+\usepackage[babel]{csquotes}
+\usepackage[a4paper,left=3.5cm,bottom=2.5cm,right=3.5cm,top=2.5cm]{geometry}
+\usepackage{subcaption}
+\usepackage{url}
+\usepackage{graphicx} 			
+\usepackage{sidecap}		
+\usepackage{setspace}		
+\usepackage{textcomp} 			
+\usepackage[table]{xcolor}		
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{tocloft} % per personalizzare l'indice
+% \usepackage[nottoc]{tocbibind} 
+\usepackage[nowrite,infront,standard,swapnames]{frontespizio}
+\usepackage{amsmath}            % subequations
+\usepackage{listings}           % code listing style    
+\usepackage[most]{tcolorbox}
+\usepackage{xcolor}
+\usepackage[nowrite,infront,standard,swapnames]{frontespizio}
+\usepackage{sectsty} % to use command to centering section and chapter titles
+\usepackage[style=numeric-comp,useprefix,hyperref,backend=bibtex,natbib,sorting=none]{biblatex}
+\usepackage{titlesec}
+\usepackage{needspace}
+
+\addbibresource{./bib/bibliography.bib}
+\defbibheading{bibliography}{\subsection*{Bibliography}}
+% Set link border color none. See more options: https://en.wikibooks.org/wiki/LaTeX/Hyperlinks
+\hypersetup{hidelinks}
+
+%% Add blank page without increase the page number
+% \shipout\null
+
+%% Increase / decrease page number
+% \stepcounter{page}{numtoincordec}
+
+% To center chapter and section text
+%\allsectionsfont{\centering}
+%\fontsize{12pt}{16pt}\selectfont % font size for the text
+%\chapterfont{\fontsize{16pt}{20pt}\selectfont} % font size for the chapter title
+%\setstretch{1.5} % line spacing
+
+\fontsize{17}{15.6}\selectfont % font 13pt con interlinea 15.6pt
+
+\doublespacing % opzionale
+
+\setlength{\parindent}{0pt} % no indentation
+
+% Prevent section titles from being placed at the bottom of a page
+\newcommand{\sectionstart}[1]{%
+    \Needspace{5\baselineskip} % Reserve space for the section heading and some content
+    \section{#1}%
+}
+
+\begin{document}
+
+    % Skip a line at the end of paragraph
+    \setlength{\parskip}{\baselineskip} 
+
+    % Frontespizio page
+    \begin{frontespizio}
+    \end{frontespizio}
+
+    % Blank page between frontespizio and toc
+    \shipout\null
+
+    % Roman page numbering for front matter
+    \pagenumbering{Roman}
+
+    % ToC
+    \tableofcontents
+    
+
+    % Abstract
+    \include{res/chapters/abstract/abstract}
+
+    % Switch to Arabic page numbering after ToC
+    \clearpage
+    \pagenumbering{arabic}
+
+    % Chapter 1
+    \include{res/chapters/ch1/chapter}
+
+    % Chapter 2
+    \include{res/chapters/ch2/chapter}
+
+    % Chapter 3
+    \include{res/chapters/ch3/chapter}
+
+    % Chapter 4
+    \include{res/chapters/ch4/chapter}
+
+    % Chapter 5
+    \include{res/chapters/ch5/chapter}
+
+    % Chapter 6
+    \include{res/chapters/ch6/chapter}
+
+    % Bibliography
+    \printbibliography[heading=bibintoc]
+
+    % List of figures and tables
+    \listoffigures
+    \listoftables
+\end{document}

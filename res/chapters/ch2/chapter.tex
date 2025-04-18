@@ -8,28 +8,6 @@ In questo contesto, l'amplificatore a transconduttanza Nauta, proposto originari
 
 \section{Principi di Funzionamento del Nauta OTA}
 
-\subsection{L'Inverter CMOS come Elemento Analogico}
-
-Il punto di partenza dell'architettura Nauta è l'utilizzo dell'inverter CMOS come elemento di base per la conversione tensione-corrente. Sebbene l'inverter CMOS sia tradizionalmente impiegato in circuiti digitali, esso può operare anche come amplificatore analogico quando polarizzato nella regione di alta transconduttanza. 
-
-\begin{figure}[h]
-    \centering
-    % Inserire qui la figura dell'inverter CMOS nei due regimi di funzionamento
-    % Questa figura può essere recuperata dall'articolo EMI_Immunity_of_the_Nauta_Inverter-Based_Amplifier, Fig. 1
-    \includegraphics[width=0.7\textwidth]{../tesi-emi/img/inverter-behaviour.png}
-    \caption{Comportamento digitale e analogico dell'inverter CMOS \cite{EMI_Immunity_of_the_Nauta_Inverter-Based_Amplifier}}
-    \label{fig:inverter_cmos}
-\end{figure}
-
-Un inverter CMOS presenta due comportamenti distinti: in regime digitale funziona come un elemento di commutazione tra i livelli logici alto e basso, mentre in regime analogico opera come un amplificatore lineare con un guadagno determinato dalla transconduttanza totale ($g_{mP} + g_{mN}$) moltiplicata per la resistenza di uscita.
-
-La corrente di uscita di un singolo inverter CMOS può essere espressa come:
-\begin{equation}
-I_{out} = I_{dn} - I_{dp} = \frac{k_n}{2}(V_{in} - V_{tn})^2 - \frac{k_p}{2}(V_{DD} - V_{in} - |V_{tp}|)^2
-\end{equation}
-
-Questa relazione mostra che la risposta di un singolo inverter è non lineare. Tuttavia, quando i fattori $k_n$ e $k_p$ dei transistor NMOS e PMOS sono adeguatamente bilanciati e il circuito è utilizzato in configurazione differenziale, è possibile ottenere una conversione V-I molto più lineare.
-
 \subsection{Struttura Base del Nauta OTA}
 
 La struttura base del Nauta OTA è costituita da sei inverter CMOS, disposti in modo da formare un amplificatore differenziale con un controllo preciso del modo comune in uscita e un guadagno regolabile. Questa configurazione sfrutta le proprietà intrinseche degli inverter CMOS per ottenere una conversione tensione-corrente (V-I) altamente lineare.
@@ -47,7 +25,9 @@ Questa configurazione permette di ottenere un'impedenza di uscita elevata per i 
 
 \subsection{Conversione Tensione-Corrente Lineare}
 
-La linearità della conversione tensione-corrente nel Nauta OTA è ottenuta grazie alla configurazione differenziale degli inverter di ingresso. Quando gli inverter sono pilotati da un segnale differenziale bilanciato attorno alla tensione di modo comune $V_c$, la corrente differenziale di uscita risulta:
+L'OTA di Nauta è concettualmente un semplice transconduttore basato su inverter CMOS, caratterizzato dall'assenza di nodi interni (che garantisce un buon comportamento ad alta frequenza), buona linearità nella conversione tensione-corrente quando i transistor operano in forte inversione, e semplicità circuitale che consente di operare con tensioni di alimentazione ridotte. Dalla topologia originale di Nauta sono state sviluppate numerose varianti, adattate a diverse applicazioni come filtri attivi, amplificatori completamente differenziali e architetture ibride.
+
+La linearità della conversione tensione-corrente nel Nauta OTA è ottenuta grazie alla configurazione differenziale degli inverter di ingresso. Quando gli inverter sono pilotati da un segnale differenziale bilanciato attorno alla tensione di modo comune $V_{cm}$, la corrente differenziale di uscita risulta:
 
 \begin{equation}
 I_{od} = I_{o1} - I_{o2} = V_{id} \cdot (g_{mN} + g_{mP})
@@ -57,16 +37,18 @@ dove $V_{id}$ è la tensione differenziale di ingresso, $g_{mN}$ è la transcond
 
 \subsection{Miglioramento del Guadagno DC}
 
-Una delle caratteristiche distintive dell'architettura Nauta è la possibilità di aumentare il guadagno DC dell'amplificatore senza compromettere la sua larghezza di banda. 
+Una delle caratteristiche distintive dell'architettura Nauta è la possibilità di aumentare il guadagno DC dell'amplificatore senza compromettere la sua larghezza di banda \cite{EMI_Immunity_of_the_Nauta_Inverter-Based_Amplifier}.
 %Questo miglioramento è ottenuto attraverso la tecnica di "conductance cancellation" implementata dagli inverter 3, 4, 5 e 6.
 
-Il guadagno di un OTA convenzionale è limitato dalla sua resistenza di uscita, che determina il guadagno DC secondo la relazione:
+Il guadagno $A_v$ di un OTA convenzionale è limitato dalla sua resistenza di uscita, che determina il guadagno DC secondo la relazione \cite{Tesi.pdf}:
 
 \begin{equation}
 A_v = g_m \cdot r_o
 \end{equation}
 
-Nell'architettura Nauta, gli inverter 3 e 6 (cross-coupled) generano una resistenza negativa che compensa parzialmente la resistenza di uscita finita degli inverter di ingresso. La conduttanza di uscita totale può essere espressa come:
+Dove $g_m$ rappresenta la transconduttanza del transistor e $r_o$ la sua resistenza di uscita.
+
+Nell'architettura Nauta, gli inverter 3 e 6 (cross-coupled) generano una resistenza negativa che compensa parzialmente la resistenza di uscita finita degli inverter di ingresso \cite{EMI_Immunity_of_the_Nauta_Inverter-Based_Amplifier}. La conduttanza di uscita totale può essere espressa come:
 
 \begin{equation}
 g_{out} = g_{out,12} - g_{out,36} + g_{out,45}
@@ -74,59 +56,53 @@ g_{out} = g_{out,12} - g_{out,36} + g_{out,45}
 
 dove $g_{out,12}$ è la conduttanza di uscita degli inverter di ingresso, $g_{out,36}$ è la conduttanza negativa generata dagli inverter cross-coupled, e $g_{out,45}$ è la conduttanza degli inverter self-coupled.
 
-Quando le dimensioni degli inverter sono correttamente progettate, la conduttanza di uscita netta del circuito può diventare molto piccola, portando a un guadagno DC elevato. Il guadagno complessivo dell'amplificatore Nauta può essere espresso come:
+Quando le dimensioni degli inverter sono correttamente progettate, la conduttanza di uscita netta del circuito può diventare molto piccola, portando a un guadagno DC elevato \cite{EMI_Immunity_of_the_Nauta_Inverter-Based_Amplifier}. Il guadagno complessivo dell'amplificatore Nauta può essere espresso come:
 
 \begin{equation}
 A_v = \frac{g_{m,12}}{g_{out,12} - g_{out,36} + g_{out,45}}
 \end{equation}
 
-Nella pratica, il guadagno DC è limitato dal disadattamento tra gli inverter, ma valori di guadagno superiori a 40 dB sono generalmente ottenibili.
+Nella pratica, il guadagno DC è limitato dal disadattamento tra gli inverter, ma valori di guadagno superiori a 40 dB sono generalmente ottenibili. Implementazioni recenti hanno dimostrato la possibilità di raggiungere valori di guadagno ancora più elevati, come nel caso dell'OTA a singola uscita basato su invertitori che raggiunge 113.62 dB di guadagno con un consumo di soli 11.02 $\mu W$ \cite{EMI_Immunity_of_the_Nauta_Inverter-Based_Amplifier}.
 
 \section{Vantaggi dell'Architettura Nauta OTA}
 
-L'architettura Nauta OTA offre numerosi vantaggi rispetto alle topologie tradizionali. La banda passante è particolarmente ampia grazie all'assenza di nodi interni, il che permette di ottenere poli parassiti posizionati a frequenze molto elevate (nell'ordine dei GHz). Questo consente operazioni a frequenze notevolmente più alte rispetto alle topologie convenzionali.
+L'architettura Nauta OTA offre numerosi vantaggi rispetto alle topologie tradizionali:
 
-La configurazione differenziale degli inverter permette di ottenere una conversione tensione-corrente con buona linearità, anche con inverter non perfettamente bilanciati. L
-% La tecnica di conductance cancellation consente inoltre di regolare il guadagno DC dell'amplificatore senza compromettere la larghezza di banda.
-
-Un ulteriore vantaggio dell'architettura Nauta è la capacità di operare con tensioni di alimentazione ridotte, aspetto particolarmente importante per applicazioni a bassa potenza. La semplicità della struttura, basata su inverter CMOS, permette infatti di sfruttare completamente la tensione di alimentazione disponibile.
-
-\subsection{Immunità EMI}
-
-Un aspetto rilevante dell'architettura Nauta è la sua buona immunità alle interferenze elettromagnetiche (EMI). Come evidenziato in \cite{EMI_Immunity_of_the_Nauta_Inverter-Based_Amplifier}, gli amplificatori basati su inverter presentano una suscettibilità alle EMI significativamente inferiore rispetto agli amplificatori convenzionali come il Miller. Questo vantaggio è stato ulteriormente confermato da vari studi, tra cui \cite{Redoute-Richelli_EMC_Magazine} e \cite{finalprint}.
-
-\begin{figure}[h]
-    \centering
-    % Inserire qui la figura che confronta l'immunità EMI del Nauta OTA rispetto ad altre architetture
-    % Questa figura può essere recuperata dall'articolo EMI_Immunity_of_the_Nauta_Inverter-Based_Amplifier, Fig. 2 o Fig. 3
-    % che mostra chiaramente il confronto di offset indotto da EMI tra diversi amplificatori
-    \caption{Confronto dell'immunità EMI tra amplificatori basati su inverter e amplificatori Miller}
-    \label{fig:emi_immunity}
-\end{figure}
-
-Questa superiore immunità EMI è dovuta principalmente alla topologia circuitale semplice senza nodi interni, all'assenza di specchi di corrente e coppie differenziali (elementi particolarmente sensibili alle EMI), e allo slew rate simmetrico sia per transizioni positive che negative, che riduce la distorsione non lineare. Inoltre, la risposta simmetrica a variazioni rapide della tensione di ingresso contribuisce ulteriormente a questa caratteristica.
-
-La resistenza alle interferenze elettromagnetiche rende l'architettura Nauta particolarmente adatta per applicazioni in ambienti con elevati livelli di interferenze elettromagnetiche, come in ambito automotive o industriale.
-
-\section{Implementazioni a Bassa Tensione del Nauta OTA}
-
-Una delle tendenze più significative nella progettazione di circuiti analogici integrati è la continua riduzione della tensione di alimentazione. L'architettura Nauta OTA si adatta bene a questa tendenza grazie alla sua capacità di operare con tensioni di alimentazione molto basse.
-
-Una variante interessante dell'architettura Nauta è il "Calibration-Less Nauta OTA" proposto in \cite{Braga2017}, che può operare con una tensione di alimentazione di soli 0,25 V in un processo CMOS digitale da 130 nm. Questa implementazione utilizza transistor in regione di inversione debole (weak inversion) e un approccio basato su array di transistor per migliorare le prestazioni con tensioni di alimentazione ultra-basse.
-
-I vantaggi di questa implementazione includono il funzionamento con tensione di alimentazione molto ridotta, il consumo di potenza estremamente basso (nell'ordine di nanowatt), e la stabilità del guadagno nonostante l'utilizzo di transistor con impianti di halo. Questi risultati dimostrano la versatilità dell'architettura Nauta e la sua capacità di adattarsi alle esigenze di riduzione della potenza e della tensione di alimentazione.
-
-\section{Nauta OTA a due stadi}
+\begin{enumerate}
+    \item \textbf{Ampia banda passante}: grazie all'assenza di nodi interni, il Nauta OTA presenta una banda passante molto ampia, consentendo operazioni a frequenze elevate.
+    \item \textbf{Linearità}: la configurazione differenziale degli inverter consente di ottenere una conversione tensione-corrente altamente lineare, anche in presenza di disadattamenti tra gli inverter.
+    \item \textbf{Basso consumo di potenza}: l'architettura Nauta è progettata per operare con tensioni di alimentazione ridotte, il che la rende adatta per applicazioni a bassa potenza.
+    \item \textbf{Semplicità strutturale}: la struttura del Nauta OTA è relativamente semplice, basata su inverter CMOS, il che facilita la progettazione e la realizzazione in processi tecnologici avanzati.
+    \item \textbf{Compatibilità con tecnologie CMOS}: l'architettura Nauta è completamente compatibile con le tecnologie CMOS, consentendo l'integrazione in circuiti analogici e digitali su un singolo chip.
+    \item \textbf{Versatilità}: il Nauta OTA può essere utilizzato in una vasta gamma di applicazioni, dai filtri Gm-C agli ADC, dai circuiti RF alle interfacce per sensori.
+\end{enumerate}
 
 Per applicazioni che richiedono prestazioni avanzate in termini di guadagno, rumore e linearità, sono state sviluppate architetture Nauta OTA a due stadi. Queste configurazioni combinano i vantaggi dell'architettura Nauta con altre topologie per ottenere caratteristiche ottimali.
 
 
-\begin{figure}[h]
+\begin{figure}[h!]
     \centering
     \includegraphics[width=1\textwidth]{../tesi-emi/img/two_stage_nauta.pdf}
     \caption{Architettura Nauta OTA a due stadi}
     \label{fig:two_stage_nauta}
 \end{figure}
+
+\section{Implementazioni a Bassa Tensione del Nauta OTA}
+
+Una delle tendenze più significative nella progettazione di circuiti analogici integrati è la continua riduzione della tensione di alimentazione. L'architettura Nauta OTA si adatta bene a questa tendenza grazie alla sua capacità di operare con tensioni di alimentazione molto basse.
+
+Una variante interessante dell'architettura Nauta è il "Calibration-Less Nauta OTA" proposto in \cite{Braga2017}, che può operare con una tensione di alimentazione di soli 0,25 V in un processo CMOS digitale da 130 nm. 
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.7\textwidth]{../tesi-emi/img/nauta-ota.pdf}
+    \caption{Architettura del Calibration-Less Nauta OTA}
+    \label{fig:calibration_less_nauta}
+\end{figure}
+
+Questa implementazione utilizza transistor in regione di inversione debole (weak inversion) e un approccio basato su array di transistor per migliorare le prestazioni con tensioni di alimentazione ultra-basse.
+
+I vantaggi di questa implementazione includono il funzionamento con tensione di alimentazione molto ridotta, il consumo di potenza estremamente basso (nell'ordine di nanowatt), e la stabilità del guadagno nonostante l'utilizzo di transistor con impianti di halo. Questi risultati dimostrano la versatilità dell'architettura Nauta e la sua capacità di adattarsi alle esigenze di riduzione della potenza e della tensione di alimentazione.
 
 %\subsection{Architettura Ibrida Inverter-Based OTA e Nauta OTA}
 %
@@ -147,21 +123,16 @@ Per applicazioni che richiedono prestazioni avanzate in termini di guadagno, rum
 %
 \section{Applicazioni del Nauta OTA}
 
-L'architettura Nauta OTA trova applicazione in numerosi ambiti grazie alle sue caratteristiche peculiari. Nei filtri Gm-C a frequenze elevate, la sua ampia banda passante lo rende adatto per implementare filtri con frequenze di taglio fino a diverse centinaia di MHz, consentendo la realizzazione di sistemi di elaborazione del segnale ad alta velocità.
+L'architettura Nauta OTA trova applicazione in numerosi ambiti grazie alle sue caratteristiche \cite{EMI_Immunity_of_the_Nauta_Inverter-Based_Amplifier}:
 
-Nei convertitori analogico-digitali (ADC), in particolare nelle architetture pipeline e sigma-delta, la linearità e la velocità del Nauta OTA sono requisiti fondamentali per ottenere convertitori con alta risoluzione e frequenza di campionamento elevata. La bassa distorsione e l'ampia banda passante consentono di migliorare significativamente le prestazioni di questi sistemi.
-
-Il Nauta OTA è utilizzato anche nei circuiti di interfaccia per sensori, dove la combinazione di basso consumo e buona linearità è particolarmente vantaggiosa. In questi contesti, la capacità di operare con tensioni di alimentazione ridotte consente di prolungare la durata delle batterie nei dispositivi portatili o di utilizzare l'energia raccolta dall'ambiente nei sistemi energy harvesting.
-
-Nei circuiti a radiofrequenza (RF), il Nauta OTA viene impiegato per la realizzazione di blocchi analogici in ricevitori e trasmettitori. La sua ampia banda passante e la bassa distorsione lo rendono adatto per la demodulazione di segnali ad alta frequenza e per la sintesi di frequenza.
-
-Infine, grazie alla capacità di operare con tensioni di alimentazione ridotte, il Nauta OTA è particolarmente indicato per circuiti a bassa tensione e bassa potenza, come quelli utilizzati in dispositivi mobili, sensori wireless e sistemi biomedicali impiantabili.
-
-\begin{figure}[h]
-    \centering
-    % Inserire qui la figura che illustra le principali applicazioni del Nauta OTA
-    % Questa figura potrebbe essere creata ex-novo come schema a blocchi mostrando
-    % le diverse applicazioni (filtri Gm-C, ADC, circuiti RF, interfacce per sensori)
-    \caption{Principali applicazioni del Nauta OTA}
-    \label{fig:applications}
-\end{figure}
+\begin{itemize}
+    \item \textbf{Filtri Gm-C}: è ampiamente utilizzato nei filtri Gm-C, dove l'ampia banda passante e linearità lo rendono ideale per applicazioni di filtraggio a frequenze elevate.
+    \item \textbf{Convertitori ADC}: la linearità e la velocità sono utilizzate per ottenere convertitori analogico-digitale (ADC) con alta risoluzione e frequenza di campionamento elevata.
+    \item \textbf{Circuiti RF}: è impiegato in circuiti a radiofrequenza (RF) per la realizzazione di blocchi analogici in ricevitori e trasmettitori, grazie alla sua elevata banda passante e bassa distorsione.
+    \item \textbf{Interfacce per sensori}: la combinazione di basso consumo e buona linearità rende l'amplificatore di Nauta adatto per circuiti di interfaccia per sensori.
+    \item \textbf{Sistemi biomedicali}: grazie alla capacità di operare con tensioni di alimentazione ridotte, è particolarmente indicato per circuiti a bassa tensione e bassa potenza, come ad esempio quelli utilizzati in dispositivi biomedicali impiantabili.
+    \item \textbf{Sistemi di elaborazione del segnale ad alta velocità}: l'ampia banda passante lo rende adatto per implementare sistemi di elaborazione del segnale ad alta velocità, come filtri e amplificatori per segnali RF.
+    \item \textbf{Sistemi di comunicazione wireless}: la sua linearità e bassa distorsione lo rendono adatto per applicazioni in sistemi di comunicazione wireless, dove è fondamentale mantenere la qualità del segnale durante la trasmissione.
+    \item \textbf{Sistemi di imaging}: viene utilizzato in circuiti di imaging, come fotocamere e sensori di immagine, dove la linearità e la velocità sono requisiti fondamentali per ottenere immagini di alta qualità.
+    \item \textbf{Sistemi di misura}: grazie alla sua linearità e bassa distorsione, il Nauta OTA è impiegato in sistemi di misura e acquisizione dati, dove è fondamentale mantenere la precisione e l'integrità del segnale.
+\end{itemize}

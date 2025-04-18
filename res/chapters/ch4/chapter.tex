@@ -1,0 +1,189 @@
+\chapter{Confronto tra amplificatori Nauta e Miller in termini di immunità EMI}
+\label{chap:Nauta_Miller_Comparison}
+
+\section{Introduzione}
+
+La suscettibilità dei circuiti integrati analogici alle interferenze elettromagnetiche (EMI) rappresenta una sfida significativa per i progettisti di circuiti moderni, soprattutto considerando l'aumento dell'inquinamento elettromagnetico negli ambienti operativi \cite{Redoute-Richelli_EMC_Magazine}. Le architetture tradizionali degli amplificatori operazionali, come la configurazione Miller, hanno dimostrato una vulnerabilità alle EMI che può compromettere le prestazioni del sistema \cite{TR2016}. Questo capitolo presenta un'analisi comparativa tra l'architettura Miller convenzionale e l'architettura Nauta, esaminando la loro rispettiva immunità ai disturbi elettromagnetici.
+
+L'amplificatore Nauta, originariamente concepito come un transconduttore basato su invertitori CMOS \cite{EMI_Immunity_of_the_Nauta_Inverter-Based_Amplifier}, rappresenta una potenziale alternativa alle architetture tradizionali per applicazioni che richiedono una maggiore robustezza alle EMI. La sua semplice topologia circuitale, priva di specchi di corrente e coppie differenziali, potrebbe offrire vantaggi significativi in termini di immunità alle interferenze.
+
+\section{Fondamenti Teorici della Suscettibilità EMI negli Amplificatori}
+
+\subsection{Meccanismi di Suscettibilità EMI nelle Architetture Tradizionali}
+
+La suscettibilità degli amplificatori operazionali alle EMI è principalmente dovuta a diversi fattori intrinseci alla loro architettura. Gli studi precedenti hanno identificato i seguenti meccanismi chiave:
+
+\begin{itemize}
+    \item \textbf{Asimmetria dello slew rate}: La differenza tra lo slew rate positivo e negativo genera una risposta non lineare quando il circuito è sottoposto a segnali EMI ad alta frequenza \cite{finalprint}.
+    
+    \item \textbf{Distorsione non lineare}: La presenza di coppie differenziali e specchi di corrente introduce non linearità che possono rettificare i segnali EMI, generando componenti DC indesiderate \cite{Redoute-Richelli_EMC_Magazine}.
+    
+    \item \textbf{Effetti capacitivi parassiti}: Le capacità parassite associate ai nodi interni possono facilitare l'accoppiamento dei segnali EMI all'interno del circuito \cite{An_EMI-Resistant_Common-Mode_Cancelation_Differential_Input_Stage_in_UMC_180_nm_CMOS}.
+\end{itemize}
+
+Nell'architettura Miller, questi fattori si manifestano principalmente attraverso la coppia differenziale d'ingresso e gli specchi di corrente che costituiscono il carico attivo. Quando un segnale EMI viene accoppiato agli ingressi dell'amplificatore, la coppia differenziale può generare un offset DC a causa della rettificazione non lineare del segnale interferente \cite{Design_considerations_for_an_ultra-low_voltage_amplifier_with_high_EMI_immunity}.
+
+\subsection{Potenziali Vantaggi dell'Architettura Nauta}
+
+L'architettura Nauta presenta caratteristiche strutturali che potrebbero mitigare questi meccanismi di suscettibilità:
+
+\begin{itemize}
+    \item \textbf{Assenza di coppie differenziali}: L'utilizzo di invertitori CMOS come elemento base elimina la necessità di coppie differenziali tradizionali.
+    
+    \item \textbf{Simmetria intrinseca}: Gli invertitori CMOS offrono naturalmente una risposta più simmetrica, con slew rate positivo e negativo potenzialmente più bilanciati \cite{EMI_Immunity_of_the_Nauta_Inverter-Based_Amplifier}.
+    
+    \item \textbf{Topologia semplificata}: L'assenza di nodi interni riduce il numero di punti vulnerabili all'accoppiamento EMI.
+    
+    \item \textbf{Comportamento lineare in regione di forte inversione}: Quando i transistor operano in forte inversione, l'amplificatore Nauta può offrire un'eccellente linearità nella conversione tensione-corrente.
+\end{itemize}
+
+% Qui si potrebbe inserire una figura che confronta le topologie di base di un amplificatore Miller e di un amplificatore Nauta, evidenziando le differenze strutturali
+
+\section{Metodologia di Simulazione}
+
+Per valutare comparativamente l'immunità alle EMI delle architetture Miller e Nauta, è stato sviluppato un approccio di simulazione sistematico utilizzando il simulatore Cadence Virtuoso. L'obiettivo è quantificare e confrontare la risposta di entrambe le architetture quando sottoposte a disturbi elettromagnetici in diverse configurazioni.
+
+\subsection{Setup di Simulazione}
+
+Le simulazioni sono state configurate secondo le seguenti specifiche:
+
+\begin{itemize}
+    \item \textbf{Configurazione circuitale}: Entrambi gli amplificatori sono stati configurati come inseguitori di tensione (voltage followers), che rappresenta la configurazione più critica per la valutazione della suscettibilità EMI \cite{TR2016}.
+    
+    \item \textbf{Modellazione EMI}: I disturbi elettromagnetici sono stati modellati come segnali sinusoidali accoppiati capacitivamente ai terminali degli amplificatori, con frequenze variabili da 1 MHz a 1 GHz.
+    
+    \item \textbf{Punti di iniezione EMI}: Sono stati considerati diversi punti di iniezione, inclusi i terminali di ingresso, i terminali di alimentazione e il terminale di uscita attraverso accoppiamento capacitivo.
+    
+    \item \textbf{Parametri di valutazione}: Per ogni configurazione, sono stati misurati lo spostamento del punto di lavoro DC (offset), le distorsioni del segnale e altri parametri rilevanti per quantificare l'effetto delle EMI.
+\end{itemize}
+
+\subsection{Varianti Architetturali Analizzate}
+
+Lo studio ha incluso la simulazione delle seguenti varianti:
+
+\begin{itemize}
+    \item \textbf{Amplificatore Miller a singolo stadio}: Implementazione tradizionale con coppia differenziale e carico attivo.
+    
+    \item \textbf{Amplificatore Miller a due stadi}: Configurazione con compensazione Miller per aumentare il guadagno.
+    
+    \item \textbf{Amplificatore Nauta a singolo stadio}: Implementazione inverter-based seguendo la topologia originale proposta da Nauta.
+    
+    \item \textbf{Amplificatore Nauta a due stadi}: Versione modificata con due stadi in cascata per aumentare il guadagno.
+\end{itemize}
+
+% Qui si potrebbe inserire una figura che mostra gli schematici dettagliati delle quattro varianti implementate
+
+\subsection{Parametri di Confronto}
+
+Per garantire un confronto equo, i circuiti sono stati progettati per avere specifiche comparabili in termini di:
+
+\begin{itemize}
+    \item Guadagno a circuito aperto (circa 40 dB per gli amplificatori a singolo stadio)
+    \item Prodotto guadagno-banda (GBW) (circa 30 MHz)
+    \item Margine di fase (almeno 70 gradi)
+    \item Carico capacitivo (1 pF)
+    \item Tecnologia di processo (UMC 180 nm CMOS)
+\end{itemize}
+
+Questo approccio permette di isolare l'effetto dell'architettura sulla suscettibilità EMI, mantenendo costanti altri parametri di progettazione.
+
+\section{Considerazioni sul Dimensionamento}
+
+\subsection{Dimensionamento dell'Amplificatore Miller}
+
+Il dimensionamento dell'amplificatore Miller ha seguito l'approccio tradizionale, con particolare attenzione ai seguenti aspetti:
+
+\begin{itemize}
+    \item \textbf{Coppia differenziale}: Dimensionata per ottenere un equilibrio tra transconduttanza e capacità parassite.
+    
+    \item \textbf{Carico attivo}: Progettato per massimizzare il guadagno di primo stadio mantenendo una buona risposta in frequenza.
+    
+    \item \textbf{Circuito di polarizzazione}: Implementato per garantire una corrente stabile attraverso la coppia differenziale.
+    
+    \item \textbf{Compensazione}: Nel caso dell'amplificatore a due stadi, è stata implementata la compensazione Miller classica per garantire stabilità.
+\end{itemize}
+
+\subsection{Dimensionamento dell'Amplificatore Nauta}
+
+Il dimensionamento dell'amplificatore Nauta ha richiesto considerazioni specifiche:
+
+\begin{itemize}
+    \item \textbf{Invertitori CMOS}: Il rapporto tra le dimensioni dei transistor PMOS e NMOS è stato calibrato per ottenere un punto di commutazione centrato e una transconduttanza ottimale.
+    
+    \item \textbf{Bilanciamento PMOS/NMOS}: Data l'importanza della simmetria per l'immunità EMI, è stato posto particolare focus sul bilanciamento delle correnti attraverso i dispositivi PMOS e NMOS.
+    
+    \item \textbf{Range di modo comune}: Il dimensionamento è stato ottimizzato per garantire un adeguato range di modo comune, cruciale per le applicazioni a bassa tensione.
+    
+    \item \textbf{Consumo di potenza}: Sono state implementate strategie per contenere il consumo di potenza, mantenendo le prestazioni desiderate.
+\end{itemize}
+
+% Qui si potrebbe inserire una tabella che riassume i dimensionamenti chiave per entrambe le architetture
+
+\section{Parametri di Valutazione delle Prestazioni}
+
+Per valutare comparativamente le prestazioni degli amplificatori in presenza di EMI, sono stati considerati i seguenti parametri:
+
+\subsection{Parametri AC Convenzionali}
+\begin{itemize}
+    \item \textbf{Guadagno in tensione (Av)}: Determinante per l'accuratezza dell'amplificatore.
+    
+    \item \textbf{Prodotto guadagno-banda (GBW)}: Indicativo della velocità dell'amplificatore.
+    
+    \item \textbf{Margine di fase (PM)}: Cruciale per la stabilità del sistema.
+    
+    \item \textbf{Slew rate (SR+ e SR-)}: L'asimmetria tra SR+ e SR- è un indicatore della potenziale suscettibilità EMI.
+\end{itemize}
+
+\subsection{Parametri di Immunità EMI}
+\begin{itemize}
+    \item \textbf{Offset indotto da EMI}: Misurato come lo spostamento della tensione di uscita DC in presenza di un segnale EMI.
+    
+    \item \textbf{Rapporto di Reiezione EMI (EMIRR)}: Quantifica la capacità dell'amplificatore di respingere i disturbi elettromagnetici.
+    
+    \item \textbf{Risposta in frequenza alla EMI}: Analizza come varia la suscettibilità in funzione della frequenza del disturbo.
+    
+    \item \textbf{Effetto dell'ampiezza EMI}: Valuta la linearità della risposta del circuito al variare dell'ampiezza del segnale interferente.
+\end{itemize}
+
+\subsection{Altri Parametri Rilevanti}
+\begin{itemize}
+    \item \textbf{Rapporto di reiezione di modo comune (CMRR)}: Importante per valutare la risposta ai disturbi di modo comune.
+    
+    \item \textbf{Rapporto di reiezione dell'alimentazione (PSRR)}: Indicativo della robustezza ai disturbi sull'alimentazione.
+    
+    \item \textbf{Potenza dissipata}: Cruciale per applicazioni a bassa potenza.
+    
+    \item \textbf{Area di silicio occupata}: Rilevante per confrontare l'efficienza delle implementazioni.
+\end{itemize}
+
+\section{Considerazioni Preliminari sull'Immunità EMI}
+
+Sulla base dell'analisi teorica e delle simulazioni preliminari, sono state formulate le seguenti ipotesi riguardo alle prestazioni di immunità EMI delle due architetture:
+
+\subsection{Vantaggi Previsti dell'Architettura Nauta}
+
+\begin{itemize}
+    \item \textbf{Maggiore simmetria intrinseca}: La struttura basata su invertitori dovrebbe garantire una risposta più simmetrica ai disturbi, riducendo la rettificazione non lineare.
+    
+    \item \textbf{Minore sensibilità alla frequenza EMI}: L'assenza di nodi interni potrebbe ridurre la variazione della suscettibilità in funzione della frequenza.
+    
+    \item \textbf{Migliore comportamento agli estremi della banda}: La risposta più simmetrica dovrebbe mitigare i picchi di suscettibilità alle alte frequenze.
+\end{itemize}
+
+\subsection{Sfide Potenziali dell'Architettura Nauta}
+
+\begin{itemize}
+    \item \textbf{Limitazioni di guadagno}: Il guadagno intrinsecamente limitato potrebbe richiedere stadi aggiuntivi, introducendo potenziali vulnerabilità.
+    
+    \item \textbf{Sensibilità alle variazioni di processo}: La dipendenza da un preciso bilanciamento PMOS/NMOS potrebbe rendere le prestazioni più sensibili alle variazioni di processo.
+    
+    \item \textbf{Consumo di potenza}: L'implementazione classica potrebbe richiedere un maggiore consumo di potenza rispetto ad alcune varianti dell'architettura Miller.
+\end{itemize}
+
+\section{Conclusioni}
+
+Questo capitolo ha presentato il framework metodologico per la valutazione comparativa dell'immunità EMI degli amplificatori basati sulle architetture Miller e Nauta. L'approccio sistematico sviluppato permette di quantificare obiettivamente le prestazioni in presenza di disturbi elettromagnetici, considerando diversi punti di iniezione, frequenze e ampiezze.
+
+La semplice topologia circuitale dell'amplificatore Nauta, priva di specchi di corrente e coppie differenziali, offre potenzialmente vantaggi significativi in termini di immunità EMI. Le simulazioni dettagliate e i risultati quantitativi di questo confronto saranno presentati e discussi nel capitolo successivo, fornendo indicazioni concrete sulla superiorità relativa di ciascuna architettura in diversi scenari applicativi.
+
+% Riferimenti bibliografici verranno gestiti automaticamente dal sistema BibTeX

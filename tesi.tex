@@ -1,61 +1,100 @@
-\documentclass[oneside, a4paper]{book}
+\documentclass[12pt,oneside,a4paper]{book}
+
+%----------------- LINGUA E CARATTERI ----------------%
 \usepackage[italian]{babel}
-\usepackage[babel]{csquotes}
-\usepackage[a4paper,left=3.5cm,bottom=2.5cm,right=3.5cm,top=2.5cm]{geometry}
-\usepackage{subcaption}
-\usepackage{url}
-\usepackage{graphicx} 			
-\usepackage{sidecap}		
-\usepackage{setspace}		
-\usepackage{textcomp} 			
-\usepackage[table]{xcolor}		
-\usepackage{float}
-\usepackage{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+%\usepackage{lmodern} % font pulito e leggibile
+\usepackage{mathpazo} % font accademico
+
+%----------------- GRAFICA & IMPOSTAZIONI ----------------%
+\usepackage[a4paper, top=3cm, bottom=3cm, left=3.5cm, right=3cm, headheight=28pt]{geometry}
+\usepackage[style=numeric-comp,backend=bibtex,natbib,sorting=none]{biblatex}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{sectsty}
 \usepackage{fancyhdr}
-\usepackage[nowrite,infront,standard,swapnames]{frontespizio}
-\usepackage{amsmath}            % subequations
-\usepackage{listings}           % code listing style    
-\usepackage[most]{tcolorbox}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{float}
 \usepackage{xcolor}
-\usepackage[nowrite,infront,standard,swapnames]{frontespizio}
-\usepackage{sectsty} % to use command to centering section and chapter titles
-\usepackage[style=numeric-comp,useprefix,hyperref,backend=bibtex,natbib,sorting=none]{biblatex}
-
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{tocloft}
+\usepackage{needspace}
+\usepackage{amsmath}
+\usepackage{csquotes}
+\usepackage{listings}
 \addbibresource{./bib/bibliography.bib}
-\defbibheading{bibliography}{\subsection*{Bibliography}}
-% Set link border color none. See more options: https://en.wikibooks.org/wiki/LaTeX/Hyperlinks
-\hypersetup{hidelinks}
 
-%% Add blank page without increase the page number
-% \shipout\null
+%----------------- FONT E INTERLINEA ----------------%
+\AtBeginDocument{
+  \fontsize{13pt}{15pt}\selectfont  % corpo testo leggibile
+  \setstretch{1.8}                   % interlinea solo testo
+  \setlength{\parindent}{0pt}       % niente rientro
+  \setlength{\parskip}{0.9\baselineskip} % spazio tra paragrafi
+}
 
-%% Increase / decrease page number
-% \stepcounter{page}{numtoincordec}
+%----------------- FRONTESPIZIO ----------------%
+\usepackage[nowrite,infront,standard,swapnames]{frontespizio}
 
-% To center chapter and section text
-%\allsectionsfont{\centering}
-\fontsize{12pt}{16pt}\selectfont % font size for the text
-%\chapterfont{\fontsize{16pt}{20pt}\selectfont} % font size for the chapter title
-\setstretch{1.5} % line spacing
-\setlength{\parindent}{0pt} % no indentation
+%----------------- TITOLI ----------------%
+\allsectionsfont{\centering\bfseries} % titoli centrati e in grassetto
+\chapterfont{\Huge\bfseries\centering} 
+\titleformat{\chapter}[display]
+  {\normalfont\Huge\bfseries\centering}
+  {\chaptername\ \thechapter}{20pt}{\Huge}
+\titlespacing*{\chapter}{0pt}{0pt}{20pt}
 
+%----------------- PAGINE ----------------%
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[R]{\thepage}
+\fancyhead[L]{\leftmark}
+\renewcommand{\headrulewidth}{0.4pt}
+
+%----------------- LINK ----------------%
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    citecolor=blue,
+    urlcolor=blue,
+    pdfborder={0 0 0}
+}
+
+%----------------- INDICE ----------------%
+\renewcommand{\cftchapfont}{\normalfont}
+\renewcommand{\cftchappagefont}{\normalfont}
+\renewcommand{\cftchapleader}{\cftdotfill{\cftdotsep}}
+
+%----------------- DOCUMENTO ----------------%
 \begin{document}
 
-    % Skip a line at the end of paragraph
-    \setlength{\parskip}{\baselineskip} 
-
-    % Frontespizio page
+    %--------- FRONTESPIZIO ---------%
     \begin{frontespizio}
     \end{frontespizio}
 
     % Blank page between frontespizio and toc
     \shipout\null
 
-    % ToC
+    %--------- PAGINE PRELIMINARI ---------%
+    \cleardoublepage
+    \pagenumbering{Roman}
     \tableofcontents
+    \cleardoublepage
+
+
+
+    % Roman page numbering for front matter
+    \pagenumbering{Roman}    
 
     % Abstract
-    \include{res/chapters/abstract/abstract} 
+    \include{res/chapters/abstract/abstract}
+
+    % Switch to Arabic page numbering after ToC
+    \clearpage
+    \pagenumbering{arabic}
 
     % Chapter 1
     \include{res/chapters/ch1/chapter}
@@ -75,7 +114,17 @@
     % Chapter 6
     \include{res/chapters/ch6/chapter}
 
-    % Bibliography
+    %--------- BIBLIOGRAFIA ---------%
+    \cleardoublepage
     \printbibliography[heading=bibintoc]
+
+    %--------- APPENDICI  ---------%
+    % \appendix
+    % \chapter{Appendice A}
+
+    %--------- LISTE ---------%
+    \cleardoublepage
+    \listoffigures
+    \listoftables
 
 \end{document}
