@@ -13,6 +13,7 @@
 \usepackage{setspace}
 \usepackage{titlesec}
 \usepackage{sectsty}
+\usepackage{microtype} % miglioramento spaziatura
 \usepackage{fancyhdr}
 \usepackage{graphicx}
 \usepackage{caption}
@@ -26,6 +27,15 @@
 \usepackage{amsmath}
 \usepackage{csquotes}
 \usepackage{listings}
+
+\definecolor{unibs}{HTML}{3D5895}
+\definecolor{whitesmoke}{HTML}{F5F5F5}
+\usepackage[textwidth=2.5cm, size=scriptsize, color=unibs, textcolor=whitesmoke]{todonotes}
+
+%----------------- FRONTESPIZIO ----------------%
+\usepackage[nowrite,infront,standard,swapnames]{frontespizio}
+
+%----------------- BIBLIOGRAFIA ----------------%
 \addbibresource{./bib/bibliography.bib}
 
 %----------------- FONT E INTERLINEA ----------------%
@@ -35,9 +45,8 @@
   \setlength{\parindent}{0pt}       % niente rientro
   \setlength{\parskip}{0.9\baselineskip} % spazio tra paragrafi
 }
-
-%----------------- FRONTESPIZIO ----------------%
-\usepackage[nowrite,infront,standard,swapnames]{frontespizio}
+\setlength{\marginparwidth}{2.5cm} % larghezza margine note
+\setlength{\emergencystretch}{1em}
 
 %----------------- TITOLI ----------------%
 \allsectionsfont{\centering\bfseries} % titoli centrati e in grassetto
@@ -80,6 +89,7 @@
 
     %--------- PAGINE PRELIMINARI ---------%
     \cleardoublepage
+    \listoftodos
     \pagenumbering{Roman}
     \tableofcontents
     \cleardoublepage

@@ -1,24 +1,32 @@
 \babel@toc {italian}{}\relax 
 \babel@toc {italian}{}\relax 
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Evoluzione delle tensioni di alimentazione nei circuiti integrati CMOS negli ultimi decenni.}}{2}{figure.caption.2}%
-\contentsline {figure}{\numberline {1.2}{\ignorespaces Configurazione bulk-driven di un transistor MOS.}}{4}{figure.caption.3}%
-\contentsline {figure}{\numberline {1.3}{\ignorespaces Configurazione bulk-driven di un amplificatore.}}{5}{figure.caption.4}%
-\contentsline {figure}{\numberline {1.4}{\ignorespaces Schema circuitale dell'amplificatore bulk-driven con immunità EMI migliorata proposto in \blx@tocontentsinit {0}\cite {Bulk-Driven_CMOS_Amplifier_With_High_EMI_Immunity}.}}{6}{figure.caption.5}%
-\contentsline {figure}{\numberline {1.5}{\ignorespaces Struttura Selfcascode per transistor NMOS.}}{7}{figure.caption.6}%
-\contentsline {figure}{\numberline {1.6}{\ignorespaces Comportamento digitale e analogico dell'inverter CMOS \blx@tocontentsinit {0}\cite {EMI_Immunity_of_the_Nauta_Inverter-Based_Amplifier}}}{8}{figure.caption.7}%
-\contentsline {figure}{\numberline {1.7}{\ignorespaces Schema circuitale dell'amplificatore Single-Ended Inverter-based (SEIA).}}{9}{figure.caption.8}%
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Evoluzione delle tensioni di alimentazione nei circuiti integrati CMOS negli ultimi decenni.}}{2}{figure.caption.3}%
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Configurazione bulk-driven di un transistor MOS.}}{4}{figure.caption.4}%
+\contentsline {figure}{\numberline {1.3}{\ignorespaces Configurazione bulk-driven di un amplificatore.}}{5}{figure.caption.5}%
+\contentsline {figure}{\numberline {1.4}{\ignorespaces Schema circuitale dell'amplificatore bulk-driven con immunità EMI migliorata proposto in \blx@tocontentsinit {0}\cite {Bulk-Driven_CMOS_Amplifier_With_High_EMI_Immunity}.}}{6}{figure.caption.6}%
+\contentsline {figure}{\numberline {1.5}{\ignorespaces Struttura Selfcascode per transistor NMOS.}}{7}{figure.caption.7}%
+\contentsline {figure}{\numberline {1.6}{\ignorespaces Comportamento digitale e analogico dell'inverter CMOS \blx@tocontentsinit {0}\cite {EMI_Immunity_of_the_Nauta_Inverter-Based_Amplifier}}}{8}{figure.caption.8}%
+\contentsline {figure}{\numberline {1.7}{\ignorespaces Schema circuitale dell'amplificatore Single-Ended Inverter-based (SEIA).}}{9}{figure.caption.9}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Architettura completa del Nauta OTA}}{11}{figure.caption.9}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Architettura Nauta OTA a due stadi}}{16}{figure.caption.10}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Architettura del Calibration-Less Nauta OTA}}{17}{figure.caption.11}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Architettura completa del Nauta OTA}}{11}{figure.caption.10}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Architettura Nauta OTA a due stadi}}{16}{figure.caption.11}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Architettura del Calibration-Less Nauta OTA}}{17}{figure.caption.12}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Rappresentazione dell'inquinamento elettromagnetico nell'ambiente moderno}}{21}{figure.caption.12}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Classificazione delle tipologie di sorgenti di interferenza elettromagnetica}}{22}{figure.caption.13}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Principali tipologie di propagazione delle interferenze nei circuiti integrati}}{24}{figure.caption.14}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Effetto delle EMI sull'uscita di un amplificatore operazionale in configurazione \textit {voltage follower}}}{25}{figure.caption.15}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Configurazione tipica per il test di suscettibilità alle \textit {EMI} di un amplificatore operazionale}}{27}{figure.caption.16}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Esempio di simulazione della risposta di un amplificatore operazionale alle EMI}}{28}{figure.caption.17}%
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Amplificatore di classe AB con topologia simmetrica per aumentare l'immunità EMI.}}{30}{figure.caption.18}%
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Confronto dell'offset indotto da EMI nell'amplificatore basato su inverter (SEIA) e nell'amplificatore Miller tradizionale \blx@tocontentsinit {0}\cite {EMI_Immunity_of_the_Nauta_Inverter-Based_Amplifier}.}}{32}{figure.caption.19}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Rappresentazione dell'inquinamento elettromagnetico nell'ambiente moderno}}{21}{figure.caption.13}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Classificazione delle tipologie di sorgenti di interferenza elettromagnetica}}{22}{figure.caption.14}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Principali tipologie di propagazione delle interferenze nei circuiti integrati}}{24}{figure.caption.15}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Effetto delle EMI sull'uscita di un amplificatore operazionale in configurazione \textit {voltage follower}}}{26}{figure.caption.16}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Configurazione tipica per il test di suscettibilità alle \textit {EMI} di un amplificatore operazionale}}{28}{figure.caption.17}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Esempio di simulazione della risposta di un amplificatore operazionale alle EMI}}{29}{figure.caption.18}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Amplificatore di classe AB con topologia simmetrica per aumentare l'immunità EMI.}}{30}{figure.caption.19}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Confronto dell'offset indotto da EMI nell'amplificatore basato su inverter (SEIA) e nell'amplificatore Miller tradizionale \blx@tocontentsinit {0}\cite {EMI_Immunity_of_the_Nauta_Inverter-Based_Amplifier}.}}{33}{figure.caption.20}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Schema circuitale dell'architettura Miller.}}{36}{figure.caption.21}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Schema circuitale dell'architettura Nauta.}}{37}{figure.caption.22}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Schema circuitale dell'amplificatore Miller a singolo stadio.}}{39}{figure.caption.24}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Schema circuitale dell'amplificatore Miller a due stadi.}}{39}{figure.caption.25}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Schema circuitale dell'amplificatore Nauta a singolo stadio.}}{39}{figure.caption.26}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Schema circuitale dell'amplificatore Nauta a due stadi.}}{40}{figure.caption.27}%
+\addvspace {10\p@ }
 \addvspace {10\p@ }

@@ -6,7 +6,7 @@ Con il termine interferenze elettromagnetiche (EMI, \textit{Electromagnetic Inte
 Negli ultimi decenni, il livello di inquinamento elettromagnetico è aumentato in modo significativo. Questo incremento è principalmente dovuto alla crescente diffusione di reti di connessione wireless, dispositivi elettronici portatili e sistemi di comunicazione sempre più complessi che hanno reso l'ambiente elettromagnetico moderno estremamente congestionato.
 
 % Qui si potrebbe inserire un'immagine sull'inquinamento elettromagnetico
-\begin{figure}[ht]
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.7\textwidth]{img/inquinamento-elettromagnetico.png}
     \caption{Rappresentazione dell'inquinamento elettromagnetico nell'ambiente moderno}
@@ -16,9 +16,9 @@ Negli ultimi decenni, il livello di inquinamento elettromagnetico è aumentato i
 Le \textit{EMI} possono essere generate da diverse sorgenti che generalmente si suddividono in due categorie principali. La prima comprende le sorgenti naturali, come i fenomeni atmosferici, le radiazioni cosmiche e le scariche elettrostatiche naturali. La seconda invece include le sorgenti artificiali, create dall'uomo, che possono essere ulteriormente classificate in emissioni volontarie ed involontarie. Le emissioni volontarie derivano da sistemi elettronici che utilizzano intenzionalmente la radiazione elettromagnetica per il loro funzionamento, come apparati di telecomunicazione, radar e stazioni radio-TV. Le emissioni involontarie, invece, sono radiazioni indesiderate generate durante il normale funzionamento di apparecchiature elettriche ed elettroniche, come le commutazioni in circuiti digitali, i motori elettrici e gli inverter.
 
 % Qui si potrebbe inserire un'immagine che mostra la classificazione delle sorgenti di interferenza
-\begin{figure}[ht]
+\begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\textwidth]{img/tipi-di-emi.png}
+    \includegraphics[width=0.8\textwidth]{img/emi-diagram.pdf}
     \caption{Classificazione delle tipologie di sorgenti di interferenza elettromagnetica}
     \label{fig:emi_sources}
 \end{figure}
@@ -40,9 +40,9 @@ Nel contesto dei circuiti integrati, la comprensione dei meccanismi di propagazi
 Nel caso delle interferenze irradiate, è il dispositivo stesso a fungere da antenna ricevente per le interferenze. L'analisi di questo tipo di interferenze richiede l'applicazione della teoria dei campi elettromagnetici. Tuttavia, nel caso dei circuiti integrati moderni, questo tipo di interferenze è attualmente meno rilevante rispetto alle interferenze condotte, principalmente perché le dimensioni dei chip sono generalmente ridotte rispetto alla lunghezza d'onda ($\lambda$) delle interferenze elettromagnetiche più comuni, rendendo i circuiti integrati antenne poco efficienti per le frequenze tipiche delle EMI.
 
 % Qui si potrebbe inserire un'immagine sulle modalità di propagazione delle EMI
-\begin{figure}[ht]
+\begin{figure}[H]
     \centering
-    \includegraphics[width=0.6\textwidth]{img/propagazione-emi.png}
+    \includegraphics[width=0.8\textwidth]{img/emi-types.pdf}
     \caption{Principali tipologie di propagazione delle interferenze nei circuiti integrati}
     \label{fig:propagazione_emi}
 \end{figure}
@@ -57,7 +57,7 @@ Tra i vari componenti presenti in una apparecchiatura elettronica, quelli che ri
 La precisione dei circuiti analogici dipende fortemente dalla stabilità dei punti di lavoro, che possono essere alterati dalle EMI \cite{TR2016}. Inoltre, questi circuiti operano spesso con segnali di ampiezza ridotta, particolarmente vulnerabili alle interferenze. Al contrario, i segnali digitali hanno un range di valori discreti per definire i livelli logici 0 e 1, e finché il disturbo non modifica il segnale portandolo al di fuori di tale range, il suo effetto è praticamente nullo o comunque limitato a fenomeni come il jitter nei segnali di clock.
 
 % Qui si potrebbe inserire un'immagine di confronto tra segnali analogici e digitali in presenza di EMI
-\begin{figure}[ht]
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.7\textwidth]{img/emi-effect-input-pins.pdf}
     \caption{Effetto delle EMI sull'uscita di un amplificatore operazionale in configurazione \textit{voltage follower}}
@@ -82,7 +82,7 @@ Per studiare efficacemente l'impatto delle \textit{EMI} sui circuiti integrati, 
 Per valutare l'impatto delle \textit{EMI} sui circuiti analogici, viene generalmente utilizzata una configurazione di test standard che prevede il circuito in esame collegato in configurazione \textit{voltage follower} (inseguitore di tensione), con segnali interferenti sinusoidali sovrapposti ai terminali di ingresso o di alimentazione \cite{finalprint, Redoute-Richelli_EMC_Magazine}. La misurazione dello spostamento della tensione di uscita (offset) rispetto al valore atteso in assenza di interferenze permette di quantificare la sensibilità del circuito alle \textit{EMI} \cite{Measurements_of_EMI_susceptibility_of_precision_voltage_references}.
 
 % Qui si potrebbe inserire un'immagine del setup di test EMI
-\begin{figure}[ht]
+\begin{figure}[H]
     \centering
     %\includegraphics[width=0.7\textwidth]{images/emi_test_setup.png}
     TODO: Inserire un'immagine del setup di test EMI
@@ -95,7 +95,7 @@ Questa configurazione rappresenta il caso peggiore poiché la retroazione dirett
 Dopo aver progettato gli amplificatori operazionali, si effettueranno delle simulazioni, grazie all'ausilio di simulatori circuitali come Cadence, al fine di analizzare il loro comportamento quando sui loro ingressi sono presenti disturbi ad alta ed altissima frequenza. Questa metodologia permette di caratterizzare in modo completo la risposta dei circuiti in esame a diverse tipologie di interferenze elettromagnetiche, fornendo informazioni preziose per il miglioramento delle loro prestazioni.
 
 % Qui si potrebbe inserire un'immagine di una simulazione EMI
-\begin{figure}[ht]
+\begin{figure}[H]
     \centering
     %\includegraphics[width=0.8\textwidth]{images/emi_simulation.png}
     TODO: Inserire un'immagine della simulazione EMI
@@ -114,7 +114,7 @@ L'amplificatore di classe AB è una configurazione circuitale che combina le car
 L'amplificatore di classe AB proposto da Richelli presenta una topologia simmetrica che migliora l'immunità EMI grazie a un bilanciamento ottimale delle correnti e alla riduzione delle capacità parassite. Inoltre, la configurazione simmetrica consente di ottenere un'uscita differenziale, che contribuisce a ridurre ulteriormente il rumore e le interferenze. La figura \ref{fig:class_ab_symmetric} mostra un esempio di amplificatore di classe AB con topologia simmetrica.
 
 % Inserire un'immagine dell'amplificatore di classe AB con topologia simmetrica
-\begin{figure}[htbp]
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.7\textwidth]{img/ultra-low-voltage-simmetrical-amplifier.pdf}
     \caption{Amplificatore di classe AB con topologia simmetrica per aumentare l'immunità EMI.}
@@ -134,7 +134,7 @@ Uno degli aspetti più interessanti degli amplificatori basati su inverter è la
 I risultati sperimentali riportati in \cite{EMI_Immunity_of_the_Nauta_Inverter-Based_Amplifier} mostrano che l'offset indotto da EMI negli amplificatori basati su inverter è circa un ordine di grandezza inferiore rispetto a quello degli amplificatori Miller convenzionali, in un ampio intervallo di frequenze e per diverse condizioni operative.
 
 % Inserire un grafico che confronta l'offset EMI indotto nell'amplificatore SEIA rispetto a un amplificatore Miller
-\begin{figure}[htbp]
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.8\textwidth]{img/inverter-based-vs-miller-emi-comparison.pdf}
     \caption{Confronto dell'offset indotto da EMI nell'amplificatore basato su inverter (SEIA) e nell'amplificatore Miller tradizionale \cite{EMI_Immunity_of_the_Nauta_Inverter-Based_Amplifier}.}

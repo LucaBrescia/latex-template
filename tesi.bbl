@@ -47,8 +47,9 @@
     \field{labeltitlesource}{title}
     \field{number}{3-4}
     \field{pages}{654\bibrangedash 661}
-    \field{title}{Design of a folded cascode opamp with increased immunity to
-  conducted electromagnetic interference in 0.18 $\mu$m CMOS}
+    \field{title}{\href{file:./res/papers/finalprint.pdf}{Design of a folded
+  cascode opamp with increased immunity to conducted electromagnetic
+  interference in 0.18 $\mu$m CMOS}}
     \field{volume}{55}
     \field{journaltitle}{Microelectronics Reliability}
     \field{year}{2015}
@@ -90,13 +91,14 @@
     \field{labeltitlesource}{title}
     \field{number}{6}
     \field{pages}{1425\bibrangedash 1434}
-    \field{title}{Bulk-Driven CMOS Amplifier With High EMI Immunity}
+  \field{title}{\href{file:./res/papers/Bulk-Driven_CMOS_Amplifier_With_High_EMI_Immunity.pdf}{Bulk-Driven
+  CMOS Amplifier With High EMI Immunity}}
     \field{volume}{57}
     \field{journaltitle}{IEEE Transactions on Electromagnetic Compatibility}
     \field{year}{2015}
   \endentry
 
-  \entry{Tesi.pdf}{thesis}{}
+  \entry{tesi}{thesis}{}
     \name{author}{1}{}{%
       {{hash=ZC}{%
          family={Zuccarotto},
@@ -109,8 +111,9 @@
     \strng{fullhash}{ZC1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{title}{Progetto di un Amplificatore Operazionale basato su struttura
-  Selfcascode in tecnologia CMOS 0.18$\mu$m}
+    \field{title}{\href{file:./res/papers/Tesi.pdf}{Progetto di un
+  Amplificatore Operazionale basato su struttura Selfcascode in tecnologia CMOS
+  0.18$\mu$m}}
     \list{institution}{1}{%
       {Università degli Studi di Brescia}%
     }
@@ -136,8 +139,8 @@
     \field{labeltitlesource}{title}
     \field{number}{2}
     \field{pages}{142\bibrangedash 153}
-    \field{title}{A CMOS Transconductance-C Filter Technique for Very High
-  Frequencies}
+  \field{title}{\href{file:./res/papers/A_CMOS_transconductance-C_filter_technique_for_very_high_frequencies.pdf}{A
+  CMOS Transconductance-C Filter Technique for Very High Frequencies}}
     \field{volume}{27}
     \field{journaltitle}{IEEE Journal of Solid-State Circuits}
     \field{year}{1992}
@@ -172,7 +175,8 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{pages}{15\bibrangedash 18}
-    \field{title}{EMI Immunity of the Nauta Inverter-Based Amplifier}
+  \field{title}{\href{file:./res/papers/EMI_Immunity_of_the_Nauta_Inverter-Based_Amplifier.pdf}{EMI
+  Immunity of the Nauta Inverter-Based Amplifier}}
     \field{journaltitle}{IEEE International Workshop on the Electromagnetic
   Compatibility of Integrated Circuits}
     \field{year}{2024}
@@ -196,14 +200,14 @@
     \field{labeltitlesource}{title}
     \field{number}{2}
     \field{pages}{142\bibrangedash 153}
-    \field{title}{A CMOS transconductance-C filter technique for very high
-  frequencies}
+  \field{title}{\href{file:./res/papers/A_CMOS_transconductance-C_filter_technique_for_very_high_frequencies.pdf}{A
+  CMOS transconductance-C filter technique for very high frequencies}}
     \field{volume}{27}
     \field{journaltitle}{IEEE Journal of Solid-State Circuits}
     \field{year}{1992}
   \endentry
 
-  \entry{Braga2017}{inproceedings}{}
+  \entry{Braga2017}{article}{}
     \name{author}{4}{}{%
       {{hash=BRAS}{%
          family={Braga},
@@ -239,8 +243,9 @@
     \field{booktitle}{IEEE 8th Latin American Symposium on Circuits \& Systems
   (LASCAS)}
     \field{pages}{1\bibrangedash 4}
-    \field{title}{Calibration-less {Nauta OTA} operating at 0.25-{V} power
-  supply in a 130-nm digital {CMOS} process}
+  \field{title}{\href{file:./res/papers/Calibration-less_Nauta_OTA_operating_at_0.25-V_power_supply_in_a_130-nm_digital_CMOS_process.pdf}{Calibration-less
+  {Nauta OTA} operating at 0.25-{V} power supply in a 130-nm digital {CMOS}
+  process}}
     \field{year}{2017}
   \endentry
 
@@ -266,8 +271,8 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{pages}{558\bibrangedash 561}
-    \field{title}{Design considerations for an Ultra-Low Voltage Amplifier with
-  High EMI Immunity}
+  \field{title}{\href{file:./res/papers/Design_considerations_for_an_ultra-low_voltage_amplifier_with_high_EMI_immunity.pdf}{Design
+  considerations for an Ultra-Low Voltage Amplifier with High EMI Immunity}}
     \field{journaltitle}{IEEE International Conference on Electronics, Circuits
   and Systems}
     \field{year}{2008}
@@ -297,8 +302,8 @@
     \field{labeltitlesource}{title}
     \field{number}{2}
     \field{pages}{92\bibrangedash 100}
-    \field{title}{A methodological approach to EMI resistant analog integrated
-  circuit design}
+  \field{title}{\href{file:./res/papers/Redoute-Richelli_-_EMC_Magazine.pdf}{A
+  methodological approach to EMI resistant analog integrated circuit design}}
     \field{volume}{4}
     \field{journaltitle}{IEEE Electromagnetic Compatibility Magazine}
     \field{year}{2015}
@@ -328,8 +333,8 @@
     \field{labeltitlesource}{title}
     \field{number}{4}
     \field{pages}{1271\bibrangedash 1272}
-    \field{title}{Susceptibility of the Instrumentation to Conducted EMI
-  Injected Through the Ground Plane}
+  \field{title}{\href{file:./res/papers/Susceptibility_of_the_Instrumentation_to_Conducted_EMI_Injected_Through_the_Ground_Plane.pdf}{Susceptibility
+  of the Instrumentation to Conducted EMI Injected Through the Ground Plane}}
     \field{volume}{65}
     \field{journaltitle}{IEEE Transactions on Electromagnetic Compatibility}
     \field{year}{2023}
@@ -365,8 +370,9 @@
     \field{labeltitlesource}{title}
     \field{number}{6}
     \field{pages}{2049\bibrangedash 2051}
-    \field{title}{An EMI-Resistant Common-Mode Cancelation Differential Input
-  Stage in UMC 180 nm CMOS}
+  \field{title}{\href{file:./res/papers/An_EMI-Resistant_Common-Mode_Cancelation_Differential_Input_Stage_in_UMC_180_nm_CMOS.pdf}{An
+  EMI-Resistant Common-Mode Cancelation Differential Input Stage in UMC 180 nm
+  CMOS}}
     \field{volume}{59}
     \field{journaltitle}{IEEE Transactions on Electromagnetic Compatibility}
     \field{year}{2017}
@@ -408,8 +414,9 @@
     \field{labeltitlesource}{title}
     \field{number}{3}
     \field{pages}{1369\bibrangedash 1379}
-    \field{title}{Susceptibility of Operational Amplifiers to Conducted EMI
-  Injected Through the Ground Plane into Their Output Terminal}
+    \field{title}{\href{file:./res/papers/TR2016.pdf}{Susceptibility of
+  Operational Amplifiers to Conducted EMI Injected Through the Ground Plane
+  into Their Output Terminal}}
     \field{volume}{65}
     \field{journaltitle}{IEEE Transactions on Reliability}
     \field{year}{2016}
@@ -456,8 +463,8 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{pages}{162\bibrangedash 167}
-    \field{title}{Measurements of EMI Susceptibility of Precision Voltage
-  References}
+  \field{title}{\href{file:./res/papers/Measurements_of_EMI_susceptibility_of_precision_voltage_references.pdf}{Measurements
+  of EMI Susceptibility of Precision Voltage References}}
     \field{journaltitle}{IEEE International Workshop on the Electromagnetic
   Compatibility of Integrated Circuits}
     \field{year}{2017}
