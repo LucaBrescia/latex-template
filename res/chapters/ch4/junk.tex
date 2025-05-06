@@ -1,0 +1,113 @@
+\section{Testo aggiuntivo scartato}
+\subsection{Considerazioni Preliminari sull'Immunità EMI}
+
+Sulla base dell'analisi teorica e delle simulazioni preliminari, sono state formulate le seguenti ipotesi riguardo alle prestazioni di immunità EMI delle due architetture:
+
+\subsubsection{Vantaggi Previsti dell'Architettura Nauta}
+
+\begin{itemize}
+    \item \textbf{Maggiore simmetria intrinseca}: La struttura basata su inverter dovrebbe garantire una risposta più simmetrica ai disturbi, riducendo la rettificazione non lineare.
+    
+    \item \textbf{Minore sensibilità alla frequenza EMI}: L'assenza di nodi interni potrebbe ridurre la variazione della suscettibilità in funzione della frequenza.
+    
+    \item \textbf{Migliore comportamento agli estremi della banda}: La risposta più simmetrica dovrebbe mitigare i picchi di suscettibilità alle alte frequenze.
+\end{itemize}
+
+\subsubsection{Sfide Potenziali dell'Architettura Nauta}
+
+\begin{itemize}
+    \item \textbf{Limitazioni di guadagno}: Il guadagno intrinsecamente limitato potrebbe richiedere stadi aggiuntivi, introducendo potenziali vulnerabilità.
+    
+    \item \textbf{Sensibilità alle variazioni di processo}: La dipendenza da un preciso bilanciamento PMOS/NMOS potrebbe rendere le prestazioni più sensibili alle variazioni di processo.
+    
+    \item \textbf{Consumo di potenza}: L'implementazione classica potrebbe richiedere un maggiore consumo di potenza rispetto ad alcune varianti dell'architettura Miller.
+\end{itemize}
+
+\subsection{Conclusioni}
+
+Questo capitolo ha presentato il framework metodologico per la valutazione comparativa dell'immunità EMI degli amplificatori basati sulle architetture Miller e Nauta. L'approccio sistematico sviluppato permette di quantificare obiettivamente le prestazioni in presenza di disturbi elettromagnetici, considerando diversi punti di iniezione, frequenze e ampiezze.
+
+La semplice topologia circuitale dell'amplificatore Nauta, priva di specchi di corrente e coppie differenziali, offre potenzialmente vantaggi significativi in termini di immunità EMI. Le simulazioni dettagliate e i risultati quantitativi di questo confronto saranno presentati e discussi nel capitolo successivo, fornendo indicazioni concrete sulla superiorità relativa di ciascuna architettura in diversi scenari applicativi.
+
+% Riferimenti bibliografici verranno gestiti automaticamente dal sistema BibTeX
+
+\subsection{Fondamenti teorici dell'analisi EMI}
+
+\subsubsection{Formula dell'offset di tensione indotto dalle EMI}
+
+Secondo Redouté e Richelli \cite{Redoute-Richelli_EMC_Magazine}, l'offset di tensione indotto dalle EMI può essere espresso dalla seguente formula:
+
+\begin{equation}
+V_{OS} = \frac{1}{V_{GS} - V_{th}} \int_{-\infty}^{+\infty} |H_c(j\omega) \cdot V_c(j\omega) \cdot V_d(j\omega)| \cdot \cos\phi \cdot d\omega
+\end{equation}
+
+dove:
+\begin{equation}
+\phi = \arctan\left(\frac{\text{Im}\{H_c(j\omega) \cdot V_c(j\omega) \cdot V_d(j\omega)\}}{\text{Re}\{H_c(j\omega) \cdot V_c(j\omega) \cdot V_d(j\omega)\}}\right)
+\end{equation}
+
+e $H_c(j\omega)$ è la funzione di trasferimento per i segnali di modo comune, $V_{GS}$ è la tensione gate-source di polarizzazione, e $V_{th}$ è la tensione di soglia. Questa formula evidenzia che l'offset indotto dalle EMI dipende dalla funzione di trasferimento di modo comune, dall'ampiezza delle componenti di modo comune e differenziale, e dalla fase tra queste componenti.
+
+\subsubsection{Specificazione dei metodi di test e validazione}
+
+Per quanto riguarda la metodologia di analisi, Richelli et al. \cite{TR2016} descrivono la configurazione sperimentale standard:
+
+\begin{quote}
+``Per verificare il grado di immunità alle interferenze elettromagnetiche del dispositivo sono state eseguite delle simulazioni in cui si è utilizzato l'amplificatore in configurazione a inseguitore di tensione, a questo si è fornito in ingresso un segnale sinusoidale e si è rilevato il valore dell'offset di uscita al variare della frequenza iniettata.''
+\end{quote}
+
+\subsubsection{Validità dei risultati - livelli di segnale}
+
+Riguardo alle soglie minime per considerare validi i risultati, Zuccarotto \cite{tesi} osserva nell'analisi degli specchi di corrente:
+
+\begin{quote}
+``Per rendere lo specchio di corrente più robusto alle interferenze, senza modificarne la topologia, è consigliabile avere una corrente $I_{DC}$ che non sia confrontabile con la $i_{EMI}$.''
+\end{quote}
+
+Richelli et al. \cite{TR2016} forniscono questa importante osservazione sulla relazione tra livelli di segnale e validità dei risultati:
+
+\begin{quote}
+``EMI coupling at the power supply and input pins is weak (the voltage generators have a small internal resistance and we can consider $R_{par} = 50\Omega$ as the worst case). Conversely, the coupling is very pronounced at the output pin which is a higher impedance node.''
+\end{quote}
+
+\subsubsection{Modellazione degli effetti parassiti}
+
+Per modellare correttamente gli effetti parassiti che influenzano le prestazioni EMI, Zuccarotto \cite{tesi} utilizza:
+
+\begin{equation}
+C_{eq} \simeq C_{db2a} + C_{db4a}
+\end{equation}
+
+Dove la capacità parassita $C_{db}$ è dovuta alla giunzione drain-bulk polarizzata inversamente e descritta dalla formula:
+
+\begin{equation}
+C_j = \sqrt{\frac{q\epsilon_s N_B}{2(V_{bi} - V)}}
+\end{equation}
+
+Questa formula, estratta da \cite{tesi}, mostra come la capacità di svuotamento vari con la tensione applicata alla giunzione, influenzando così la risposta alle EMI.
+
+\subsubsection{Caratterizzazione della suscettibilità alle EMI}
+
+Per la caratterizzazione della suscettibilità alle EMI, Richelli et al. \cite{Measurements_of_EMI_susceptibility_of_precision_voltage_references} specificano:
+
+\begin{quote}
+``Il parametro utilizzato per valutare la suscettibilità alle EMI è la tensione di offset in uscita, misurata come lo scostamento del valore medio della tensione di uscita rispetto al valore nominale.''
+\end{quote}
+
+\subsubsection{Asimmetria dello slew rate}
+
+Riguardo all'asimmetria dello slew rate come causa di suscettibilità alle EMI, Zuccarotto \cite{tesi} osserva:
+
+\begin{quote}
+``L'asimmetria deriva dal fatto che le correnti di carica e scarica non sono necessariamente uguali, infatti nei diversi transistor gli effetti parassiti modificano tale valore. Tale limitazione diventa determinante al crescere della frequenza.''
+\end{quote}
+
+E aggiunge la formula che lega lo slew rate alla frequenza massima del segnale:
+
+\begin{equation}
+\max\left(\frac{dV_i(t)}{dt}\right) = \omega A
+\end{equation}
+
+\begin{quote}
+``Finché $\omega A \leq SR$ l'uscita segue l'ingresso senza problemi. Superata tale soglia, però, l'uscita risulta essere sempre più distorta rispetto al segnale d'ingresso.''
+\end{quote}

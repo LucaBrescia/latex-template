@@ -1,32 +1,66 @@
 \babel@toc {italian}{}\relax 
 \babel@toc {italian}{}\relax 
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Evoluzione delle tensioni di alimentazione nei circuiti integrati CMOS negli ultimi decenni.}}{2}{figure.caption.3}%
-\contentsline {figure}{\numberline {1.2}{\ignorespaces Configurazione bulk-driven di un transistor MOS.}}{4}{figure.caption.4}%
-\contentsline {figure}{\numberline {1.3}{\ignorespaces Configurazione bulk-driven di un amplificatore.}}{5}{figure.caption.5}%
-\contentsline {figure}{\numberline {1.4}{\ignorespaces Schema circuitale dell'amplificatore bulk-driven con immunità EMI migliorata proposto in \blx@tocontentsinit {0}\cite {Bulk-Driven_CMOS_Amplifier_With_High_EMI_Immunity}.}}{6}{figure.caption.6}%
-\contentsline {figure}{\numberline {1.5}{\ignorespaces Struttura Selfcascode per transistor NMOS.}}{7}{figure.caption.7}%
-\contentsline {figure}{\numberline {1.6}{\ignorespaces Comportamento digitale e analogico dell'inverter CMOS \blx@tocontentsinit {0}\cite {EMI_Immunity_of_the_Nauta_Inverter-Based_Amplifier}}}{8}{figure.caption.8}%
-\contentsline {figure}{\numberline {1.7}{\ignorespaces Schema circuitale dell'amplificatore Single-Ended Inverter-based (SEIA).}}{9}{figure.caption.9}%
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Evoluzione delle tensioni di alimentazione nei circuiti integrati CMOS negli ultimi decenni.}}{2}{figure.caption.2}%
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Configurazione bulk-driven di un transistor MOS.}}{4}{figure.caption.3}%
+\contentsline {figure}{\numberline {1.3}{\ignorespaces Configurazione bulk-driven di un amplificatore.}}{5}{figure.caption.4}%
+\contentsline {figure}{\numberline {1.4}{\ignorespaces Schema circuitale dell'amplificatore bulk-driven con immunità EMI migliorata proposto in \blx@tocontentsinit {0}\cite {Bulk-Driven_CMOS_Amplifier_With_High_EMI_Immunity}.}}{6}{figure.caption.5}%
+\contentsline {figure}{\numberline {1.5}{\ignorespaces Struttura Selfcascode per transistor NMOS.}}{7}{figure.caption.6}%
+\contentsline {figure}{\numberline {1.6}{\ignorespaces Comportamento digitale e analogico dell'inverter CMOS \blx@tocontentsinit {0}\cite {EMI_Immunity_of_the_Nauta_Inverter-Based_Amplifier}}}{8}{figure.caption.7}%
+\contentsline {figure}{\numberline {1.7}{\ignorespaces Schema circuitale dell'amplificatore Single-Ended Inverter-based (SEIA).}}{9}{figure.caption.8}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Architettura completa del Nauta OTA}}{11}{figure.caption.10}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Architettura Nauta OTA a due stadi}}{16}{figure.caption.11}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Architettura del Calibration-Less Nauta OTA}}{17}{figure.caption.12}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Architettura completa del Nauta OTA}}{11}{figure.caption.9}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Architettura Nauta OTA a due stadi}}{16}{figure.caption.10}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Architettura del Calibration-Less Nauta OTA}}{17}{figure.caption.11}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Rappresentazione dell'inquinamento elettromagnetico nell'ambiente moderno}}{21}{figure.caption.13}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Classificazione delle tipologie di sorgenti di interferenza elettromagnetica}}{22}{figure.caption.14}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Principali tipologie di propagazione delle interferenze nei circuiti integrati}}{24}{figure.caption.15}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Effetto delle EMI sull'uscita di un amplificatore operazionale in configurazione \textit {voltage follower}}}{26}{figure.caption.16}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Configurazione tipica per il test di suscettibilità alle \textit {EMI} di un amplificatore operazionale}}{28}{figure.caption.17}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Esempio di simulazione della risposta di un amplificatore operazionale alle EMI}}{29}{figure.caption.18}%
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Amplificatore di classe AB con topologia simmetrica per aumentare l'immunità EMI.}}{30}{figure.caption.19}%
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Confronto dell'offset indotto da EMI nell'amplificatore basato su inverter (SEIA) e nell'amplificatore Miller tradizionale \blx@tocontentsinit {0}\cite {EMI_Immunity_of_the_Nauta_Inverter-Based_Amplifier}.}}{33}{figure.caption.20}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Rappresentazione dell'inquinamento elettromagnetico nell'ambiente moderno}}{19}{figure.caption.12}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Classificazione delle tipologie di sorgenti di interferenza elettromagnetica}}{20}{figure.caption.13}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Principali tipologie di propagazione delle interferenze nei circuiti integrati}}{22}{figure.caption.14}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Effetto delle EMI sull'uscita di un amplificatore operazionale in configurazione \textit {voltage follower}}}{24}{figure.caption.15}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Configurazione a inseguitore di tensione, tipica per il test di suscettibilità alle \textit {EMI} di un amplificatore operazionale}}{26}{figure.caption.16}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Suddivisione delle frequenze dei segnali}}{27}{figure.caption.17}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Amplificatore di classe AB con topologia simmetrica per aumentare l'immunità EMI.}}{29}{figure.caption.18}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Confronto dell'offset indotto da EMI nell'amplificatore basato su inverter (SEIA) e nell'amplificatore Miller tradizionale \blx@tocontentsinit {0}\cite {EMI_Immunity_of_the_Nauta_Inverter-Based_Amplifier}.}}{31}{figure.caption.19}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Schema circuitale dell'architettura Miller.}}{36}{figure.caption.21}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Schema circuitale dell'architettura Nauta.}}{37}{figure.caption.22}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Schema circuitale dell'amplificatore Miller a singolo stadio.}}{39}{figure.caption.24}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Schema circuitale dell'amplificatore Miller a due stadi.}}{39}{figure.caption.25}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Schema circuitale dell'amplificatore Nauta a singolo stadio.}}{39}{figure.caption.26}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Schema circuitale dell'amplificatore Nauta a due stadi.}}{40}{figure.caption.27}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Schema circuitale dell'architettura Miller.}}{34}{figure.caption.20}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Schema circuitale dell'architettura Nauta.}}{35}{figure.caption.21}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Schema circuitale dell'amplificatore Miller a singolo stadio.}}{37}{figure.caption.22}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Schema circuitale dell'amplificatore Miller a due stadi con compensazione.}}{38}{figure.caption.23}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Schema circuitale dell'amplificatore Nauta a singolo stadio.}}{38}{figure.caption.24}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Schema circuitale dell'amplificatore Nauta a due stadi con compensazione.}}{38}{figure.caption.25}%
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Schematico di riferimento per l'OTA di Nauta a stadio singolo.}}{43}{figure.caption.27}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Schematico di riferimento per l'inverter dell'OTA di Nauta a stadio singolo.}}{44}{figure.caption.28}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Schematico di riferimento per la cella inverter base.}}{44}{figure.caption.29}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Risultati delle simulazioni per il guadagno di tensione ($A_V$) e la fase (Phase) dell'OTA di Nauta a stadio singolo con Valim = 0.5V.}}{47}{figure.caption.33}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Risultati delle simulazioni per il guadagno di tensione ($A_V$) e la fase (Phase) dell'OTA di Nauta a stadio singolo con Valim = 1V.}}{48}{figure.caption.34}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Risultati delle simulazioni per il guadagno di tensione ($A_V$) e la fase (Phase) dell'OTA di Nauta a stadio singolo con Valim = 1.8V.}}{49}{figure.caption.35}%
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Risultati delle simulazioni per l'emi rejection dell'OTA di Nauta a stadio singolo}}{52}{figure.caption.40}%
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Schematico di riferimento per l'OTA di Miller a stadio singolo.}}{53}{figure.caption.42}%
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Schematico del blocco \textit {single\_stage} per l'OTA di Miller a stadio singolo.}}{54}{figure.caption.43}%
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Risultati delle simulazioni per il guadagno di tensione ($A_V$) e la fase (Phase) dell'OTA di Miller a stadio singolo con Valim = 1V.}}{56}{figure.caption.47}%
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Risultati delle simulazioni per il guadagno di tensione ($A_V$) e la fase (Phase) dell'OTA di Miller a stadio singolo con Valim = 1.8V.}}{57}{figure.caption.48}%
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Risultati delle simulazioni per il rapporto di reiezione al modo comume (CMRR) e il range di modo comune (CMR) dell'OTA di Miller a stadio singolo con Valim = 1V.}}{58}{figure.caption.49}%
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Risultati delle simulazioni per il rapporto di reiezione al modo comume (CMRR) e il range di modo comune (CMR) dell'OTA di Miller a stadio singolo con Valim = 1.8V.}}{59}{figure.caption.50}%
+\contentsline {figure}{\numberline {5.14}{\ignorespaces Risultati delle simulazioni per l'emi rejection dell'OTA di Miller a stadio singolo.}}{61}{figure.caption.55}%
+\contentsline {figure}{\numberline {5.15}{\ignorespaces Schematico di riferimento per l'OTA di Nauta a stadio doppio.}}{62}{figure.caption.57}%
+\contentsline {figure}{\numberline {5.16}{\ignorespaces Schematico di riferimento per il blocco \textit {two\_stage\_NautaOTA} dell'OTA di Nauta a stadio doppio.}}{63}{figure.caption.58}%
+\contentsline {figure}{\numberline {5.17}{\ignorespaces Schematico di riferimento per il blocco \textit {OTA\_Nauta\_compensated} dell'OTA di Nauta a stadio doppio.}}{63}{figure.caption.59}%
+\contentsline {figure}{\numberline {5.18}{\ignorespaces Schematico di riferimento per la cella inverter base.}}{64}{figure.caption.60}%
+\contentsline {figure}{\numberline {5.19}{\ignorespaces Risultati delle simulazioni per il guadagno di tensione ($A_V$) e la fase (Phase) dell'OTA di Nauta a stadio doppio con Valim = 0.5V.}}{67}{figure.caption.63}%
+\contentsline {figure}{\numberline {5.20}{\ignorespaces Risultati delle simulazioni per il guadagno di tensione ($A_V$) e la fase (Phase) dell'OTA di Nauta a stadio doppio con Valim = 1V.}}{68}{figure.caption.64}%
+\contentsline {figure}{\numberline {5.21}{\ignorespaces Risultati delle simulazioni per il guadagno di tensione ($A_V$) e la fase (Phase) dell'OTA di Nauta a stadio doppio con Valim = 1.8V.}}{69}{figure.caption.65}%
+\contentsline {figure}{\numberline {5.22}{\ignorespaces Risultati delle simulazioni per il rapporto di reiezione al modo comume (CMRR) e il range di modo comune (CMR) dell'OTA di Nauta a stadio doppio con Valim = 0.5V.}}{70}{figure.caption.66}%
+\contentsline {figure}{\numberline {5.23}{\ignorespaces Risultati delle simulazioni per il rapporto di reiezione al modo comume (CMRR) e il range di modo comune (CMR) dell'OTA di Nauta a stadio doppio con Valim = 1V.}}{71}{figure.caption.67}%
+\contentsline {figure}{\numberline {5.24}{\ignorespaces Risultati delle simulazioni per il rapporto di reiezione al modo comume (CMRR) e il range di modo comune (CMR) dell'OTA di Nauta a stadio doppio con Valim = 1.8V.}}{72}{figure.caption.68}%
+\contentsline {figure}{\numberline {5.25}{\ignorespaces Risultati delle simulazioni per l'emi rejection dell'OTA di Nauta a stadio doppio.}}{74}{figure.caption.73}%
+\contentsline {figure}{\numberline {5.26}{\ignorespaces Schematico di riferimento per l'OTA di Miller a stadio doppio.}}{75}{figure.caption.75}%
+\contentsline {figure}{\numberline {5.27}{\ignorespaces Schematico di riferimento per il blocco \textit {two\_stage\_MillerOTA} dell'OTA di Miller a stadio doppio.}}{76}{figure.caption.76}%
+\contentsline {figure}{\numberline {5.28}{\ignorespaces Risultati delle simulazioni per il guadagno di tensione ($A_V$) e la fase (Phase) dell'OTA di Miller a stadio doppio con Valim = 1V.}}{79}{figure.caption.78}%
+\contentsline {figure}{\numberline {5.29}{\ignorespaces Risultati delle simulazioni per il guadagno di tensione ($A_V$) e la fase (Phase) dell'OTA di Miller a stadio doppio con Valim = 1.8V.}}{80}{figure.caption.79}%
+\contentsline {figure}{\numberline {5.30}{\ignorespaces Risultati delle simulazioni per il rapporto di reiezione al modo comume (CMRR) e il range di modo comune (CMR) dell'OTA di Miller a stadio doppio con Valim = 1V.}}{81}{figure.caption.80}%
+\contentsline {figure}{\numberline {5.31}{\ignorespaces Risultati delle simulazioni per il rapporto di reiezione al modo comume (CMRR) e il range di modo comune (CMR) dell'OTA di Miller a stadio doppio con Valim = 1.8V.}}{82}{figure.caption.81}%
+\contentsline {figure}{\numberline {5.32}{\ignorespaces Risultati delle simulazioni per l'emi rejection dell'OTA di Miller a stadio doppio.}}{84}{figure.caption.86}%
+\contentsline {figure}{\numberline {5.33}{\ignorespaces Risultati delle simulazioni per l'emi rejection dell'OTA di Nauta e dell'OTA di Miller a stadio singolo.}}{85}{figure.caption.88}%
+\contentsline {figure}{\numberline {5.34}{\ignorespaces Risultati delle simulazioni per l'emi rejection dell'OTA di Nauta e dell'OTA di Miller a stadio doppio.}}{86}{figure.caption.90}%
 \addvspace {10\p@ }

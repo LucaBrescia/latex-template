@@ -10,23 +10,26 @@
 %----------------- GRAFICA & IMPOSTAZIONI ----------------%
 \usepackage[a4paper, top=3cm, bottom=3cm, left=3.5cm, right=3cm, headheight=28pt]{geometry}
 \usepackage[style=numeric-comp,backend=bibtex,natbib,sorting=none]{biblatex}
-\usepackage{setspace}
-\usepackage{titlesec}
-\usepackage{sectsty}
-\usepackage{microtype} % miglioramento spaziatura
-\usepackage{fancyhdr}
-\usepackage{graphicx}
-\usepackage{caption}
-\usepackage{subcaption}
-\usepackage{float}
-\usepackage{xcolor}
-\usepackage{url}
-\usepackage{hyperref}
-\usepackage{tocloft}
-\usepackage{needspace}
-\usepackage{amsmath}
-\usepackage{csquotes}
-\usepackage{listings}
+\usepackage{setspace}   % interlinea
+\usepackage{titlesec}   % titoli
+\usepackage{sectsty}    % titoli
+\usepackage{microtype}  % miglioramento spaziatura
+\usepackage{fancyhdr}   % intestazioni e piè di pagina
+\usepackage{graphicx}   % immagini
+\usepackage{caption}    % didascalie
+\usepackage{subcaption} % sottodidascalie
+\usepackage{longtable}  % tabelle lunghe
+\usepackage{float}      % tabelle e figure
+\usepackage{xcolor}     % colori
+\usepackage{url}        % url
+\usepackage{hyperref}   % link ipertestuali
+\usepackage{tocloft}    % indice
+\usepackage{needspace}  % spazio necessario
+\usepackage{amsmath}    % formule matematiche
+\usepackage{csquotes}   % citazioni
+\usepackage{listings}   % codice sorgente
+\usepackage{tikz}       % diagrammi
+
 
 \definecolor{unibs}{HTML}{3D5895}
 \definecolor{whitesmoke}{HTML}{F5F5F5}
@@ -89,7 +92,7 @@
 
     %--------- PAGINE PRELIMINARI ---------%
     \cleardoublepage
-    \listoftodos
+    %\listoftodos
     \pagenumbering{Roman}
     \tableofcontents
     \cleardoublepage
@@ -136,5 +139,10 @@
     \cleardoublepage
     \listoffigures
     \listoftables
+
+    %--------- RINGRAZIAMENTI ---------%	
+    \cleardoublepage
+    \include{res/chapters/acknowledgements/acknowledgements}
+
 
 \end{document}

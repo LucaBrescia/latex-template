@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2023.12.15)  18 JUL 2024 12:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2023.12.15)  6 MAY 2025 18:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**v:/Progetti/tesi-nautaota/tesi-frn.tex
-(v:/Progetti/tesi-nautaota/tesi-frn.tex
+**v:/Progetti/tesi-emi/tesi-frn.tex
+(v:/Progetti/tesi-emi/tesi-frn.tex
 LaTeX2e <2023-11-01>
 L3 programming layer <2023-11-09>
 (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/latex/base\book.cls
@@ -117,7 +117,8 @@ No auxiliary output files.
 File: l3backend-pdftex.def 2023-11-09 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count267
 \l__pdf_internal_box=\box53
-) (tesi-frn.aux)
+)
+No file tesi-frn.aux.
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
 LaTeX Font Info:    ... okay on input line 28.
 LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
@@ -132,7 +133,6 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
 LaTeX Font Info:    ... okay on input line 28.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
 LaTeX Font Info:    ... okay on input line 28.
-
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -207,15 +207,15 @@ L3 programming layer <2023-11-09>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 2958 strings out of 474587
- 48895 string characters out of 5747589
+ 2954 strings out of 474587
+ 48774 string characters out of 5747589
  1926558 words of memory out of 5000000
- 25128 multiletter control sequences out of 15000+600000
+ 25127 multiletter control sequences out of 15000+600000
  562335 words of font info for 50 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,14n,71p,241b,264s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 57i,14n,71p,236b,264s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/b/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/b/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/b/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/b/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/b/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-Output written on tesi-frn.pdf (1 page, 177983 bytes).
+Output written on tesi-frn.pdf (1 page, 177977 bytes).
 PDF statistics:
  48 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

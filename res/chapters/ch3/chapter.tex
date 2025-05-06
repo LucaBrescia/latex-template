@@ -84,23 +84,21 @@ Per valutare l'impatto delle \textit{EMI} sui circuiti analogici, viene generalm
 % Qui si potrebbe inserire un'immagine del setup di test EMI
 \begin{figure}[H]
     \centering
-    %\includegraphics[width=0.7\textwidth]{images/emi_test_setup.png}
-    TODO: Inserire un'immagine del setup di test EMI
-    \caption{Configurazione tipica per il test di suscettibilità alle \textit{EMI} di un amplificatore operazionale}
+    \includegraphics[width=0.7\textwidth]{img/inseguitore.drawio.pdf}
+    \caption{Configurazione a inseguitore di tensione, tipica per il test di suscettibilità alle \textit{EMI} di un amplificatore operazionale}
     \label{fig:emi_test_setup}
 \end{figure}
 
-Questa configurazione rappresenta il caso peggiore poiché la retroazione diretta tra uscita e ingresso invertente amplifica gli effetti delle \textit{EMI}, consentendo di evidenziare anche le più piccole vulnerabilità del circuito. I principali parametri utilizzati per quantificare la sensibilità dei circuiti alle \textit{EMI} sono l'offset indotto da EMI (la variazione della tensione di uscita DC causata dalle interferenze), l'intervallo di frequenze critiche (le frequenze alle quali il circuito mostra la massima sensibilità) e la densità spettrale di potenza (PSD), che misura l'energia del segnale interferente trasferita all'uscita \cite{Bulk-Driven_CMOS_Amplifier_With_High_EMI_Immunity, TR2016}.
+Questa configurazione rappresenta il caso peggiore poiché la retroazione diretta tra uscita e ingresso invertente amplifica gli effetti delle \textit{EMI}. I principali parametri utilizzati per quantificare la sensibilità dei circuiti alle \textit{EMI} sono l'offset indotto da EMI (la variazione della tensione di uscita DC causata dalle interferenze), l'intervallo di frequenze critiche (le frequenze alle quali il circuito mostra la massima sensibilità) e la densità spettrale di potenza (PSD), che misura l'energia del segnale interferente trasferita all'uscita \cite{Bulk-Driven_CMOS_Amplifier_With_High_EMI_Immunity, TR2016}.
 
-Dopo aver progettato gli amplificatori operazionali, si effettueranno delle simulazioni, grazie all'ausilio di simulatori circuitali come Cadence, al fine di analizzare il loro comportamento quando sui loro ingressi sono presenti disturbi ad alta ed altissima frequenza. Questa metodologia permette di caratterizzare in modo completo la risposta dei circuiti in esame a diverse tipologie di interferenze elettromagnetiche, fornendo informazioni preziose per il miglioramento delle loro prestazioni.
+Dopo aver progettato gli amplificatori operazionali, si effettueranno delle simulazioni, grazie all'ausilio del simulatore circuitale Virtuoso, al fine di analizzare il loro comportamento quando sui loro ingressi sono presenti disturbi ad elevata ed elevatissima frequenza. Questa metodologia permette di caratterizzare in modo completo la risposta dei circuiti in esame a diverse tipologie di interferenze elettromagnetiche, fornendo informazioni preziose per il miglioramento delle loro prestazioni.
 
 % Qui si potrebbe inserire un'immagine di una simulazione EMI
 \begin{figure}[H]
     \centering
-    %\includegraphics[width=0.8\textwidth]{images/emi_simulation.png}
-    TODO: Inserire un'immagine della simulazione EMI
-    \caption{Esempio di simulazione della risposta di un amplificatore operazionale alle EMI}
-    \label{fig:emi_simulation}
+    \includegraphics[width=0.8\textwidth]{img/suddivizione-onde.png}
+    \caption{Suddivisione delle frequenze dei segnali}
+    \label{fig:emi_division}
 \end{figure}
 
 \section{Strategie per migliorare l'immunità EMI}
@@ -109,7 +107,6 @@ Un aspetto critico nella progettazione di amplificatori operazionali a bassa ten
 
 Richelli \cite{Design_considerations_for_an_ultra-low_voltage_amplifier_with_high_EMI_immunity} ha affrontato questa problematica proponendo un amplificatore di classe AB basato su una topologia a due stadi fortemente simmetrica, particolarmente efficace nel minimizzare gli effetti dei disturbi provenienti da diverse fonti. L'amplificatore proposto può essere realizzato in tecnologia CMOS standard ed è adatto per le basse tensioni di alimentazione richieste dai circuiti integrati moderni.
 
-%%TODO: Inserire una breve descrizione di che cos'è un amplificatore di classe AB e la sua importanza nella progettazione di circuiti analogici.
 L'amplificatore di classe AB è una configurazione circuitale che combina le caratteristiche degli amplificatori di classe A e B, offrendo un buon compromesso tra linearità e efficienza energetica. Un classe A è un amplificatore che opera in modo continuo, con una corrente di bias costante, mentre un amplificatore di classe B opera solo durante metà del ciclo del segnale. La classe AB combina questi due approcci, consentendo una maggiore efficienza energetica rispetto alla classe A e una migliore linearità rispetto alla classe B.
 L'amplificatore di classe AB proposto da Richelli presenta una topologia simmetrica che migliora l'immunità EMI grazie a un bilanciamento ottimale delle correnti e alla riduzione delle capacità parassite. Inoltre, la configurazione simmetrica consente di ottenere un'uscita differenziale, che contribuisce a ridurre ulteriormente il rumore e le interferenze. La figura \ref{fig:class_ab_symmetric} mostra un esempio di amplificatore di classe AB con topologia simmetrica.
 

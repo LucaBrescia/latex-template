@@ -1,6 +1,6 @@
 \babel@toc {italian}{}\relax 
 \babel@toc {italian}{}\relax 
-\contentsline {chapter}{Abstract}{I}{chapter*.1}%
+\contentsline {chapter}{Abstract}{I}{Doc-Start}%
 \contentsline {chapter}{\numberline {1}Nuove Topologie di Amplificatori a Bassa Tensione e Bassa Potenza}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Evoluzione della progettazione di circuiti a bassa tensione}{1}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Principali tecniche per amplificatori a bassa tensione}{3}{section.1.2}%
@@ -9,45 +9,59 @@
 \contentsline {section}{\numberline {1.3}Amplificatori basati su inverter CMOS}{7}{section.1.3}%
 \contentsline {subsection}{\numberline {1.3.1}L'Inverter CMOS come Elemento Analogico}{8}{subsection.1.3.1}%
 \contentsline {chapter}{\numberline {2}L'Architettura Nauta OTA}{10}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Introduzione}{10}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Principi di Funzionamento del Nauta OTA}{11}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Struttura Base del Nauta OTA}{11}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}Conversione Tensione-Corrente Lineare}{12}{subsection.2.2.2}%
-\contentsline {subsection}{\numberline {2.2.3}Miglioramento del Guadagno DC}{13}{subsection.2.2.3}%
-\contentsline {section}{\numberline {2.3}Vantaggi dell'Architettura Nauta OTA}{15}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Implementazioni a Bassa Tensione del Nauta OTA}{16}{section.2.4}%
-\contentsline {section}{\numberline {2.5}Applicazioni del Nauta OTA}{18}{section.2.5}%
-\contentsline {chapter}{\numberline {3}Le Interferenze Elettromagnetiche}{20}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Definizione e tipologie di interferenze elettromagnetiche}{20}{section.3.1}%
-\contentsline {section}{\numberline {3.2}\textit {EMI} nei circuiti integrati}{22}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Tipologie di propagazione delle \textit {EMI} nei circuiti integrati}{24}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Sensibilità dei circuiti analogici alle \textit {EMI}}{25}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}Immunità \textit {EMI} nell'architettura Nauta}{27}{subsection.3.4.1}%
-\contentsline {section}{\numberline {3.5}Metodologia di studio delle EMI}{27}{section.3.5}%
-\contentsline {section}{\numberline {3.6}Strategie per migliorare l'immunità EMI}{29}{section.3.6}%
-\contentsline {subsection}{\numberline {3.6.1}Vantaggi degli amplificatori basati su inverter in termini di immunità EMI}{32}{subsection.3.6.1}%
-\contentsline {chapter}{\numberline {4}Confronto tra amplificatori Nauta e Miller in termini di immunità EMI}{34}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Fondamenti Teorici della Suscettibilità EMI negli Amplificatori}{35}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Meccanismi di Suscettibilità EMI nelle Architetture Tradizionali}{35}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Potenziali Vantaggi dell'Architettura Nauta}{36}{subsection.4.1.2}%
-\contentsline {section}{\numberline {4.2}Metodologia di Simulazione}{37}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Setup di Simulazione}{38}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Varianti Architetturali Analizzate}{38}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.2.3}Parametri di Confronto}{40}{subsection.4.2.3}%
-\contentsline {section}{\numberline {4.3}Importanza di un elevato CMRR nella mitigazione delle EMI}{41}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Testo aggiuntivo scartato}{43}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}Considerazioni Preliminari sull'Immunità EMI}{43}{subsection.4.4.1}%
-\contentsline {subsubsection}{Vantaggi Previsti dell'Architettura Nauta}{43}{section*.29}%
-\contentsline {subsubsection}{Sfide Potenziali dell'Architettura Nauta}{43}{section*.30}%
-\contentsline {subsection}{\numberline {4.4.2}Conclusioni}{44}{subsection.4.4.2}%
-\contentsline {subsection}{\numberline {4.4.3}Fondamenti teorici dell'analisi EMI}{45}{subsection.4.4.3}%
-\contentsline {subsubsection}{Formula dell'offset di tensione indotto dalle EMI}{45}{section*.31}%
-\contentsline {subsubsection}{Specificazione dei metodi di test e validazione}{45}{section*.32}%
-\contentsline {subsubsection}{Validità dei risultati - livelli di segnale}{46}{section*.33}%
-\contentsline {subsubsection}{Modellazione degli effetti parassiti}{47}{section*.34}%
-\contentsline {subsubsection}{Caratterizzazione della suscettibilità alle EMI}{47}{section*.35}%
-\contentsline {subsubsection}{Asimmetria dello slew rate}{48}{section*.36}%
-\contentsline {chapter}{\numberline {5}Analisi dei risultati delle simulazioni}{49}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Introduzione}{49}{section.5.1}%
-\contentsline {chapter}{\numberline {6}Conclusioni e sviluppi futuri}{50}{chapter.6}%
-\contentsline {chapter}{Bibliografia}{51}{chapter*.37}%
+\contentsline {section}{\numberline {2.1}Principi di Funzionamento del Nauta OTA}{11}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Struttura Base del Nauta OTA}{11}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Conversione Tensione-Corrente Lineare}{12}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.3}Miglioramento del Guadagno DC}{13}{subsection.2.1.3}%
+\contentsline {section}{\numberline {2.2}Vantaggi dell'Architettura Nauta OTA}{15}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Implementazioni a Bassa Tensione del Nauta OTA}{16}{section.2.3}%
+\contentsline {chapter}{\numberline {3}Le Interferenze Elettromagnetiche}{18}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Definizione e tipologie di interferenze elettromagnetiche}{18}{section.3.1}%
+\contentsline {section}{\numberline {3.2}\textit {EMI} nei circuiti integrati}{20}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Tipologie di propagazione delle \textit {EMI} nei circuiti integrati}{22}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Sensibilità dei circuiti analogici alle \textit {EMI}}{23}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Immunità \textit {EMI} nell'architettura Nauta}{25}{subsection.3.4.1}%
+\contentsline {section}{\numberline {3.5}Metodologia di studio delle EMI}{25}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Strategie per migliorare l'immunità EMI}{28}{section.3.6}%
+\contentsline {subsection}{\numberline {3.6.1}Vantaggi degli amplificatori basati su inverter in termini di immunità EMI}{30}{subsection.3.6.1}%
+\contentsline {chapter}{\numberline {4}Confronto tra amplificatori Nauta e Miller in termini di immunità EMI}{32}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Fondamenti Teorici della Suscettibilità EMI negli Amplificatori}{33}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Meccanismi di Suscettibilità EMI nelle Architetture Tradizionali}{33}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Potenziali Vantaggi dell'Architettura Nauta}{34}{subsection.4.1.2}%
+\contentsline {section}{\numberline {4.2}Metodologia di Simulazione}{35}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Setup di Simulazione}{36}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Varianti Architetturali Analizzate}{36}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Parametri di Confronto}{39}{subsection.4.2.3}%
+\contentsline {section}{\numberline {4.3}Importanza di un elevato CMRR nella mitigazione delle EMI}{39}{section.4.3}%
+\contentsline {chapter}{\numberline {5}Analisi dei risultati delle simulazioni}{42}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Introduzione}{42}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Analisi dei risultati per l'OTA di Nauta a stadio singolo}{43}{section.5.2}%
+\contentsline {subsubsection}{Schematico di riferimento per la simulazione}{43}{section*.26}%
+\contentsline {subsubsection}{Dimensionamento dei componenti}{45}{section*.30}%
+\contentsline {subsubsection}{\textbf {$A_V$}, Phase, CMRR e CMR}{47}{section*.32}%
+\contentsline {subsubsection}{Phase Margin, Gain Bandwidth Product e Slew Rate}{49}{section*.36}%
+\contentsline {subsubsection}{Emi rejection}{51}{section*.39}%
+\contentsline {section}{\numberline {5.3}Analisi dei risultati per il Miller OTA a stadio singolo}{53}{section.5.3}%
+\contentsline {subsubsection}{Schematico di riferimento per la simulazione}{53}{section*.41}%
+\contentsline {subsubsection}{Dimensionamento dei componenti}{55}{section*.44}%
+\contentsline {subsubsection}{Av, Phase, CMRR e CMR}{56}{section*.46}%
+\contentsline {subsubsection}{Phase Margin, Gain Bandwidth Product e Slew Rate}{59}{section*.51}%
+\contentsline {subsubsection}{Emi rejection}{61}{section*.54}%
+\contentsline {section}{\numberline {5.4}Analisi dei risultati per l'OTA di Nauta a stadio doppio}{62}{section.5.4}%
+\contentsline {subsubsection}{Schematico di riferimento per la simulazione}{62}{section*.56}%
+\contentsline {subsubsection}{Dimensionamento dei componenti}{64}{section*.61}%
+\contentsline {subsubsection}{A$_v$, Phase, CMRR e CMR}{67}{section*.62}%
+\contentsline {subsubsection}{Phase Margin, Gain Bandwidth Product e Slew Rate}{73}{section*.69}%
+\contentsline {subsubsection}{Emi rejection}{74}{section*.72}%
+\contentsline {section}{\numberline {5.5}Analisi dei risultati per l'OTA di Miller a stadio doppio}{75}{section.5.5}%
+\contentsline {subsubsection}{Schematico di riferimento per la simulazione}{75}{section*.74}%
+\contentsline {subsection}{\numberline {5.5.1}Dimensionamento dei componenti}{76}{subsection.5.5.1}%
+\contentsline {subsubsection}{A$_v$, Phase, CMRR e CMR}{78}{section*.77}%
+\contentsline {subsubsection}{Phase Margin, Gain Bandwidth Product e Slew Rate}{83}{section*.82}%
+\contentsline {subsubsection}{Emi rejection}{83}{section*.85}%
+\contentsline {section}{\numberline {5.6}Sensibilità alle EMI a confronto tra i due OTA}{84}{section.5.6}%
+\contentsline {subsubsection}{OTA a stadio singolo}{85}{section*.87}%
+\contentsline {subsubsection}{OTA a stadio doppio}{86}{section*.89}%
+\contentsline {chapter}{\numberline {6}Conclusioni e sviluppi futuri}{88}{chapter.6}%
+\contentsline {chapter}{Bibliografia}{91}{chapter*.91}%
+\contentsline {chapter}{Ringraziamenti}{100}{chapter*.91}%

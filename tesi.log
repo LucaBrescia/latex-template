@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2023.12.15)  25 APR 2025 18:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2023.12.15)  6 MAY 2025 18:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -448,13 +448,31 @@ Package caption Info: New subtype `subfigure' on input line 238.
 \c@subfigure=\count405
 Package caption Info: New subtype `subtable' on input line 238.
 \c@subtable=\count406
+) (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/latex/tools\longtable.sty
+Package: longtable 2023-11-01 v4.19 Multi-page Table package (DPC)
+\LTleft=\skip84
+\LTright=\skip85
+\LTpre=\skip86
+\LTpost=\skip87
+\LTchunksize=\count407
+\LTcapwidth=\dimen166
+\LT@head=\box54
+\LT@firsthead=\box55
+\LT@foot=\box56
+\LT@lastfoot=\box57
+\LT@gbox=\box58
+\LT@cols=\count408
+\LT@rows=\count409
+\c@LT@tables=\count410
+\c@LT@chunks=\count411
+\LT@p@ftn=\toks24
 ) (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count407
-\float@exts=\toks24
-\float@box=\box54
-\@float@everytoks=\toks25
-\@floatcapt=\box55
+\c@float@type=\count412
+\float@exts=\toks25
+\float@box=\box59
+\@float@everytoks=\toks26
+\@floatcapt=\box60
 ) (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
 Package: xcolor 2023/11/15 v3.01 LaTeX color extensions (UK)
  (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
@@ -490,11 +508,11 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count408
+\c@section@level=\count413
 )
-\@linkdim=\dimen166
-\Hy@linkcounter=\count409
-\Hy@pagecounter=\count410
+\@linkdim=\dimen167
+\Hy@linkcounter=\count414
+\Hy@pagecounter=\count415
  (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
 File: pd1enc.def 2023-11-09 v7.01f Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
@@ -502,7 +520,7 @@ Now handling font encoding PD1 ...
 ) (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count411
+\Hy@SavedSpaceFactor=\count416
  (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
 File: puenc.def 2023-11-09 v7.01f Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
@@ -515,17 +533,17 @@ Package hyperref Info: Plain pages OFF on input line 4186.
 Package hyperref Info: Backreferencing OFF on input line 4191.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4438.
-\c@Hy@tempcnt=\count412
+\c@Hy@tempcnt=\count417
 LaTeX Info: Redefining \url on input line 4776.
-\XeTeXLinkMargin=\dimen167
+\XeTeXLinkMargin=\dimen168
  (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
  (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
-\Fld@menulength=\count413
-\Field@Width=\dimen168
-\Fld@charsize=\dimen169
+\Fld@menulength=\count418
+\Field@Width=\dimen169
+\Fld@charsize=\dimen170
 Package hyperref Info: Hyper figures OFF on input line 6055.
 Package hyperref Info: Link nesting OFF on input line 6060.
 Package hyperref Info: Hyper index ON on input line 6063.
@@ -537,9 +555,9 @@ Package hyperref Info: PDF/A mode OFF on input line 6085.
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-\Hy@abspage=\count414
-\c@Item=\count415
-\c@Hfootnote=\count416
+\Hy@abspage=\count419
+\c@Item=\count420
+\c@Hfootnote=\count421
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
  (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
@@ -548,8 +566,8 @@ File: hpdftex.def 2023-11-09 v7.01f Hyperref driver for pdfTeX
 Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend package
 with kernel methods
 )
-\Fld@listcount=\count417
-\c@bookmark@seq@number=\count418
+\Fld@listcount=\count422
+\c@bookmark@seq@number=\count423
  (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfilecheck.sty
 Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
  (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\uniquecounter.sty
@@ -557,121 +575,121 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 285.
 )
-\Hy@SectionHShift=\skip84
+\Hy@SectionHShift=\skip88
 ) (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/latex/tocloft\tocloft.sty
 Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
 Package tocloft Info: The document has chapter divisions on input line 51.
-\cftparskip=\skip85
-\cftbeforetoctitleskip=\skip86
-\cftaftertoctitleskip=\skip87
-\cftbeforepartskip=\skip88
-\cftpartnumwidth=\skip89
-\cftpartindent=\skip90
-\cftbeforechapskip=\skip91
-\cftchapindent=\skip92
-\cftchapnumwidth=\skip93
-\cftbeforesecskip=\skip94
-\cftsecindent=\skip95
-\cftsecnumwidth=\skip96
-\cftbeforesubsecskip=\skip97
-\cftsubsecindent=\skip98
-\cftsubsecnumwidth=\skip99
-\cftbeforesubsubsecskip=\skip100
-\cftsubsubsecindent=\skip101
-\cftsubsubsecnumwidth=\skip102
-\cftbeforeparaskip=\skip103
-\cftparaindent=\skip104
-\cftparanumwidth=\skip105
-\cftbeforesubparaskip=\skip106
-\cftsubparaindent=\skip107
-\cftsubparanumwidth=\skip108
-\cftbeforeloftitleskip=\skip109
-\cftafterloftitleskip=\skip110
-\cftbeforefigskip=\skip111
-\cftfigindent=\skip112
-\cftfignumwidth=\skip113
-\c@lofdepth=\count419
-\c@lotdepth=\count420
-\cftbeforelottitleskip=\skip114
-\cftafterlottitleskip=\skip115
-\cftbeforetabskip=\skip116
-\cfttabindent=\skip117
-\cfttabnumwidth=\skip118
+\cftparskip=\skip89
+\cftbeforetoctitleskip=\skip90
+\cftaftertoctitleskip=\skip91
+\cftbeforepartskip=\skip92
+\cftpartnumwidth=\skip93
+\cftpartindent=\skip94
+\cftbeforechapskip=\skip95
+\cftchapindent=\skip96
+\cftchapnumwidth=\skip97
+\cftbeforesecskip=\skip98
+\cftsecindent=\skip99
+\cftsecnumwidth=\skip100
+\cftbeforesubsecskip=\skip101
+\cftsubsecindent=\skip102
+\cftsubsecnumwidth=\skip103
+\cftbeforesubsubsecskip=\skip104
+\cftsubsubsecindent=\skip105
+\cftsubsubsecnumwidth=\skip106
+\cftbeforeparaskip=\skip107
+\cftparaindent=\skip108
+\cftparanumwidth=\skip109
+\cftbeforesubparaskip=\skip110
+\cftsubparaindent=\skip111
+\cftsubparanumwidth=\skip112
+\cftbeforeloftitleskip=\skip113
+\cftafterloftitleskip=\skip114
+\cftbeforefigskip=\skip115
+\cftfigindent=\skip116
+\cftfignumwidth=\skip117
+\c@lofdepth=\count424
+\c@lotdepth=\count425
+\cftbeforelottitleskip=\skip118
+\cftafterlottitleskip=\skip119
+\cftbeforetabskip=\skip120
+\cfttabindent=\skip121
+\cfttabnumwidth=\skip122
 ) (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/latex/needspace\needspace.sty
 Package: needspace 2025/03/13 v1.3e reserve vertical space
 ) (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
 Package: amsmath 2023/05/13 v2.17o AMS math features
-\@mathmargin=\skip119
+\@mathmargin=\skip123
 
 For additional information on amsmath, use the `?' option.
 (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
 Package: amstext 2021/08/26 v2.01 AMS text
  (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks26
-\ex@=\dimen170
+\@emptytoks=\toks27
+\ex@=\dimen171
 )) (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen171
+\pmbraise@=\dimen172
 ) (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
-\inf@bad=\count421
+\inf@bad=\count426
 LaTeX Info: Redefining \frac on input line 234.
-\uproot@=\count422
-\leftroot@=\count423
+\uproot@=\count427
+\leftroot@=\count428
 LaTeX Info: Redefining \overline on input line 399.
 LaTeX Info: Redefining \colon on input line 410.
-\classnum@=\count424
-\DOTSCASE@=\count425
+\classnum@=\count429
+\DOTSCASE@=\count430
 LaTeX Info: Redefining \ldots on input line 496.
 LaTeX Info: Redefining \dots on input line 499.
 LaTeX Info: Redefining \cdots on input line 620.
-\Mathstrutbox@=\box56
-\strutbox@=\box57
+\Mathstrutbox@=\box61
+\strutbox@=\box62
 LaTeX Info: Redefining \big on input line 722.
 LaTeX Info: Redefining \Big on input line 723.
 LaTeX Info: Redefining \bigg on input line 724.
 LaTeX Info: Redefining \Bigg on input line 725.
-\big@size=\dimen172
+\big@size=\dimen173
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count426
+\macc@depth=\count431
 LaTeX Info: Redefining \bmod on input line 905.
 LaTeX Info: Redefining \pmod on input line 910.
 LaTeX Info: Redefining \smash on input line 940.
 LaTeX Info: Redefining \relbar on input line 970.
 LaTeX Info: Redefining \Relbar on input line 971.
-\c@MaxMatrixCols=\count427
+\c@MaxMatrixCols=\count432
 \dotsspace@=\muskip21
-\c@parentequation=\count428
-\dspbrk@lvl=\count429
-\tag@help=\toks27
-\row@=\count430
-\column@=\count431
-\maxfields@=\count432
-\andhelp@=\toks28
-\eqnshift@=\dimen173
-\alignsep@=\dimen174
-\tagshift@=\dimen175
-\tagwidth@=\dimen176
-\totwidth@=\dimen177
-\lineht@=\dimen178
-\@envbody=\toks29
-\multlinegap=\skip120
-\multlinetaggap=\skip121
-\mathdisplay@stack=\toks30
+\c@parentequation=\count433
+\dspbrk@lvl=\count434
+\tag@help=\toks28
+\row@=\count435
+\column@=\count436
+\maxfields@=\count437
+\andhelp@=\toks29
+\eqnshift@=\dimen174
+\alignsep@=\dimen175
+\tagshift@=\dimen176
+\tagwidth@=\dimen177
+\totwidth@=\dimen178
+\lineht@=\dimen179
+\@envbody=\toks30
+\multlinegap=\skip124
+\multlinetaggap=\skip125
+\mathdisplay@stack=\toks31
 LaTeX Info: Redefining \[ on input line 2953.
 LaTeX Info: Redefining \] on input line 2954.
 ) (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/latex/csquotes\csquotes.sty
 Package: csquotes 2022-09-14 v5.2n context-sensitive quotations (JAW)
-\csq@reset=\count433
-\csq@gtype=\count434
-\csq@glevel=\count435
-\csq@qlevel=\count436
-\csq@maxlvl=\count437
-\csq@tshold=\count438
-\csq@ltx@everypar=\toks31
+\csq@reset=\count438
+\csq@gtype=\count439
+\csq@glevel=\count440
+\csq@qlevel=\count441
+\csq@maxlvl=\count442
+\csq@tshold=\count443
+\csq@ltx@everypar=\toks32
  (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/latex/csquotes\csquotes.def
 File: csquotes.def 2022-09-14 v5.2n csquotes generic definitions (JAW)
 )
@@ -680,44 +698,33 @@ Package csquotes Info: ... configuration file loaded successfully.
  (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/latex/csquotes\csquotes.cfg
 File: csquotes.cfg 
 )) (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
-\lst@mode=\count439
-\lst@gtempboxa=\box58
-\lst@token=\toks32
-\lst@length=\count440
-\lst@currlwidth=\dimen179
-\lst@column=\count441
-\lst@pos=\count442
-\lst@lostspace=\dimen180
-\lst@width=\dimen181
-\lst@newlines=\count443
-\lst@lineno=\count444
-\lst@maxwidth=\dimen182
+\lst@mode=\count444
+\lst@gtempboxa=\box63
+\lst@token=\toks33
+\lst@length=\count445
+\lst@currlwidth=\dimen180
+\lst@column=\count446
+\lst@pos=\count447
+\lst@lostspace=\dimen181
+\lst@width=\dimen182
+\lst@newlines=\count448
+\lst@lineno=\count449
+\lst@maxwidth=\dimen183
  (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
 File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
-\c@lstnumber=\count445
-\lst@skipnumbers=\count446
-\lst@framebox=\box59
+\c@lstnumber=\count450
+\lst@skipnumbers=\count451
+\lst@framebox=\box64
 ) (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
 File: listings.cfg 2023/02/27 1.9 listings configuration
 ))
 Package: listings 2023/02/27 1.9 (Carsten Heinz)
- (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/latex/todonotes\todonotes.sty
-Package: todonotes 2023/01/31 v1.1.6 Todonotes source and documentation.
-Package: todonotes 2023/01/31
- (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/latex/xkeyval\xkeyval.sty
-Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
- (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkeyval.tex (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkvutils.tex
-\XKV@toks=\toks33
-\XKV@tempa@toks=\toks34
-)
-\XKV@depth=\count447
-File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
-)) (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendlayer\tikz.sty (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgf.sty (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfrcs.sty (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil-common.tex
-\pgfutil@everybye=\toks35
-\pgfutil@tempdima=\dimen183
-\pgfutil@tempdimb=\dimen184
+ (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendlayer\tikz.sty (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgf.sty (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfrcs.sty (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil-common.tex
+\pgfutil@everybye=\toks34
+\pgfutil@tempdima=\dimen184
+\pgfutil@tempdimb=\dimen185
 ) (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil-latex.def
-\pgfutil@abb=\box60
+\pgfutil@abb=\box65
 ) (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfrcs.code.tex (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/generic/pgf\pgf.revision.tex)
 Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
 ))
@@ -725,31 +732,31 @@ Package: pgf 2023-01-15 v3.1.10 (3.1.10)
  (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgfcore.sty (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/latex/pgf/systemlayer\pgfsys.sty (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsys.code.tex
 Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
  (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks36
-\pgfkeys@temptoks=\toks37
+\pgfkeys@pathtoks=\toks35
+\pgfkeys@temptoks=\toks36
  (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeyslibraryfiltered.code.tex
-\pgfkeys@tmptoks=\toks38
+\pgfkeys@tmptoks=\toks37
 ))
-\pgf@x=\dimen185
-\pgf@y=\dimen186
-\pgf@xa=\dimen187
-\pgf@ya=\dimen188
-\pgf@xb=\dimen189
-\pgf@yb=\dimen190
-\pgf@xc=\dimen191
-\pgf@yc=\dimen192
-\pgf@xd=\dimen193
-\pgf@yd=\dimen194
+\pgf@x=\dimen186
+\pgf@y=\dimen187
+\pgf@xa=\dimen188
+\pgf@ya=\dimen189
+\pgf@xb=\dimen190
+\pgf@yb=\dimen191
+\pgf@xc=\dimen192
+\pgf@yc=\dimen193
+\pgf@xd=\dimen194
+\pgf@yd=\dimen195
 \w@pgf@writea=\write4
 \r@pgf@reada=\read4
-\c@pgf@counta=\count448
-\c@pgf@countb=\count449
-\c@pgf@countc=\count450
-\c@pgf@countd=\count451
-\t@pgf@toka=\toks39
-\t@pgf@tokb=\toks40
-\t@pgf@tokc=\toks41
-\pgf@sys@id@count=\count452
+\c@pgf@counta=\count452
+\c@pgf@countb=\count453
+\c@pgf@countc=\count454
+\c@pgf@countd=\count455
+\t@pgf@toka=\toks38
+\t@pgf@tokb=\toks39
+\t@pgf@tokc=\toks40
+\pgf@sys@id@count=\count456
  (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf.cfg
 File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
 )
@@ -760,59 +767,59 @@ File: pgfsys-pdftex.def 2023-01-15 v3.1.10 (3.1.10)
 File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
 ))) (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfsyssoftpath@smallbuffer@items=\count453
-\pgfsyssoftpath@bigbuffer@items=\count454
+\pgfsyssoftpath@smallbuffer@items=\count457
+\pgfsyssoftpath@bigbuffer@items=\count458
 ) (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsysprotocol.code.tex
 File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )) (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcore.code.tex
 Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
  (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code.tex (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathutil.code.tex) (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathparser.code.tex
-\pgfmath@dimen=\dimen195
-\pgfmath@count=\count455
-\pgfmath@box=\box61
-\pgfmath@toks=\toks42
-\pgfmath@stack@operand=\toks43
-\pgfmath@stack@operation=\toks44
+\pgfmath@dimen=\dimen196
+\pgfmath@count=\count459
+\pgfmath@box=\box66
+\pgfmath@toks=\toks41
+\pgfmath@stack@operand=\toks42
+\pgfmath@stack@operation=\toks43
 ) (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.code.tex) (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.basic.code.tex) (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.trigonometric.code.tex) (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.random.code.tex) (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.comparison.code.tex) (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.base.code.tex) (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.round.code.tex) (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.misc.code.tex) (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.integerarithmetics.code.tex) (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathcalc.code.tex) (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count456
+\c@pgfmathroundto@lastzeros=\count460
 )) (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfint.code.tex) (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepoints.code.tex
 File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@picminx=\dimen196
-\pgf@picmaxx=\dimen197
-\pgf@picminy=\dimen198
-\pgf@picmaxy=\dimen199
-\pgf@pathminx=\dimen256
-\pgf@pathmaxx=\dimen257
-\pgf@pathminy=\dimen258
-\pgf@pathmaxy=\dimen259
-\pgf@xx=\dimen260
-\pgf@xy=\dimen261
-\pgf@yx=\dimen262
-\pgf@yy=\dimen263
-\pgf@zx=\dimen264
-\pgf@zy=\dimen265
+\pgf@picminx=\dimen197
+\pgf@picmaxx=\dimen198
+\pgf@picminy=\dimen199
+\pgf@picmaxy=\dimen256
+\pgf@pathminx=\dimen257
+\pgf@pathmaxx=\dimen258
+\pgf@pathminy=\dimen259
+\pgf@pathmaxy=\dimen260
+\pgf@xx=\dimen261
+\pgf@xy=\dimen262
+\pgf@yx=\dimen263
+\pgf@yy=\dimen264
+\pgf@zx=\dimen265
+\pgf@zy=\dimen266
 ) (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathconstruct.code.tex
 File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@path@lastx=\dimen266
-\pgf@path@lasty=\dimen267
+\pgf@path@lastx=\dimen267
+\pgf@path@lasty=\dimen268
 ) (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathusage.code.tex
 File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@shorten@end@additional=\dimen268
-\pgf@shorten@start@additional=\dimen269
+\pgf@shorten@end@additional=\dimen269
+\pgf@shorten@start@additional=\dimen270
 ) (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorescopes.code.tex
 File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfpic=\box62
-\pgf@hbox=\box63
-\pgf@layerbox@main=\box64
-\pgf@picture@serial@count=\count457
+\pgfpic=\box67
+\pgf@hbox=\box68
+\pgf@layerbox@main=\box69
+\pgf@picture@serial@count=\count461
 ) (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoregraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgflinewidth=\dimen270
+\pgflinewidth=\dimen271
 ) (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoretransformations.code.tex
 File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@pt@x=\dimen271
-\pgf@pt@y=\dimen272
-\pgf@pt@temp=\dimen273
+\pgf@pt@x=\dimen272
+\pgf@pt@y=\dimen273
+\pgf@pt@temp=\dimen274
 ) (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorequick.code.tex
 File: pgfcorequick.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ) (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreobjects.code.tex
@@ -821,17 +828,17 @@ File: pgfcoreobjects.code.tex 2023-01-15 v3.1.10 (3.1.10)
 File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ) (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorearrows.code.tex
 File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfarrowsep=\dimen274
+\pgfarrowsep=\dimen275
 ) (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@max=\dimen275
-\pgf@sys@shading@range@num=\count458
-\pgf@shadingcount=\count459
+\pgf@max=\dimen276
+\pgf@sys@shading@range@num=\count462
+\pgf@shadingcount=\count463
 ) (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ) (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreexternal.code.tex
 File: pgfcoreexternal.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfexternal@startupbox=\box65
+\pgfexternal@startupbox=\box70
 ) (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorelayers.code.tex
 File: pgfcorelayers.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ) (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoretransparency.code.tex
@@ -842,76 +849,87 @@ File: pgfcorepatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
 File: pgfcorerdf.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ))) (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmoduleshapes.code.tex
 File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfnodeparttextbox=\box66
+\pgfnodeparttextbox=\box71
 ) (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmoduleplot.code.tex
 File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ) (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfcomp-version-0-65.sty
 Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
-\pgf@nodesepstart=\dimen276
-\pgf@nodesepend=\dimen277
+\pgf@nodesepstart=\dimen277
+\pgf@nodesepend=\dimen278
 ) (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfcomp-version-1-18.sty
 Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
 )) (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgffor.sty (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfkeys.sty (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys.code.tex)) (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/latex/pgf/math\pgfmath.sty (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code.tex)) (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgffor.code.tex
 Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
-\pgffor@iter=\dimen278
-\pgffor@skip=\dimen279
-\pgffor@stack=\toks45
-\pgffor@toks=\toks46
+\pgffor@iter=\dimen279
+\pgffor@skip=\dimen280
+\pgffor@stack=\toks44
+\pgffor@toks=\toks45
 )) (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz\tikz.code.tex
 Package: tikz 2023-01-15 v3.1.10 (3.1.10)
  (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibraryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@plot@mark@count=\count460
-\pgfplotmarksize=\dimen280
+\pgf@plot@mark@count=\count464
+\pgfplotmarksize=\dimen281
 )
-\tikz@lastx=\dimen281
-\tikz@lasty=\dimen282
-\tikz@lastxsaved=\dimen283
-\tikz@lastysaved=\dimen284
-\tikz@lastmovetox=\dimen285
-\tikz@lastmovetoy=\dimen286
-\tikzleveldistance=\dimen287
-\tikzsiblingdistance=\dimen288
-\tikz@figbox=\box67
-\tikz@figbox@bg=\box68
-\tikz@tempbox=\box69
-\tikz@tempbox@bg=\box70
-\tikztreelevel=\count461
-\tikznumberofchildren=\count462
-\tikznumberofcurrentchild=\count463
-\tikz@fig@count=\count464
+\tikz@lastx=\dimen282
+\tikz@lasty=\dimen283
+\tikz@lastxsaved=\dimen284
+\tikz@lastysaved=\dimen285
+\tikz@lastmovetox=\dimen286
+\tikz@lastmovetoy=\dimen287
+\tikzleveldistance=\dimen288
+\tikzsiblingdistance=\dimen289
+\tikz@figbox=\box72
+\tikz@figbox@bg=\box73
+\tikz@tempbox=\box74
+\tikz@tempbox@bg=\box75
+\tikztreelevel=\count465
+\tikznumberofchildren=\count466
+\tikznumberofcurrentchild=\count467
+\tikz@fig@count=\count468
  (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfmatrixcurrentrow=\count465
-\pgfmatrixcurrentcolumn=\count466
-\pgf@matrix@numberofcolumns=\count467
+\pgfmatrixcurrentrow=\count469
+\pgfmatrixcurrentcolumn=\count470
+\pgf@matrix@numberofcolumns=\count471
 )
-\tikz@expandcount=\count468
+\tikz@expandcount=\count472
  (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
-))) (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarypositioning.code.tex
+))) (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/latex/todonotes\todonotes.sty
+Package: todonotes 2023/01/31 v1.1.6 Todonotes source and documentation.
+Package: todonotes 2023/01/31
+ (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/latex/xkeyval\xkeyval.sty
+Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
+ (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkeyval.tex (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkvutils.tex
+\XKV@toks=\toks46
+\XKV@tempa@toks=\toks47
+)
+\XKV@depth=\count473
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+)) (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarypositioning.code.tex
 File: tikzlibrarypositioning.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ) (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
 Package: calc 2023/07/08 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count469
-\calc@Bcount=\count470
-\calc@Adimen=\dimen289
-\calc@Bdimen=\dimen290
-\calc@Askip=\skip122
-\calc@Bskip=\skip123
+\calc@Acount=\count474
+\calc@Bcount=\count475
+\calc@Adimen=\dimen290
+\calc@Bdimen=\dimen291
+\calc@Askip=\skip126
+\calc@Bskip=\skip127
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count471
-\calc@Cskip=\skip124
+\calc@Ccount=\count476
+\calc@Cskip=\skip128
 )
-\c@@todonotes@numberoftodonotes=\count472
+\c@@todonotes@numberoftodonotes=\count477
 ) (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/latex/frontespizio\frontespizio.sty
 Package: frontespizio 2011/09/21 1.4a (Enrico Gregorio)
  (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/latex/tools\afterpage.sty
 Package: afterpage 2023/07/04 v1.08 After-Page Package (DPC)
-\AP@output=\toks47
-\AP@partial=\box71
-\AP@footins=\box72
+\AP@output=\toks48
+\AP@partial=\box76
+\AP@footins=\box77
 ) (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/latex/environ\environ.sty
 Package: environ 2014/05/04 v0.3 A new way to define environments
  (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/latex/trimspaces\trimspaces.sty
@@ -921,44 +939,51 @@ Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
 ) (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifxetex.sty
 Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
 )
-\front@candtoks=\toks48
-\front@candcount=\count473
-\front@reltoks=\toks49
-\front@relcount=\count474
-\front@correltoks=\toks50
-\front@correlcount=\count475
+\front@candtoks=\toks49
+\front@candcount=\count478
+\front@reltoks=\toks50
+\front@relcount=\count479
+\front@correltoks=\toks51
+\front@correlcount=\count480
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 73.
+Package hyperref Info: Option `colorlinks' set `true' on input line 76.
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'italian'.
-LaTeX Font Info:    Trying to load font information for T1+ppl on input line 81.
+LaTeX Font Info:    Trying to load font information for T1+ppl on input line 84.
  (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1ppl.fd
 File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
-) (tesi.aux (res/chapters/abstract/abstract.aux) (res/chapters/ch1/chapter.aux) (res/chapters/ch2/chapter.aux) (res/chapters/ch3/chapter.aux) (res/chapters/ch4/chapter.aux) (res/chapters/ch5/chapter.aux) (res/chapters/ch6/chapter.aux))
+) (tesi.aux (res/chapters/abstract/abstract.aux) (res/chapters/ch1/chapter.aux) (res/chapters/ch2/chapter.aux) (res/chapters/ch3/chapter.aux) (res/chapters/ch4/chapter.aux) (res/chapters/ch5/chapter.aux
+
+LaTeX Warning: Label `fig:schematic_nauta_double_stage_inverter' multiply defined.
+
+
+LaTeX Warning: Label `fig:schematic_miller_double_stage' multiply defined.
+
+) (res/chapters/ch6/chapter.aux) (res/chapters/acknowledgements/acknowledgements.aux))
 \openout1 = `tesi.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Info: Redefining \it@ocap on input line 81.
-LaTeX Info: Redefining \it@ccap on input line 81.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Info: Redefining \it@ocap on input line 84.
+LaTeX Info: Redefining \it@ccap on input line 84.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1010,22 +1035,22 @@ Package biblatex Info: Data encoding 'utf8' specified.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'tesi.bbl' found.
  (tesi.bbl)
-Package biblatex Info: Reference section=0 on input line 81.
-Package biblatex Info: Reference segment=0 on input line 81.
-LaTeX Info: Redefining \microtypecontext on input line 81.
-Package microtype Info: Applying patch `item' on input line 81.
-Package microtype Info: Applying patch `toc' on input line 81.
-Package microtype Info: Applying patch `eqnum' on input line 81.
-Package microtype Info: Applying patch `footnote' on input line 81.
-Package microtype Info: Applying patch `verbatim' on input line 81.
-LaTeX Info: Redefining \microtypesetup on input line 81.
+Package biblatex Info: Reference section=0 on input line 84.
+Package biblatex Info: Reference segment=0 on input line 84.
+LaTeX Info: Redefining \microtypecontext on input line 84.
+Package microtype Info: Applying patch `item' on input line 84.
+Package microtype Info: Applying patch `toc' on input line 84.
+Package microtype Info: Applying patch `eqnum' on input line 84.
+Package microtype Info: Applying patch `footnote' on input line 84.
+Package microtype Info: Applying patch `verbatim' on input line 84.
+LaTeX Info: Redefining \microtypesetup on input line 84.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 81.
+LaTeX Info: Redefining \showhyphens on input line 84.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -1033,17 +1058,17 @@ Package microtype Info: No adjustment of character kerning.
 File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
 ) (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count476
-\scratchdimen=\dimen291
-\scratchbox=\box73
-\nofMPsegments=\count477
-\nofMParguments=\count478
-\everyMPshowfont=\toks51
-\MPscratchCnt=\count479
-\MPscratchDim=\dimen292
-\MPnumerator=\count480
-\makeMPintoPDFobject=\count481
-\everyMPtoPDFconversion=\toks52
+\scratchcounter=\count481
+\scratchdimen=\dimen292
+\scratchbox=\box78
+\nofMPsegments=\count482
+\nofMParguments=\count483
+\everyMPshowfont=\toks52
+\MPscratchCnt=\count484
+\MPscratchDim=\dimen293
+\MPnumerator=\count485
+\makeMPintoPDFobject=\count486
+\everyMPtoPDFconversion=\toks53
 ) (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -1054,17 +1079,21 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
+Package caption Info: longtable package is loaded.
+ (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/latex/caption\ltcaption.sty
+Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
+)
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring ON on input line 81.
+Package hyperref Info: Link coloring ON on input line 84.
  (tesi.out) (tesi.out)
 \@outlinefile=\write5
 \openout5 = `tesi.out'.
 
-\c@lstlisting=\count482
-<tesi-frn.pdf, id=178, 597.50829pt x 845.0471pt>
+\c@lstlisting=\count487
+<tesi-frn.pdf, id=181, 597.50829pt x 845.0471pt>
 File: tesi-frn.pdf Graphic file (type pdf)
 <use tesi-frn.pdf>
-Package pdftex.def Info: tesi-frn.pdf  used on input line 84.
+Package pdftex.def Info: tesi-frn.pdf  used on input line 87.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
  [1
 
@@ -1073,25 +1102,25 @@ Package pdftex.def Info: tesi-frn.pdf  used on input line 84.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.88     \shipout\null
-                       [1] (tesi.tdo
-LaTeX Font Info:    Trying to load font information for OT1+ppl on input line 1.
+l.91     \shipout\null
+                       [1] (tesi.toc
+LaTeX Font Info:    Trying to load font information for OT1+ppl on input line 3.
  (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ppl.fd
 File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 )
-LaTeX Font Info:    Trying to load font information for OML+zplm on input line 1.
+LaTeX Font Info:    Trying to load font information for OML+zplm on input line 3.
  (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omlzplm.fd
 File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
 )
-LaTeX Font Info:    Trying to load font information for OMS+zplm on input line 1.
+LaTeX Font Info:    Trying to load font information for OMS+zplm on input line 3.
  (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omszplm.fd
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )
-LaTeX Font Info:    Trying to load font information for OMX+zplm on input line 1.
+LaTeX Font Info:    Trying to load font information for OMX+zplm on input line 3.
  (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omxzplm.fd
 File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
 )
-LaTeX Font Info:    Trying to load font information for OT1+zplm on input line 1.
+LaTeX Font Info:    Trying to load font information for OT1+zplm on input line 3.
  (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1zplm.fd
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 )
@@ -1099,25 +1128,24 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `zplm' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-)
-\tf@tdo=\write6
-\openout6 = `tesi.tdo'.
-
- (tesi.toc [1
-
+ [1
 
 {C:/Users/b/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}] [2])
-\tf@toc=\write7
-\openout7 = `tesi.toc'.
+\tf@toc=\write6
+\openout6 = `tesi.toc'.
 
  [3]
 \openout2 = `res/chapters/abstract/abstract.aux'.
 
- (res/chapters/abstract/abstract.tex)
+ (res/chapters/abstract/abstract.tex
+LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 5.
+ (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ppl.fd
+File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
+))
 pdfTeX warning (ext4): destination with the same identifier (name{page.I}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.103     \include{res/chapters/abstract/abstract}
+l.106     \include{res/chapters/abstract/abstract}
                                                    [1
 
 
@@ -1127,7 +1155,7 @@ l.103     \include{res/chapters/abstract/abstract}
 
  (res/chapters/ch1/chapter.tex
 Capitolo 1.
-<V:/Progetti/tesi-emi/img/evoluzione.png, id=305, 463.7325pt x 309.40594pt>
+<V:/Progetti/tesi-emi/img/evoluzione.png, id=304, 463.7325pt x 309.40594pt>
 File: V:/Progetti/tesi-emi/img/evoluzione.png Graphic file (type png)
 <use V:/Progetti/tesi-emi/img/evoluzione.png>
 Package pdftex.def Info: V:/Progetti/tesi-emi/img/evoluzione.png  used on input line 10.
@@ -1143,41 +1171,37 @@ l.16
 
 
 
-] [2 <V:/Progetti/tesi-emi/img/evoluzione.png>]
-LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 22.
- (C:\Users\b\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ppl.fd
-File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
-) [3]
-<img/bulk-driven.png, id=326, 150.5625pt x 156.585pt>
+] [2 <V:/Progetti/tesi-emi/img/evoluzione.png>] [3]
+<img/bulk-driven.png, id=325, 150.5625pt x 156.585pt>
 File: img/bulk-driven.png Graphic file (type png)
 <use img/bulk-driven.png>
 Package pdftex.def Info: img/bulk-driven.png  used on input line 40.
 (pdftex.def)             Requested size: 123.77074pt x 128.72786pt.
  [4 <./img/bulk-driven.png>]
-<img/bulk-driven-classic-ota.pdf, id=334, 161.51692pt x 131.06064pt>
+<img/bulk-driven-classic-ota.pdf, id=333, 161.51692pt x 131.06064pt>
 File: img/bulk-driven-classic-ota.pdf Graphic file (type pdf)
 <use img/bulk-driven-classic-ota.pdf>
 Package pdftex.def Info: img/bulk-driven-classic-ota.pdf  used on input line 51.
 (pdftex.def)             Requested size: 206.28249pt x 167.38507pt.
  [5 <./img/bulk-driven-classic-ota.pdf>]
-<img/bulk-driven-improved.pdf, id=343, 498.38895pt x 214.11092pt>
+<img/bulk-driven-improved.pdf, id=342, 498.38895pt x 214.11092pt>
 File: img/bulk-driven-improved.pdf Graphic file (type pdf)
 <use img/bulk-driven-improved.pdf>
 Package pdftex.def Info: img/bulk-driven-improved.pdf  used on input line 61.
 (pdftex.def)             Requested size: 330.05322pt x 141.79388pt.
-<img/self-cascode.png, id=347, 85.06781pt x 118.19156pt>
+<img/self-cascode.png, id=346, 85.06781pt x 118.19156pt>
 File: img/self-cascode.png Graphic file (type png)
 <use img/self-cascode.png>
 Package pdftex.def Info: img/self-cascode.png  used on input line 73.
 (pdftex.def)             Requested size: 82.51173pt x 114.64566pt.
  [6 <./img/bulk-driven-improved.pdf>]
-<../tesi-emi/img/inverter-behaviour.png, id=358, 877.77937pt x 419.31656pt>
+<../tesi-emi/img/inverter-behaviour.png, id=357, 877.77937pt x 419.31656pt>
 File: ../tesi-emi/img/inverter-behaviour.png Graphic file (type png)
 <use ../tesi-emi/img/inverter-behaviour.png>
 Package pdftex.def Info: ../tesi-emi/img/inverter-behaviour.png  used on input line 92.
 (pdftex.def)             Requested size: 288.79422pt x 137.959pt.
  [7 <./img/self-cascode.png>] [8 <../tesi-emi/img/inverter-behaviour.png>]
-<img/nauta-ota-single-ended.pdf, id=380, 219.70766pt x 62.13046pt>
+<img/nauta-ota-single-ended.pdf, id=379, 219.70766pt x 62.13046pt>
 File: img/nauta-ota-single-ended.pdf Graphic file (type pdf)
 <use img/nauta-ota-single-ended.pdf>
 Package pdftex.def Info: img/nauta-ota-single-ended.pdf  used on input line 110.
@@ -1193,35 +1217,42 @@ Capitolo 2.
 
 
 ]
-<../tesi-emi/img/nauta-ota.pdf, id=399, 237.78151pt x 209.31999pt>
+<../tesi-emi/img/nauta-ota.pdf, id=398, 237.78151pt x 209.31999pt>
 File: ../tesi-emi/img/nauta-ota.pdf Graphic file (type pdf)
 <use ../tesi-emi/img/nauta-ota.pdf>
-Package pdftex.def Info: ../tesi-emi/img/nauta-ota.pdf  used on input line 17.
+Package pdftex.def Info: ../tesi-emi/img/nauta-ota.pdf  used on input line 15.
 (pdftex.def)             Requested size: 288.79422pt x 254.2585pt.
- [11 <../tesi-emi/img/nauta-ota.pdf>] [12] [13] [14] [15]
+ [11 <../tesi-emi/img/nauta-ota.pdf>] [12] [13] [14]
 
 pdfTeX warning: pdflatex (file ../tesi-emi/img/two_stage_nauta.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<../tesi-emi/img/two_stage_nauta.pdf, id=439, 452.6511pt x 225.7233pt>
+<../tesi-emi/img/two_stage_nauta.pdf, id=429, 452.6511pt x 225.7233pt>
 File: ../tesi-emi/img/two_stage_nauta.pdf Graphic file (type pdf)
 <use ../tesi-emi/img/two_stage_nauta.pdf>
-Package pdftex.def Info: ../tesi-emi/img/two_stage_nauta.pdf  used on input line 85.
+Package pdftex.def Info: ../tesi-emi/img/two_stage_nauta.pdf  used on input line 82.
 (pdftex.def)             Requested size: 412.56497pt x 205.7426pt.
-[16 <../tesi-emi/img/two_stage_nauta.pdf>]
+[15]
 File: ../tesi-emi/img/nauta-ota.pdf Graphic file (type pdf)
 <use ../tesi-emi/img/nauta-ota.pdf>
-Package pdftex.def Info: ../tesi-emi/img/nauta-ota.pdf  used on input line 98.
+Package pdftex.def Info: ../tesi-emi/img/nauta-ota.pdf  used on input line 95.
 (pdftex.def)             Requested size: 288.79422pt x 254.2585pt.
- [17] [18]) [19]
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[16 <../tesi-emi/img/two_stage_nauta.pdf>]) [17]
 \openout2 = `res/chapters/ch3/chapter.aux'.
 
  (res/chapters/ch3/chapter.tex
 Capitolo 3.
-<img/inquinamento-elettromagnetico.png, id=473, 409.29149pt x 286.93336pt>
+
+LaTeX Warning: Citation 'capitolo2' on page 18 undefined on input line 4.
+
+<img/inquinamento-elettromagnetico.png, id=460, 409.29149pt x 286.93336pt>
 File: img/inquinamento-elettromagnetico.png Graphic file (type png)
 <use img/inquinamento-elettromagnetico.png>
 Package pdftex.def Info: img/inquinamento-elettromagnetico.png  used on input line 11.
 (pdftex.def)             Requested size: 288.79422pt x 202.46318pt.
-[20
+[18
 
 
 
@@ -1229,137 +1260,383 @@ Package pdftex.def Info: img/inquinamento-elettromagnetico.png  used on input li
 ]
 
 pdfTeX warning: pdflatex (file ./img/emi-diagram.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<img/emi-diagram.pdf, id=479, 845.07724pt x 597.55246pt>
+<img/emi-diagram.pdf, id=465, 845.07724pt x 597.55246pt>
 File: img/emi-diagram.pdf Graphic file (type pdf)
 <use img/emi-diagram.pdf>
 Package pdftex.def Info: img/emi-diagram.pdf  used on input line 21.
 (pdftex.def)             Requested size: 330.05322pt x 233.38188pt.
-[21 <./img/inquinamento-elettromagnetico.png>] [22 <./img/emi-diagram.pdf>] [23]
+[19 <./img/inquinamento-elettromagnetico.png>]
+
+LaTeX Warning: Citation 'capitolo2' on page 20 undefined on input line 26.
+
+[20 <./img/emi-diagram.pdf>]
+
+LaTeX Warning: Citation 'capitolo2' on page 21 undefined on input line 31.
+
+
+LaTeX Warning: Citation 'capitolo2' on page 21 undefined on input line 38.
+
+[21]
 
 pdfTeX warning: pdflatex (file ./img/emi-types.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<img/emi-types.pdf, id=504, 641.39626pt x 280.04625pt>
+<img/emi-types.pdf, id=488, 641.39626pt x 280.04625pt>
 File: img/emi-types.pdf Graphic file (type pdf)
 <use img/emi-types.pdf>
 Package pdftex.def Info: img/emi-types.pdf  used on input line 45.
 (pdftex.def)             Requested size: 330.05322pt x 144.10791pt.
-[24 <./img/emi-types.pdf>] [25]
-<img/emi-effect-input-pins.pdf, id=523, 198.71301pt x 57.34631pt>
+[22 <./img/emi-types.pdf>]
+
+LaTeX Warning: Citation 'capitolo2' on page 23 undefined on input line 55.
+
+[23]
+<img/emi-effect-input-pins.pdf, id=505, 198.71301pt x 57.34631pt>
 File: img/emi-effect-input-pins.pdf Graphic file (type pdf)
 <use img/emi-effect-input-pins.pdf>
 Package pdftex.def Info: img/emi-effect-input-pins.pdf  used on input line 62.
 (pdftex.def)             Requested size: 288.79422pt x 83.35301pt.
- [26 <./img/emi-effect-input-pins.pdf>] [27] [28] [29]
-<img/ultra-low-voltage-simmetrical-amplifier.pdf, id=561, 226.45901pt x 111.1204pt>
+
+
+LaTeX Warning: Citation 'capitolo2' on page 24 undefined on input line 67.
+
+[24 <./img/emi-effect-input-pins.pdf>]
+
+LaTeX Warning: Citation 'capitolo2' on page 25 undefined on input line 80.
+
+[25]
+
+pdfTeX warning: pdflatex (file ./img/inseguitore.drawio.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<img/inseguitore.drawio.pdf, id=525, 163.57109pt x 111.29579pt>
+File: img/inseguitore.drawio.pdf Graphic file (type pdf)
+<use img/inseguitore.drawio.pdf>
+Package pdftex.def Info: img/inseguitore.drawio.pdf  used on input line 87.
+(pdftex.def)             Requested size: 288.79422pt x 196.50781pt.
+[26 <./img/inseguitore.drawio.pdf>]
+<img/suddivizione-onde.png, id=543, 426.46455pt x 274.05356pt>
+File: img/suddivizione-onde.png Graphic file (type png)
+<use img/suddivizione-onde.png>
+Package pdftex.def Info: img/suddivizione-onde.png  used on input line 99.
+(pdftex.def)             Requested size: 330.05322pt x 212.10912pt.
+ [27 <./img/suddivizione-onde.png>] [28]
+<img/ultra-low-voltage-simmetrical-amplifier.pdf, id=558, 226.45901pt x 111.1204pt>
 File: img/ultra-low-voltage-simmetrical-amplifier.pdf Graphic file (type pdf)
 <use img/ultra-low-voltage-simmetrical-amplifier.pdf>
-Package pdftex.def Info: img/ultra-low-voltage-simmetrical-amplifier.pdf  used on input line 119.
+Package pdftex.def Info: img/ultra-low-voltage-simmetrical-amplifier.pdf  used on input line 116.
 (pdftex.def)             Requested size: 288.79422pt x 141.71985pt.
- [30 <./img/ultra-low-voltage-simmetrical-amplifier.pdf>] [31]
-<img/inverter-based-vs-miller-emi-comparison.pdf, id=579, 207.13815pt x 155.37021pt>
+
+
+LaTeX Warning: Citation 'capitolo2' on page 29 undefined on input line 121.
+
+[29 <./img/ultra-low-voltage-simmetrical-amplifier.pdf>] [30]
+<img/inverter-based-vs-miller-emi-comparison.pdf, id=574, 207.13815pt x 155.37021pt>
 File: img/inverter-based-vs-miller-emi-comparison.pdf Graphic file (type pdf)
 <use img/inverter-based-vs-miller-emi-comparison.pdf>
-Package pdftex.def Info: img/inverter-based-vs-miller-emi-comparison.pdf  used on input line 139.
+Package pdftex.def Info: img/inverter-based-vs-miller-emi-comparison.pdf  used on input line 136.
 (pdftex.def)             Requested size: 330.05322pt x 247.58035pt.
- [32]) [33 <./img/inverter-based-vs-miller-emi-comparison.pdf>]
+) [31 <./img/inverter-based-vs-miller-emi-comparison.pdf>]
 \openout2 = `res/chapters/ch4/chapter.aux'.
 
  (res/chapters/ch4/chapter.tex
 Capitolo 4.
-[34
+[32
 
 
 
 
-] [35]
+] [33]
 
 pdfTeX warning: pdflatex (file ./img/sch/miller.drawio.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<img/sch/miller.drawio.pdf, id=926, 271.97609pt x 306.18388pt>
+<img/sch/miller.drawio.pdf, id=918, 271.97609pt x 306.18388pt>
 File: img/sch/miller.drawio.pdf Graphic file (type pdf)
 <use img/sch/miller.drawio.pdf>
 Package pdftex.def Info: img/sch/miller.drawio.pdf  used on input line 28.
 (pdftex.def)             Requested size: 330.05322pt x 371.57219pt.
-[36 <./img/sch/miller.drawio.pdf>]
+[34 <./img/sch/miller.drawio.pdf>]
 File: img/nauta-ota-single-ended.pdf Graphic file (type pdf)
 <use img/nauta-ota-single-ended.pdf>
 Package pdftex.def Info: img/nauta-ota-single-ended.pdf  used on input line 52.
-(pdftex.def)             Requested size: 217.83633pt x 61.60225pt.
+(pdftex.def)             Requested size: 272.29439pt x 77.00778pt.
 
 
 pdfTeX warning: pdflatex (file ./img/sch/inverter.drawio.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<img/sch/inverter.drawio.pdf, id=944, 202.8378pt x 234.8775pt>
+<img/sch/inverter.drawio.pdf, id=936, 202.8378pt x 234.8775pt>
 File: img/sch/inverter.drawio.pdf Graphic file (type pdf)
 <use img/sch/inverter.drawio.pdf>
 Package pdftex.def Info: img/sch/inverter.drawio.pdf  used on input line 59.
-(pdftex.def)             Requested size: 108.91815pt x 126.12233pt.
-[37 <./img/sch/inverter.drawio.pdf>]
-Package hyperref Info: bookmark level for unknown todo defaults to 0 on input line 76.
+(pdftex.def)             Requested size: 136.14719pt x 157.6574pt.
+[35 <./img/sch/inverter.drawio.pdf>]
 File: img/sch/miller.drawio.pdf Graphic file (type pdf)
 <use img/sch/miller.drawio.pdf>
 Package pdftex.def Info: img/sch/miller.drawio.pdf  used on input line 93.
-(pdftex.def)             Requested size: 165.02347pt x 185.78142pt.
- [38]
+(pdftex.def)             Requested size: 247.54149pt x 278.67914pt.
+ [36]
 
 pdfTeX warning: pdflatex (file ./img/sch/miller_two_staged.drawio.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<img/sch/miller_two_staged.drawio.pdf, id=963, 385.44pt x 306.18388pt>
+<img/sch/miller_two_staged.drawio.pdf, id=954, 385.44pt x 306.18388pt>
 File: img/sch/miller_two_staged.drawio.pdf Graphic file (type pdf)
 <use img/sch/miller_two_staged.drawio.pdf>
 Package pdftex.def Info: img/sch/miller_two_staged.drawio.pdf  used on input line 101.
-(pdftex.def)             Requested size: 206.28249pt x 163.86514pt.
-
+(pdftex.def)             Requested size: 247.54149pt x 196.63911pt.
+[37]
 
 pdfTeX warning: pdflatex (file ./img/sch/basic_nauta.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<img/sch/basic_nauta.pdf, id=964, 264.02641pt x 66.2475pt>
+<img/sch/basic_nauta.pdf, id=961, 264.02641pt x 66.2475pt>
 File: img/sch/basic_nauta.pdf Graphic file (type pdf)
 <use img/sch/basic_nauta.pdf>
 Package pdftex.def Info: img/sch/basic_nauta.pdf  used on input line 109.
 (pdftex.def)             Requested size: 247.54149pt x 62.11293pt.
 
 
-pdfTeX warning: pdflatex (file ./img/sch/nauta_two_staged.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<img/sch/nauta_two_staged.pdf, id=965, 471.68219pt x 151.5261pt>
-File: img/sch/nauta_two_staged.pdf Graphic file (type pdf)
-<use img/sch/nauta_two_staged.pdf>
-Package pdftex.def Info: img/sch/nauta_two_staged.pdf  used on input line 117.
-(pdftex.def)             Requested size: 330.05322pt x 106.03285pt.
-[39 <./img/sch/miller_two_staged.drawio.pdf> <./img/sch/basic_nauta.pdf>] [40 <./img/sch/nauta_two_staged.pdf>] [41] [42] [43] [44] [45] [46] [47]) [48]
+pdfTeX warning: pdflatex (file ./img/sch/nauta_two_staged_compensated.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<img/sch/nauta_two_staged_compensated.pdf, id=962, 471.68219pt x 182.6022pt>
+File: img/sch/nauta_two_staged_compensated.pdf Graphic file (type pdf)
+<use img/sch/nauta_two_staged_compensated.pdf>
+Package pdftex.def Info: img/sch/nauta_two_staged_compensated.pdf  used on input line 117.
+(pdftex.def)             Requested size: 330.05322pt x 127.77887pt.
+[38 <./img/sch/miller_two_staged.drawio.pdf> <./img/sch/basic_nauta.pdf> <./img/sch/nauta_two_staged_compensated.pdf>] [39] [40]) [41]
 \openout2 = `res/chapters/ch5/chapter.aux'.
 
  (res/chapters/ch5/chapter.tex
 Capitolo 5.
-
-LaTeX Warning: Reference `ch:emi_simulator' on page 49 undefined on input line 5.
-
-) [49
+[42
 
 
 
 
 ]
+<img/nauta/single/sim_nauta_single_stage.png, id=1028, 1282.03969pt x 612.03656pt>
+File: img/nauta/single/sim_nauta_single_stage.png Graphic file (type png)
+<use img/nauta/single/sim_nauta_single_stage.png>
+Package pdftex.def Info: img/nauta/single/sim_nauta_single_stage.png  used on input line 19.
+(pdftex.def)             Requested size: 412.56497pt x 196.94835pt.
+<img/nauta/single/sch_nauta_single_stage.png, id=1031, 1283.54532pt x 418.56375pt>
+File: img/nauta/single/sch_nauta_single_stage.png Graphic file (type png)
+<use img/nauta/single/sch_nauta_single_stage.png>
+Package pdftex.def Info: img/nauta/single/sch_nauta_single_stage.png  used on input line 28.
+(pdftex.def)             Requested size: 412.56497pt x 134.5371pt.
+ [43 <./img/nauta/single/sim_nauta_single_stage.png>]
+<img/nauta/single/sch_inverter.png, id=1042, 522.45187pt x 628.59843pt>
+File: img/nauta/single/sch_inverter.png Graphic file (type png)
+<use img/nauta/single/sch_inverter.png>
+Package pdftex.def Info: img/nauta/single/sch_inverter.png  used on input line 37.
+(pdftex.def)             Requested size: 206.28249pt x 248.19295pt.
+ [44 <./img/nauta/single/sch_nauta_single_stage.png> <./img/nauta/single/sch_inverter.png>] [45] [46]
+<img/nauta/single/av_ph_0_5V.jpg, id=1060, 462.528pt x 346.896pt>
+File: img/nauta/single/av_ph_0_5V.jpg Graphic file (type jpg)
+<use img/nauta/single/av_ph_0_5V.jpg>
+Package pdftex.def Info: img/nauta/single/av_ph_0_5V.jpg  used on input line 86.
+(pdftex.def)             Requested size: 412.56497pt x 309.44044pt.
+<img/nauta/single/av_ph_1V.jpg, id=1061, 462.528pt x 346.896pt>
+File: img/nauta/single/av_ph_1V.jpg Graphic file (type jpg)
+<use img/nauta/single/av_ph_1V.jpg>
+Package pdftex.def Info: img/nauta/single/av_ph_1V.jpg  used on input line 92.
+(pdftex.def)             Requested size: 412.56497pt x 309.44044pt.
+<img/nauta/single/av_ph_1_8V.jpg, id=1062, 462.528pt x 346.896pt>
+File: img/nauta/single/av_ph_1_8V.jpg Graphic file (type jpg)
+<use img/nauta/single/av_ph_1_8V.jpg>
+Package pdftex.def Info: img/nauta/single/av_ph_1_8V.jpg  used on input line 98.
+(pdftex.def)             Requested size: 412.56497pt x 309.44044pt.
+ [47 <./img/nauta/single/av_ph_0_5V.jpg>] [48 <./img/nauta/single/av_ph_1V.jpg>] [49 <./img/nauta/single/av_ph_1_8V.jpg>] [50]
+<img/nauta/single/emi_comparison.jpg, id=1089, 462.528pt x 346.896pt>
+File: img/nauta/single/emi_comparison.jpg Graphic file (type jpg)
+<use img/nauta/single/emi_comparison.jpg>
+Package pdftex.def Info: img/nauta/single/emi_comparison.jpg  used on input line 152.
+(pdftex.def)             Requested size: 412.56497pt x 309.44044pt.
+ [51]
+<img/miller/single/sim_miller_single.png, id=1096, 1943.76187pt x 945.5325pt>
+File: img/miller/single/sim_miller_single.png Graphic file (type png)
+<use img/miller/single/sim_miller_single.png>
+Package pdftex.def Info: img/miller/single/sim_miller_single.png  used on input line 183.
+(pdftex.def)             Requested size: 412.56497pt x 200.68855pt.
+ [52 <./img/nauta/single/emi_comparison.jpg>]
+<img/miller/single/sch_miller_single.png, id=1104, 1943.76187pt x 945.5325pt>
+File: img/miller/single/sch_miller_single.png Graphic file (type png)
+<use img/miller/single/sch_miller_single.png>
+Package pdftex.def Info: img/miller/single/sch_miller_single.png  used on input line 192.
+(pdftex.def)             Requested size: 412.56497pt x 200.68855pt.
+ [53 <./img/miller/single/sim_miller_single.png>] [54 <./img/miller/single/sch_miller_single.png>]
+Overfull \vbox (8.68382pt too high) has occurred while \output is active []
+
+ [55]
+<img/miller/single/av_phase_1V.jpg, id=1125, 462.528pt x 346.896pt>
+File: img/miller/single/av_phase_1V.jpg Graphic file (type jpg)
+<use img/miller/single/av_phase_1V.jpg>
+Package pdftex.def Info: img/miller/single/av_phase_1V.jpg  used on input line 239.
+(pdftex.def)             Requested size: 412.56497pt x 309.44044pt.
+<img/miller/single/av_phase_1_8V.jpg, id=1126, 462.528pt x 346.896pt>
+File: img/miller/single/av_phase_1_8V.jpg Graphic file (type jpg)
+<use img/miller/single/av_phase_1_8V.jpg>
+Package pdftex.def Info: img/miller/single/av_phase_1_8V.jpg  used on input line 246.
+(pdftex.def)             Requested size: 412.56497pt x 309.44044pt.
+ [56 <./img/miller/single/av_phase_1V.jpg>]
+<img/miller/single/cmr_cmrr_1V.jpg, id=1135, 462.528pt x 346.896pt>
+File: img/miller/single/cmr_cmrr_1V.jpg Graphic file (type jpg)
+<use img/miller/single/cmr_cmrr_1V.jpg>
+Package pdftex.def Info: img/miller/single/cmr_cmrr_1V.jpg  used on input line 258.
+(pdftex.def)             Requested size: 412.56497pt x 309.44044pt.
+ [57 <./img/miller/single/av_phase_1_8V.jpg>]
+<img/miller/single/cmr_cmrr_1_8V.jpg, id=1141, 462.528pt x 346.896pt>
+File: img/miller/single/cmr_cmrr_1_8V.jpg Graphic file (type jpg)
+<use img/miller/single/cmr_cmrr_1_8V.jpg>
+Package pdftex.def Info: img/miller/single/cmr_cmrr_1_8V.jpg  used on input line 265.
+(pdftex.def)             Requested size: 412.56497pt x 309.44044pt.
+ [58 <./img/miller/single/cmr_cmrr_1V.jpg>] [59 <./img/miller/single/cmr_cmrr_1_8V.jpg>] [60]
+<img/miller/single/emi_comparison.jpg, id=1161, 462.528pt x 346.896pt>
+File: img/miller/single/emi_comparison.jpg Graphic file (type jpg)
+<use img/miller/single/emi_comparison.jpg>
+Package pdftex.def Info: img/miller/single/emi_comparison.jpg  used on input line 314.
+(pdftex.def)             Requested size: 412.56497pt x 309.44044pt.
+<img/nauta/double/sim_nauta_double.png, id=1163, 1295.59032pt x 637.63219pt>
+File: img/nauta/double/sim_nauta_double.png Graphic file (type png)
+<use img/nauta/double/sim_nauta_double.png>
+Package pdftex.def Info: img/nauta/double/sim_nauta_double.png  used on input line 338.
+(pdftex.def)             Requested size: 412.56497pt x 203.04433pt.
+ [61 <./img/miller/single/emi_comparison.jpg>]
+<img/nauta/double/sch_nauta_double.png, id=1172, 1295.59032pt x 637.63219pt>
+File: img/nauta/double/sch_nauta_double.png Graphic file (type png)
+<use img/nauta/double/sch_nauta_double.png>
+Package pdftex.def Info: img/nauta/double/sch_nauta_double.png  used on input line 347.
+(pdftex.def)             Requested size: 412.56497pt x 203.04433pt.
+ [62 <./img/nauta/double/sim_nauta_double.png>]
+<img/nauta/double/sch_nauta_ota_compensated.png, id=1182, 1294.8375pt x 638.385pt>
+File: img/nauta/double/sch_nauta_ota_compensated.png Graphic file (type png)
+<use img/nauta/double/sch_nauta_ota_compensated.png>
+Package pdftex.def Info: img/nauta/double/sch_nauta_ota_compensated.png  used on input line 356.
+(pdftex.def)             Requested size: 412.56497pt x 203.40094pt.
+<img/nauta/double/sch_inverter.png, id=1184, 1294.8375pt x 637.63219pt>
+File: img/nauta/double/sch_inverter.png Graphic file (type png)
+<use img/nauta/double/sch_inverter.png>
+Package pdftex.def Info: img/nauta/double/sch_inverter.png  used on input line 365.
+(pdftex.def)             Requested size: 412.56497pt x 203.16109pt.
+ [63 <./img/nauta/double/sch_nauta_double.png> <./img/nauta/double/sch_nauta_ota_compensated.png>] [64 <./img/nauta/double/sch_inverter.png>] [65] [66]
+<img/nauta/double/av_ph_0_5V.jpg, id=1209, 462.528pt x 346.896pt>
+File: img/nauta/double/av_ph_0_5V.jpg Graphic file (type jpg)
+<use img/nauta/double/av_ph_0_5V.jpg>
+Package pdftex.def Info: img/nauta/double/av_ph_0_5V.jpg  used on input line 452.
+(pdftex.def)             Requested size: 412.56497pt x 309.44044pt.
+<img/nauta/double/av_ph_1V.jpg, id=1210, 462.528pt x 346.896pt>
+File: img/nauta/double/av_ph_1V.jpg Graphic file (type jpg)
+<use img/nauta/double/av_ph_1V.jpg>
+Package pdftex.def Info: img/nauta/double/av_ph_1V.jpg  used on input line 459.
+(pdftex.def)             Requested size: 412.56497pt x 309.44044pt.
+ [67 <./img/nauta/double/av_ph_0_5V.jpg>]
+<img/nauta/double/av_ph_1_8V.jpg, id=1218, 462.528pt x 346.896pt>
+File: img/nauta/double/av_ph_1_8V.jpg Graphic file (type jpg)
+<use img/nauta/double/av_ph_1_8V.jpg>
+Package pdftex.def Info: img/nauta/double/av_ph_1_8V.jpg  used on input line 466.
+(pdftex.def)             Requested size: 412.56497pt x 309.44044pt.
+ [68 <./img/nauta/double/av_ph_1V.jpg>]
+<img/nauta/double/cmr_cmrr_0_5V.jpg, id=1224, 462.528pt x 346.896pt>
+File: img/nauta/double/cmr_cmrr_0_5V.jpg Graphic file (type jpg)
+<use img/nauta/double/cmr_cmrr_0_5V.jpg>
+Package pdftex.def Info: img/nauta/double/cmr_cmrr_0_5V.jpg  used on input line 474.
+(pdftex.def)             Requested size: 412.56497pt x 309.44044pt.
+ [69 <./img/nauta/double/av_ph_1_8V.jpg>]
+<img/nauta/double/cmr_cmrr_1V.jpg, id=1230, 462.528pt x 346.896pt>
+File: img/nauta/double/cmr_cmrr_1V.jpg Graphic file (type jpg)
+<use img/nauta/double/cmr_cmrr_1V.jpg>
+Package pdftex.def Info: img/nauta/double/cmr_cmrr_1V.jpg  used on input line 490.
+(pdftex.def)             Requested size: 412.56497pt x 309.44044pt.
+ [70 <./img/nauta/double/cmr_cmrr_0_5V.jpg>]
+<img/nauta/double/cmr_cmrr_1_8V.jpg, id=1236, 462.528pt x 346.896pt>
+File: img/nauta/double/cmr_cmrr_1_8V.jpg Graphic file (type jpg)
+<use img/nauta/double/cmr_cmrr_1_8V.jpg>
+Package pdftex.def Info: img/nauta/double/cmr_cmrr_1_8V.jpg  used on input line 506.
+(pdftex.def)             Requested size: 412.56497pt x 309.44044pt.
+ [71 <./img/nauta/double/cmr_cmrr_1V.jpg>] [72 <./img/nauta/double/cmr_cmrr_1_8V.jpg>] [73]
+<img/nauta/double/emi_comparison.jpg, id=1258, 462.528pt x 346.896pt>
+File: img/nauta/double/emi_comparison.jpg Graphic file (type jpg)
+<use img/nauta/double/emi_comparison.jpg>
+Package pdftex.def Info: img/nauta/double/emi_comparison.jpg  used on input line 561.
+(pdftex.def)             Requested size: 412.56497pt x 309.44044pt.
+<img/miller/double/sim_miller_double_stage.png, id=1260, 1281.28688pt x 564.60938pt>
+File: img/miller/double/sim_miller_double_stage.png Graphic file (type png)
+<use img/miller/double/sim_miller_double_stage.png>
+Package pdftex.def Info: img/miller/double/sim_miller_double_stage.png  used on input line 590.
+(pdftex.def)             Requested size: 412.56497pt x 181.79866pt.
+ [74 <./img/nauta/double/emi_comparison.jpg>]
+
+LaTeX Warning: Reference `fig:schematic_miller_double_stage_inverter' on page 75 undefined on input line 595.
+
+<img/miller/double/sch_miller_double_stage.png, id=1267, 1210.5225pt x 630.10406pt>
+File: img/miller/double/sch_miller_double_stage.png Graphic file (type png)
+<use img/miller/double/sch_miller_double_stage.png>
+Package pdftex.def Info: img/miller/double/sch_miller_double_stage.png  used on input line 599.
+(pdftex.def)             Requested size: 412.56497pt x 214.75172pt.
+[75 <./img/miller/double/sim_miller_double_stage.png>] [76 <./img/miller/double/sch_miller_double_stage.png>] [77]
+<img/miller/double/av_ph_1V.jpg, id=1287, 462.528pt x 346.896pt>
+File: img/miller/double/av_ph_1V.jpg Graphic file (type jpg)
+<use img/miller/double/av_ph_1V.jpg>
+Package pdftex.def Info: img/miller/double/av_ph_1V.jpg  used on input line 671.
+(pdftex.def)             Requested size: 412.56497pt x 309.44044pt.
+ [78]
+<img/miller/double/av_ph_1_8V.jpg, id=1293, 462.528pt x 346.896pt>
+File: img/miller/double/av_ph_1_8V.jpg Graphic file (type jpg)
+<use img/miller/double/av_ph_1_8V.jpg>
+Package pdftex.def Info: img/miller/double/av_ph_1_8V.jpg  used on input line 678.
+(pdftex.def)             Requested size: 412.56497pt x 309.44044pt.
+ [79 <./img/miller/double/av_ph_1V.jpg>]
+<img/miller/double/cmr_cmrr_1V.jpg, id=1300, 462.528pt x 346.896pt>
+File: img/miller/double/cmr_cmrr_1V.jpg Graphic file (type jpg)
+<use img/miller/double/cmr_cmrr_1V.jpg>
+Package pdftex.def Info: img/miller/double/cmr_cmrr_1V.jpg  used on input line 687.
+(pdftex.def)             Requested size: 412.56497pt x 309.44044pt.
+ [80 <./img/miller/double/av_ph_1_8V.jpg>]
+<img/miller/double/cmr_cmrr_1_8V.jpg, id=1307, 462.528pt x 346.896pt>
+File: img/miller/double/cmr_cmrr_1_8V.jpg Graphic file (type jpg)
+<use img/miller/double/cmr_cmrr_1_8V.jpg>
+Package pdftex.def Info: img/miller/double/cmr_cmrr_1_8V.jpg  used on input line 705.
+(pdftex.def)             Requested size: 412.56497pt x 309.44044pt.
+ [81 <./img/miller/double/cmr_cmrr_1V.jpg>] [82 <./img/miller/double/cmr_cmrr_1_8V.jpg>]
+<img/miller/double/emi_comparison.jpg, id=1321, 462.528pt x 346.896pt>
+File: img/miller/double/emi_comparison.jpg Graphic file (type jpg)
+<use img/miller/double/emi_comparison.jpg>
+Package pdftex.def Info: img/miller/double/emi_comparison.jpg  used on input line 759.
+(pdftex.def)             Requested size: 412.56497pt x 309.44044pt.
+ [83] [84 <./img/miller/double/emi_comparison.jpg>]
+<img/emi/emi_comparison_miller_nauta_single_stage.jpg, id=1335, 462.528pt x 346.896pt>
+File: img/emi/emi_comparison_miller_nauta_single_stage.jpg Graphic file (type jpg)
+<use img/emi/emi_comparison_miller_nauta_single_stage.jpg>
+Package pdftex.def Info: img/emi/emi_comparison_miller_nauta_single_stage.jpg  used on input line 786.
+(pdftex.def)             Requested size: 412.56497pt x 309.44044pt.
+ [85 <./img/emi/emi_comparison_miller_nauta_single_stage.jpg>]
+<img/emi/emi_comparison_miller_nauta_two_staged.jpg, id=1344, 462.528pt x 346.896pt>
+File: img/emi/emi_comparison_miller_nauta_two_staged.jpg Graphic file (type jpg)
+<use img/emi/emi_comparison_miller_nauta_two_staged.jpg>
+Package pdftex.def Info: img/emi/emi_comparison_miller_nauta_two_staged.jpg  used on input line 816.
+(pdftex.def)             Requested size: 412.56497pt x 309.44044pt.
+) [86 <./img/emi/emi_comparison_miller_nauta_two_staged.jpg>] [87]
 \openout2 = `res/chapters/ch6/chapter.aux'.
 
  (res/chapters/ch6/chapter.tex
 Capitolo 6.
-) [50
+[88
 
 
 
 
-] [51
+]) [89] [90] [91
 
 
 
 
-] [52] (tesi.lof [53
+] [92] (tesi.lof [93
 
-])
-\tf@lof=\write8
-\openout8 = `tesi.lof'.
+] [94] [95] [96])
+\tf@lof=\write7
+\openout7 = `tesi.lof'.
 
- (tesi.lot)
-\tf@lot=\write9
-\openout9 = `tesi.lot'.
+ (tesi.lot [97] [98])
+\tf@lot=\write8
+\openout8 = `tesi.lot'.
 
- [54] (tesi.aux (res/chapters/abstract/abstract.aux) (res/chapters/ch1/chapter.aux) (res/chapters/ch2/chapter.aux) (res/chapters/ch3/chapter.aux) (res/chapters/ch4/chapter.aux) (res/chapters/ch5/chapter.aux) (res/chapters/ch6/chapter.aux))
+ [99]
+\openout2 = `res/chapters/acknowledgements/acknowledgements.aux'.
+
+ (res/chapters/acknowledgements/acknowledgements.tex) [100
+
+
+
+] (tesi.aux (res/chapters/abstract/abstract.aux) (res/chapters/ch1/chapter.aux) (res/chapters/ch2/chapter.aux) (res/chapters/ch3/chapter.aux) (res/chapters/ch4/chapter.aux) (res/chapters/ch5/chapter.aux) (res/chapters/ch6/chapter.aux) (res/chapters/acknowledgements/acknowledgements.aux))
  ***********
 LaTeX2e <2023-11-01>
 L3 programming layer <2023-11-09>
@@ -1368,8 +1645,11 @@ L3 programming layer <2023-11-09>
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `tesi.out' has not changed.
-(rerunfilecheck)             Checksum: E0B88929482D2E5FFF0B3A02DD7845C8;10804.
+(rerunfilecheck)             Checksum: F2FA4AB9A393971D5939EC2563671339;11755.
 
 Package biblatex Warning: Please (re)run BibTeX on the file(s):
 (biblatex)                tesi
@@ -1380,17 +1660,17 @@ Package logreq Info: Writing requests to 'tesi.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 37040 strings out of 474587
- 699397 string characters out of 5747589
- 1936558 words of memory out of 5000000
- 58073 multiletter control sequences out of 15000+600000
- 608248 words of font info for 317 fonts, out of 8000000 for 9000
+ 37701 strings out of 474587
+ 719546 string characters out of 5747589
+ 1974558 words of memory out of 5000000
+ 58612 multiletter control sequences out of 15000+600000
+ 614567 words of font info for 342 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,12n,101p,1892b,2435s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,18n,87p,1907b,2435s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/b/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/b/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/b/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/b/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/b/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/b/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/b/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/b/AppData/Local/Programs/MiKTeX/fonts/type1/public/mathpazo/fplmr.pfb><C:/Users/b/AppData/Local/Programs/MiKTeX/fonts/type1/public/mathpazo/fplmri.pfb><C:/Users/b/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb><C:/Users/b/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplbi8a.pfb><C:/Users/b/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/b/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on tesi.pdf (60 pages, 1651086 bytes).
+Output written on tesi.pdf (106 pages, 28399559 bytes).
 PDF statistics:
- 1244 PDF objects out of 1440 (max. 8388607)
- 170 named destinations out of 1000 (max. 500000)
- 67534 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 1667 PDF objects out of 1728 (max. 8388607)
+ 266 named destinations out of 1000 (max. 500000)
+ 71306 words of extra memory for PDF output out of 74296 (max. 10000000)
 

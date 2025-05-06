@@ -19,6 +19,8 @@ Reallocating 'name_of_file' (item size: 1) to 29 items.
 A level-1 auxiliary file: res/chapters/ch5/chapter.aux
 Reallocating 'name_of_file' (item size: 1) to 29 items.
 A level-1 auxiliary file: res/chapters/ch6/chapter.aux
+Reallocating 'name_of_file' (item size: 1) to 51 items.
+A level-1 auxiliary file: res/chapters/acknowledgements/acknowledgements.aux
 Reallocating 'glb_str_end' (item size: 4) to 20 items.
 Reallocating 'glb_str_ptr' (item size: 4) to 20 items.
 Reallocating 'global_strs' (item size: 1) to 4000000 items.
@@ -36,47 +38,49 @@ Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Database file #1: tesi-blx.bib
 Database file #2: ./bib/bibliography.bib
+Warning--I didn't find a database entry for "capitolo2"
 Biblatex version: 3.19
 Reallocating 'wiz_functions' (item size: 4) to 9000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
-You've used 15 entries,
+You've used 14 entries,
             6399 wiz_defined-function locations,
-            1297 strings with 13591 characters,
-and the built_in function-call counts, 112300 in all, are:
-= -- 9345
+            1297 strings with 12507 characters,
+and the built_in function-call counts, 110954 in all, are:
+= -- 9311
 > -- 1426
-< -- 340
-+ -- 3095
+< -- 332
++ -- 3094
 - -- 504
-* -- 7958
-:= -- 12959
+* -- 7930
+:= -- 12937
 add.period$ -- 0
-call.type$ -- 15
-change.case$ -- 187
+call.type$ -- 14
+change.case$ -- 185
 chr.to.int$ -- 42
-cite$ -- 28
-duplicate$ -- 11198
-empty$ -- 10027
+cite$ -- 26
+duplicate$ -- 11003
+empty$ -- 9793
 format.name$ -- 885
-if$ -- 22704
+if$ -- 22381
 int.to.chr$ -- 0
-int.to.str$ -- 41
+int.to.str$ -- 40
 missing$ -- 0
-newline$ -- 449
+newline$ -- 444
 num.names$ -- 618
-pop$ -- 5097
+pop$ -- 4772
 preamble$ -- 1
-purify$ -- 276
+purify$ -- 274
 quote$ -- 0
-skip$ -- 2459
+skip$ -- 2396
 stack$ -- 0
-substring$ -- 17956
-swap$ -- 1940
-text.length$ -- 311
+substring$ -- 17950
+swap$ -- 1893
+text.length$ -- 303
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 494
+type$ -- 460
 warning$ -- 0
-while$ -- 1509
+while$ -- 1508
 width$ -- 0
-write$ -- 435
+write$ -- 431
+(There was 1 warning)
